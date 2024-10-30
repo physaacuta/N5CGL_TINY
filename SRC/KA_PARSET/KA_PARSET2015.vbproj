@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{191BA349-5136-49DB-A120-D11370BF3FBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KA_PARSET.modMain</StartupObject>
+    <RootNamespace>KA_PARSET</RootNamespace>
+    <AssemblyName>KA_PARSET</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OptionStrict>On</OptionStrict>
+    <ApplicationIcon>パラメータ設定画面.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KA_PARSET.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KA_PARSET.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KA_PARSET.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KA_PARSET.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KizuLibCLIx32, Version=1.0.6878.18250, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EXE\KizuLibCLIx32.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Include\DspCommon.vb">
+      <Link>DspCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommon.vb">
+      <Link>KizuCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommonSelect.vb">
+      <Link>KizuCommonSelect.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuListID.vb">
+      <Link>KizuListID.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\LineCommon.vb">
+      <Link>LineCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\OutInterface.vb">
+      <Link>OutInterface.vb</Link>
+    </Compile>
+    <Compile Include="..\..\LibPG\認証\UserCheck.vb">
+      <Link>UserCheck.vb</Link>
+    </Compile>
+    <Compile Include="..\KA_PARCOLOR\基底クラス\frmMain_ParSet_SysName.Designer.vb">
+      <Link>基底クラス\frmMain_ParSet_SysName.Designer.vb</Link>
+      <DependentUpon>frmMain_ParSet_SysName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\KA_PARCOLOR\基底クラス\frmMain_ParSet_SysName.vb">
+      <Link>基底クラス\frmMain_ParSet_SysName.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\KA_PARCOLOR\基底クラス\frmMain_ParSet_UplList_SysName.Designer.vb">
+      <Link>基底クラス\frmMain_ParSet_UplList_SysName.Designer.vb</Link>
+      <DependentUpon>frmMain_ParSet_UplList_SysName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\KA_PARCOLOR\基底クラス\frmMain_ParSet_UplList_SysName.vb">
+      <Link>基底クラス\frmMain_ParSet_UplList_SysName.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAllCodeOutput.designer.vb">
+      <DependentUpon>frmAllCodeOutput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAllCodeOutput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCameraLink.Designer.vb">
+      <DependentUpon>frmCameraLink.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCameraLink.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommonAlarm.designer.vb">
+      <DependentUpon>frmCommonAlarm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommonAlarm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommonMaster.designer.vb">
+      <DependentUpon>frmCommonMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommonMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogMaster.designer.vb">
+      <DependentUpon>frmLogMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaeTypeGr.Designer.vb">
+      <DependentUpon>frmMaeTypeGr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaeTypeGr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.designer.vb">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPCodeJudge.designer.vb">
+      <DependentUpon>frmPCodeJudge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPCodeJudge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPCodeMaster.designer.vb">
+      <DependentUpon>frmPCodeMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPCodeMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPCodeOutput.designer.vb">
+      <DependentUpon>frmPCodeOutput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPCodeOutput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPCommonOutPut.designer.vb">
+      <DependentUpon>frmPCommonOutPut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPCommonOutPut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSCodeJudge.designer.vb">
+      <DependentUpon>frmSCodeJudge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSCodeJudge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSCodeMaster.designer.vb">
+      <DependentUpon>frmSCodeMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSCodeMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSCodeOutPut.designer.vb">
+      <DependentUpon>frmSCodeOutPut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSCodeOutPut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatusMaster.designer.vb">
+      <DependentUpon>frmStatusMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatusMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTypeGr.designer.vb">
+      <DependentUpon>frmTypeGr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTypeGr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAllCodeOutput.resx">
+      <DependentUpon>frmAllCodeOutput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCameraLink.resx">
+      <DependentUpon>frmCameraLink.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommonAlarm.resx">
+      <DependentUpon>frmCommonAlarm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommonMaster.resx">
+      <DependentUpon>frmCommonMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogMaster.resx">
+      <DependentUpon>frmLogMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaeTypeGr.resx">
+      <DependentUpon>frmMaeTypeGr.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <DependentUpon>frmPassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPCodeJudge.resx">
+      <DependentUpon>frmPCodeJudge.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPCodeMaster.resx">
+      <DependentUpon>frmPCodeMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPCodeOutput.resx">
+      <DependentUpon>frmPCodeOutput.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPCommonOutPut.resx">
+      <DependentUpon>frmPCommonOutPut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSCodeJudge.resx">
+      <DependentUpon>frmSCodeJudge.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSCodeMaster.resx">
+      <DependentUpon>frmSCodeMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSCodeOutPut.resx">
+      <DependentUpon>frmSCodeOutPut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatusMaster.resx">
+      <DependentUpon>frmStatusMaster.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTypeGr.resx">
+      <DependentUpon>frmTypeGr.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\EXE\KizuLibCLIx32.dll">
+      <Link>KizuLibCLIx32.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\EXE\KizuLibCLIx64.dll">
+      <Link>KizuLibCLIx64.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\LibPG\認証\UserCheck32.dll">
+      <Link>UserCheck32.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\LibPG\認証\UserCheck64.dll">
+      <Link>UserCheck64.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="パラメータ設定画面.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\KizuForm\KizuForm2015.vbproj">
+      <Project>{7804679d-f0d1-4c19-bdd3-11e6bdce4030}</Project>
+      <Name>KizuForm2015</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\tClassForm\tClassForm2015.vbproj">
+      <Project>{2a0234a6-c555-47a3-aec2-5e7828ec0ba1}</Project>
+      <Name>tClassForm2015</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\tClassLibrary\tClassLibrary2015.vbproj">
+      <Project>{f8144424-2197-479c-9bb0-89d2da9c5847}</Project>
+      <Name>tClassLibrary2015</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

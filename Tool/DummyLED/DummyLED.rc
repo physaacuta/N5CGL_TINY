@@ -1,0 +1,203 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\DummyLED.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DummyLED.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DUMMYLED_DIALOG DIALOGEX 0, 0, 289, 123
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ダミーLED[DummyLED]"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "強制終了",IDOK,232,7,50,16
+    LISTBOX         IDC_LIST1,7,69,275,47,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SESSION,24,6,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,87,6,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "装置",IDC_STATIC,7,7,15,8
+    LTEXT           "Ch",IDC_STATIC,75,8,9,8
+    GROUPBOX        "状態",IDC_STATIC,7,21,171,47
+    GROUPBOX        "デバッグ",IDC_STATIC,178,23,104,45
+    CONTROL         "デバッグ",IDC_DEBUG,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,146,7,31,14
+    CONTROL         "消灯",IDC_STATE_ONOFF_CHK,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,257,52,21,14
+    EDITTEXT        IDC_STATE_TEMP,205,52,24,14,ES_AUTOHSCROLL
+    LTEXT           "全体調光",IDC_STATIC,52,32,33,14,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATE_VALUE,86,32,30,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "温度",IDC_BTN_TEMP,230,52,24,14
+    LTEXT           "温度",IDC_STATIC,17,47,33,14,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATE_VALUE21,51,47,21,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "断線状態",IDC_STATIC,119,32,33,14,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATE_VALUE3,154,32,20,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "温度状態",IDC_STATIC,119,47,33,14,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATE_VALUE4,154,47,20,14,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO4,194,36,22,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ch",IDC_STATIC,183,38,9,8
+    COMBOBOX        IDC_COMBO5,230,36,22,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ﾕﾆ",IDC_STATIC,219,37,10,8
+    EDITTEXT        IDC_STATE_VALUE22,73,47,21,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_STATE_VALUE23,95,47,21,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "断線",IDC_BTN_BREAK,182,52,22,14
+    EDITTEXT        IDC_STATE_ONOFF,37,32,14,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "点灯",IDC_STATIC,17,32,20,14,0,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DummyLED.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "DummyLED.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DUMMYLED_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DUMMYLED_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\DummyLED.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

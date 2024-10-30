@@ -1,0 +1,50 @@
+#=========================================================
+# RPIファイル監視
+#
+# ----- 共通部 ---------------------------
+# INS_NUM  		何個ある (1オリジン。MAX:4)
+# CHECK_OK_NUM		過去xコイルを見て、１つもRPIファイルが無ければNG判定 (1～)
+# CYCLE_TIME		チェック周期 [分] ※チェック対象疵検管理Noが変更なければ、チェックしない
+# TIME_FIRST		初期実行までの時間 (0:定周期無し) [分]
+# RPI_CHECK_SQL		実績検索に用いるSQL文。%dはCHECK_OK_NUM分Forループ。必ず「疵検管理Noが1件ヒットする形式」にすること。
+#
+### 各機能 [**_ID_1･･･] ---------------------------
+## 設定
+# RPI_CHECK_MODE	0:ini参照	1:直接指定
+#
+# (0:ini参照)
+# RPISAVE_INI_PATH	TI_RPISAVEのINIファイル絶対パス(統括IniSettingの中)
+# RPISAVE_INS_SEC	TI_RPISAVEセクション名 ([TI_RPISAVE_INS_1])
+#
+# (1:直接指定)
+# RPI_FOLDER_SAVE_1	保存パス指定
+#
+## 機器状態
+# ERR_ID		機器ID
+# REBOOT_PCNAME 再起動PC名称。空白時再起動無し
+#=========================================================
+[KT_RPICHK]
+INS_NUM 	= 1
+CHECK_OK_NUM	= 5
+CYCLE_TIME	= 1
+TIME_FIRST	= 1
+RPI_CHECK_SQL   = SELECT MIN(c.管理No) FROM (SELECT TOP %d 管理No FROM COIL_RESULT WHERE 実績格納区分=1 AND 検査本数 <> 0 ORDER BY 管理No DESC) AS c
+
+
+[KT_RPICHK_ID_1]
+RPI_CHECK_MODE     = 1
+
+
+
+# ini参照 [RPI_CHECK_MODE:0]
+RPISAVE_INI_PATH= "C:\N1CAPL\IniSetting_1CAPL\t全長画像処理表機能 KizuTask.ini"
+RPISAVE_INS_SEC	= TI_RPISAVE_INS_1
+# 直接指定 [RPI_CHECK_MODE:1]
+RPI_FOLDER_SAVE_1  = \\192.9.200.30\F$\RPI
+
+
+ERR_ID		= 1
+REBOOT_PCNAME=RPIEXEC01
+
+
+

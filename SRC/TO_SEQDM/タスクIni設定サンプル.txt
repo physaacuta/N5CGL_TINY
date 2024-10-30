@@ -1,0 +1,33 @@
+#=========================================================
+# シーケンサ データメモリ管理
+#   UDP接続        ※ MXコンポーネントVer4対応
+# -- MXコンポーネント設置用 --
+#  PC_NETWORK_NO		: パソコン側(自局) ネットワークNo
+#  PC_STATION_NO		: パソコン側(自局) 局番 　※同一ﾈｯﾄﾜｰｸで重複しないこと
+#  SEQ_NETWORK_NO		: シーケンサ側(他局) ネットワークNo
+#  SEQ_STATION_NO		: シーケンサ側(他局) 局番
+#  SEQ_CPU_TYPE			: Ver3: CPUタイプ  マニュアル sh080275f.pdf  P53を参照 (10進数で指定すること)
+#                                 Ver4: Ver4 sh081083g.pdf  P56を参照
+#     CPUタイプ (上が新機種)
+#      Q06UDV:211
+#      Q06UDEH:146
+#      Q06: 35
+#      Q02: 34
+#
+# -- データメモリ領域用 --
+#  READADDR  	: 読込エリア開始アドレス
+#  WRITEADDR 	: 書込エリア開始アドレス
+#=========================================================
+[TO_SEQDM]
+PC_NETWORK_NO	= 1
+PC_STATION_NO	= 2
+SEQ_NETWORK_NO	= 1
+SEQ_STATION_NO 	= 1
+SEQ_CPU_TYPE	= 211
+CONNECT_IP	= 192.168.0.2
+CONNECT_PORT	= 5001
+CONNECT_TIMEOUT	= 5000
+
+READADDR  = D100
+WRITEADDR = D400
+

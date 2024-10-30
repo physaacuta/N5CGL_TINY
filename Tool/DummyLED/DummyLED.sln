@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DummyLED", "DummyLED.vcproj", "{AC29F316-C820-4799-9CD6-509958C1F961}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E} = {F1AC4980-774C-4FAF-AD15-FF810E9E492E}
+		{41A0A3A1-DB76-49E5-AA42-36CE3CFA929A} = {41A0A3A1-DB76-49E5-AA42-36CE3CFA929A}
+		{49A7E523-23D9-4EB8-9E67-522874A270EA} = {49A7E523-23D9-4EB8-9E67-522874A270EA}
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD} = {BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07} = {3916A2AB-5105-411A-A9BD-CA740CE84A07}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KizuLib", "..\..\Library\KizuLib\KizuLib.vcproj", "{F1AC4980-774C-4FAF-AD15-FF810E9E492E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KizuLibMFC", "..\..\Library\KizuLibMFC\KizuLibMFC.vcproj", "{3916A2AB-5105-411A-A9BD-CA740CE84A07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KizuODBC", "..\..\Library\KizuODBC\KizuODBC.vcproj", "{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DefectLib", "..\..\Library\DefectLib\DefectLib.vcproj", "{49A7E523-23D9-4EB8-9E67-522874A270EA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KizuSOCK3", "..\..\Library\KizuSOCK3\KizuSOCK3.vcproj", "{41A0A3A1-DB76-49E5-AA42-36CE3CFA929A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC29F316-C820-4799-9CD6-509958C1F961}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC29F316-C820-4799-9CD6-509958C1F961}.Debug|Win32.Build.0 = Debug|Win32
+		{AC29F316-C820-4799-9CD6-509958C1F961}.Release|Win32.ActiveCfg = Release|Win32
+		{AC29F316-C820-4799-9CD6-509958C1F961}.Release|Win32.Build.0 = Release|Win32
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug|Win32.Build.0 = Debug|Win32
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release|Win32.ActiveCfg = Release|Win32
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release|Win32.Build.0 = Release|Win32
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug|Win32.Build.0 = Debug|Win32
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release|Win32.ActiveCfg = Release|Win32
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release|Win32.Build.0 = Release|Win32
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug|Win32.Build.0 = Debug|Win32
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release|Win32.ActiveCfg = Release|Win32
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release|Win32.Build.0 = Release|Win32
+		{49A7E523-23D9-4EB8-9E67-522874A270EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{49A7E523-23D9-4EB8-9E67-522874A270EA}.Debug|Win32.Build.0 = Debug|Win32
+		{49A7E523-23D9-4EB8-9E67-522874A270EA}.Release|Win32.ActiveCfg = Release|Win32
+		{49A7E523-23D9-4EB8-9E67-522874A270EA}.Release|Win32.Build.0 = Release|Win32
+		{41A0A3A1-DB76-49E5-AA42-36CE3CFA929A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{41A0A3A1-DB76-49E5-AA42-36CE3CFA929A}.Debug|Win32.Build.0 = Debug|Win32
+		{41A0A3A1-DB76-49E5-AA42-36CE3CFA929A}.Release|Win32.ActiveCfg = Release|Win32
+		{41A0A3A1-DB76-49E5-AA42-36CE3CFA929A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

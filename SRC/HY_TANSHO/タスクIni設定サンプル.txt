@@ -1,0 +1,75 @@
+#===============================================================================
+#   探傷画面設定値
+#===============================================================================
+#[HY_TANSHO](探傷画面共通設定)
+#   FROM_TOTAL_NUM          :出力総画面数               (1～:探傷画面ウィンドウの出力数)
+#   MAP_INTERVAL            :疵マップ更新秒数           (0～:探傷画面上疵マップの更新間隔)
+#   STATUS_INTERVAL         :ステータス更新秒数         (0～:探傷画面上ステータス欄の更新間隔)
+#   COIL_INTERVAL           :コイル更新秒数             (0～:探傷画面上コイル情報欄の更新間隔)
+#   SYNC_MODE               :同期モード                 (0:全ての画面を同期、1:検査台毎に動作、2:同期無し)
+#   IMAGE_WIDTH             :画像100pixel横幅設定       (1～:100pixel横幅を指定[mm])
+#   TCM_IMAGE_WIDTH         :TCM画像100pixel横幅設定    (1～:100pixel横幅を指定[mm])
+#===============================================================================
+#[HY_TANSHO_FORMn](探傷画面個別設定 : n=1以上)
+#   FROM_POS_NUM            :画面位置番号               (1～:HY_TANSHO_FORMnまで表示)
+#   FROM_MEN_NUM            :表示表裏面番号             (0:表面、1:裏面) 
+#   KENSA_NUM               :検査台番号                 (0～:検査台番号 ポインタ情報テーブル参照番号)
+#   KENSA_NAME              :検査台名称                 (0～:検査台名称 ポインタ情報テーブル参照番号)
+#   MAP_SCROLL_DIRECT       :疵マップ進行方向           (0:下から上、1:上から下)
+#   MAP_VIEW_DIRECT         :疵マップヘッダ側           (0:左がDS、 1:左がWS) ※文字のみ
+#   MAP_CELL_DIRECT         :疵マップセル側             (0:疵マップの左右反転無し、1:疵マップの左右反転有り)
+#   IMAGE_VIEW_DIRECT       :疵画像の表示欄反転         (0:左がDS、1:左がWS) ※文字のみ
+#   IMAGE_TOP_BOTTOM_INF    :疵画像の上下反転           (0:反転無し、1:反転有り)
+#   IMAGE_SIDE_INF          :疵画像の右左反転           (0:反転無し、1:反転有り)
+#   MAP_KENSA_DISP          :疵マップ検査台表示         (0:表示なし、1:表示あり)
+#   DEFIMAGE_DIRECT         :拡大画面の画像並び         (0:左から、1:右から)
+#   TCM_IMAGE_VIEW_DIRECT   :TCM疵画像の表示欄反転      (0:左がDS、1:左がWS) ※文字のみ
+#   TCM_IMAGE_TOP_BOTTOM_INF:TCM疵画像の上下反転        (0:反転無し、1:反転有り)
+#   TCM_IMAGE_SIDE_INF      :TCM疵画像の右左反転        (0:反転無し、1:反転有り)
+#   APPROACH_ALARM_DISP     :警報情報表示有無(テスト用) (0:非表示、  1:表示    ) ※基本は非表示
+#===============================================================================
+
+[HY_TANSHO]
+FROM_TOTAL_NUM      = 2
+MAP_INTERVAL        = 500
+STATUS_INTERVAL     = 1000
+COIL_INTERVAL       = 2000
+SYNC_MODE           = 0
+IMAGE_WIDTH         = 25
+TCM_IMAGE_WIDTH     = 40
+
+[HY_TANSHO_FORM1]
+FROM_POS_NUM            = 1
+FROM_MEN_NUM            = 0
+KENSA_NUM               = 2
+KENSA_NAME              = 表面検査室
+MAP_SCROLL_DIRECT       = 0
+MAP_VIEW_DIRECT         = 0
+MAP_CELL_DIRECT         = 0
+IMAGE_VIEW_DIRECT       = 0
+IMAGE_TOP_BOTTOM_INF    = 0
+IMAGE_SIDE_INF          = 0
+MAP_KENSA_DISP          = 1
+DEFIMAGE_DIRECT         = 0
+TCM_IMAGE_VIEW_DIRECT	= 0
+TCM_IMAGE_TOP_BOTTOM_INF= 0
+TCM_IMAGE_SIDE_INF	= 0
+APPROACH_ALARM_DISP	= 0
+
+[HY_TANSHO_FORM2]
+FROM_POS_NUM            = 2
+FROM_MEN_NUM            = 1
+KENSA_NUM               = 2
+KENSA_NAME              = 裏面検査室
+MAP_SCROLL_DIRECT       = 0
+MAP_VIEW_DIRECT         = 0
+MAP_CELL_DIRECT         = 0
+IMAGE_VIEW_DIRECT       = 0
+IMAGE_TOP_BOTTOM_INF    = 0
+IMAGE_SIDE_INF          = 0
+MAP_KENSA_DISP          = 1
+DEFIMAGE_DIRECT         = 0
+TCM_IMAGE_VIEW_DIRECT	= 0
+TCM_IMAGE_TOP_BOTTOM_INF= 0
+TCM_IMAGE_SIDE_INF	= 0
+APPROACH_ALARM_DISP	= 0

@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A0234A6-C555-47A3-AEC2-5E7828EC0BA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>tClassForm</RootNamespace>
+    <AssemblyName>tClassForm</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>tClassForm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>tClassForm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>tClassForm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>tClassForm.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBase.Designer.vb">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase_Main.designer.vb">
+      <DependentUpon>frmBase_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase_Popup.designer.vb">
+      <DependentUpon>frmBase_Popup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase_Popup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain_Menu.designer.vb">
+      <DependentUpon>frmMain_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPop_Btn1.Designer.vb">
+      <DependentUpon>frmPop_Btn1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPop_Btn1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPop_Btn2.Designer.vb">
+      <DependentUpon>frmPop_Btn2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPop_Btn2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPop_Btn3.Designer.vb">
+      <DependentUpon>frmPop_Btn3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPop_Btn3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPop_MsgBox.Designer.vb">
+      <DependentUpon>frmPop_MsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPop_MsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPop_MsgBox3.Designer.vb">
+      <DependentUpon>frmPop_MsgBox3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPop_MsgBox3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPop_Pass.Designer.vb">
+      <DependentUpon>frmPop_Pass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPop_Pass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPop_WaitMsgBox.Designer.vb">
+      <DependentUpon>frmPop_WaitMsgBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPop_WaitMsgBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase_Main.resx">
+      <DependentUpon>frmBase_Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase_Popup.resx">
+      <DependentUpon>frmBase_Popup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain_Menu.resx">
+      <DependentUpon>frmMain_Menu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPop_Btn1.resx">
+      <DependentUpon>frmPop_Btn1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPop_Btn2.resx">
+      <DependentUpon>frmPop_Btn2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPop_Btn3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPop_Btn3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPop_MsgBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPop_MsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPop_MsgBox3.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPop_MsgBox3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPop_Pass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPop_Pass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPop_WaitMsgBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPop_WaitMsgBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tClassLibrary\tClassLibrary2015.vbproj">
+      <Project>{0B6E49D5-5E3D-4371-94A5-B70215F68E96}</Project>
+      <Name>tClassLibrary2015</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

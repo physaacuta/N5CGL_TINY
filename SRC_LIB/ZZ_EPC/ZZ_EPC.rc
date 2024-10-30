@@ -1,0 +1,289 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\ZZ_EPC.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ZZ_EPC.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ZZ_EPC_DIALOG DIALOGEX 0, 0, 459, 352
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "擬似今野さんタスク [ZZ_EPC]"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "強制終了",IDOK,405,0,50,16
+    LISTBOX         IDC_LIST1,0,204,459,147,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "UDP受信した事にする",IDC_UDPRECV,2,3,88,16
+    EDITTEXT        IDC_KIZUCNT1,39,74,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRMCNT1,99,74,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUTYPE1,59,74,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUGRADE1,79,74,20,14,ES_AUTOHSCROLL
+    GROUPBOX        "疵情報設定",IDC_STATIC,0,24,183,124
+    GROUPBOX        "定周期設定",IDC_STATIC,186,24,272,99
+    CTEXT           "ｴｯｼﾞ内平均",IDC_STATIC,192,58,40,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "右OV",IDC_STATIC,192,70,40,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "cam",IDC_STATIC,189,135,32,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "カメラ角度",IDC_STATIC,232,34,96,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_BR_CENTER_ANGLE1,232,58,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GAIN_R,384,84,32,12,ES_AUTOHSCROLL
+    CTEXT           "1",IDC_STATIC,232,46,24,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "2",IDC_STATIC,256,46,24,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "3",IDC_STATIC,280,46,24,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "4",IDC_STATIC,304,46,24,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "カメラゲイン 1～10",IDC_STATIC,372,72,75,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "R",IDC_STATIC,372,84,12,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "B",IDC_STATIC,372,108,12,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "G",IDC_STATIC,372,96,12,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_BR_OV_R_ANGLE1,232,70,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_OV_L_ANGLE1,232,82,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_CENTER_ANGLE2,256,58,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_OV_R_ANGLE2,256,70,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_OV_L_ANGLE2,256,82,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_CENTER_ANGLE3,280,58,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_OV_R_ANGLE3,280,70,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_OV_L_ANGLE3,280,82,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_CENTER_ANGLE4,304,58,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_OV_R_ANGLE4,304,70,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BR_OV_L_ANGLE4,304,82,24,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "輝度変更",IDC_CHANGE_BRIGHTNESS,328,58,32,36
+    EDITTEXT        IDC_GAIN_G,384,96,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GAIN_B,384,108,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "カメラゲイン変更",IDC_CHANGE_CAMGAIN,418,84,36,36,BS_MULTILINE
+    EDITTEXT        IDC_EDGE,387,32,24,12,ES_AUTOHSCROLL
+    CONTROL         "エッジ変更反映",IDC_PUTEDGE,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,372,58,56,12
+    PUSHBUTTON      "エッジ変更",IDC_CHANGE_EDGE,411,32,32,25
+    CTEXT           "疵種1個目",IDC_STATIC,2,74,37,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "疵種",IDC_STATIC,59,59,20,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "個数",IDC_STATIC,39,59,20,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "Gr",IDC_STATIC,79,59,20,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "間隔",IDC_STATIC,99,59,20,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "変更",IDC_CNG_KIZU1,140,74,20,14
+    CONTROL         "停止",IDC_STOP_KIZU1,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,160,74,20,14
+    EDITTEXT        IDC_KIZUCNT2,39,88,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRMCNT2,99,88,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUTYPE2,59,88,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUGRADE2,79,88,20,14,ES_AUTOHSCROLL
+    CTEXT           "疵種2個目",IDC_STATIC,2,88,37,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "変更",IDC_CNG_KIZU2,140,88,20,14
+    CONTROL         "停止",IDC_STOP_KIZU2,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,160,88,20,14
+    EDITTEXT        IDC_KIZUCNT3,39,102,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRMCNT3,99,102,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUTYPE3,59,102,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUGRADE3,79,102,20,14,ES_AUTOHSCROLL
+    CTEXT           "疵種3個目",IDC_STATIC,2,102,37,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "変更",IDC_CNG_KIZU3,140,102,20,14
+    CONTROL         "停止",IDC_STOP_KIZU3,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,160,102,20,14
+    EDITTEXT        IDC_KIZUCNT4,39,116,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRMCNT4,99,116,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUTYPE4,59,116,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUGRADE4,79,116,20,14,ES_AUTOHSCROLL
+    CTEXT           "疵種4個目",IDC_STATIC,2,116,37,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "変更",IDC_CNG_KIZU4,140,116,20,14
+    CONTROL         "停止",IDC_STOP_KIZU4,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,160,116,20,14
+    EDITTEXT        IDC_KIZUCNT5,39,130,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRMCNT5,99,130,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUTYPE5,59,130,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KIZUGRADE5,79,130,20,14,ES_AUTOHSCROLL
+    CTEXT           "疵種5個目",IDC_STATIC,2,130,37,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "変更",IDC_CNG_KIZU5,140,130,20,14
+    CONTROL         "停止",IDC_STOP_KIZU5,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,160,130,20,14
+    PUSHBUTTON      "更新",IDC_UPDATE,140,60,40,14
+    EDITTEXT        IDC_CYCLE1,119,74,20,14,ES_AUTOHSCROLL
+    CTEXT           "周期",IDC_STATIC,119,59,20,14,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_CYCLE2,119,88,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CYCLE3,119,102,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CYCLE4,119,116,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CYCLE5,119,130,20,14,ES_AUTOHSCROLL
+    CONTROL         "未検査",IDC_SKIP,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,328,43,29,15
+    CONTROL         "色々乱数",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,41,37,43,10
+    LTEXT           "DS",IDC_STATIC,375,34,10,8
+    LTEXT           "WS",IDC_STATIC,374,46,10,8
+    CTEXT           "0～255",IDC_STATIC,192,45,40,12,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "フレーム情報設定",IDC_STATIC,186,123,272,78
+    COMBOBOX        IDC_CAM_ID,222,135,34,49,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "gain",IDC_STATIC,189,161,32,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "exp",IDC_STATIC,189,183,32,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "volt",IDC_STATIC,331,162,32,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "temp",IDC_STATIC,331,183,32,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "1",IDC_STATIC,221,149,24,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "2",IDC_STATIC,245,149,24,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "3",IDC_STATIC,269,149,24,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "1",IDC_STATIC,363,146,24,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_CAM_GAIN_1,221,161,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAM_GAIN_2,245,161,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAM_GAIN_3,269,161,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAM_EXP_1,221,183,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAM_EXP_2,245,183,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAM_EXP_3,269,183,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAM_VOLT_1,363,162,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAM_TEMP_1,363,183,24,12,ES_AUTOHSCROLL
+    CTEXT           "左OV",IDC_STATIC,192,82,40,12,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "ゲイン変更",IDC_CHANGE_CAM_GAIN,293,160,36,15
+    PUSHBUTTON      "露光変更",IDC_CHANGE_CAM_EXP,293,181,36,15
+    PUSHBUTTON      "電圧変更",IDC_CHANGE_CAM_VOLT,386,160,36,15
+    PUSHBUTTON      "温度変更",IDC_CHANGE_CAM_TEMP,386,181,36,15
+    EDITTEXT        IDC_EDGE3,387,44,24,12,ES_AUTOHSCROLL
+    LTEXT           "切り出し画像縮小率",IDC_STATIC,303,136,59,8
+    EDITTEXT        IDC_POS_X,94,37,30,14,ES_AUTOHSCROLL
+    LTEXT           "幅座標\nWSからの位置[mm]",IDC_STATIC,126,36,56,17
+    CONTROL         "SMEM",IDC_USE_SMEM,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,431,132,23,15
+    COMBOBOX        IDC_SHRINKRATIO,363,133,24,52,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ZZ_EPC.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "ZZ_EPC.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ZZ_EPC_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 458
+        BOTTOMMARGIN, 306
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ZZ_EPC_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\ZZ_EPC.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

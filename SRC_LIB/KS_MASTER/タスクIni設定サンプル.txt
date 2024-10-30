@@ -1,0 +1,43 @@
+#=========================================================
+# PCマスター管理設定
+# -- 共通設定用 --
+#  APP_ENABLE_ID  : 自タスク起動時に立ち上げ完了通知を送る機器ID
+#  START_TIMEWAIT : 処理開始待ち時間 (PCの安定稼動するまでの待ち時間) [秒] (未指定時 5秒)
+# -- ハートビート設定用 --
+#  HB_SEND_ENABLE : ハートビート定周期送信 (0:無し   1～：送信する機器ID) (*で全PCへ送信)
+# -- DB接続確認用 --
+#  DB_ENABLE	: DB定周期確認 (0:無し 1：有り) (送信EvtNoは:FACT_KS_DB_STATEUS)
+#  DB_SENDTASKx : DB状態変更時の送信タスク (チェック完了時に毎回送信。送信PCは全て*) (MAX 1～50)
+# -- 統括PCたち下げ時の検査停止通知 --
+#  STOP_SEND_MAIL_PC	: メール送信PC (空白時は、以降何も無し)
+#  STOP_SEND_MAIL_TASK	: TO_DEFECT の名称
+#  STOP_SEND_MAIL_NO	: TO_DEFECT の停止 FACT_NO
+#  STOP_AFFTER_WAIT_TIME: メール送信後の待ち時間。TO_DEFECTがちゃんと停止するまでの時間 [秒]
+#=========================================================
+[KS_MASTER]
+APP_ENABLE_ID = 9
+START_TIMEWAIT = 30
+HB_SEND_ENABLE  = 15
+DB_ENABLE    = 1
+DB_SENDTASK1 = TO_DEFECT
+DB_SENDTASK2 = HY_TANSHO
+STOP_SEND_MAIL_PC     = "."
+STOP_SEND_MAIL_TASK   = TO_DEFECT 
+STOP_SEND_MAIL_NO     = 2103
+STOP_AFFTER_WAIT_TIME = 5
+
+#------------------
+# 各タイミングでのコマンド実行
+# ***_START		: 開始時 (常駐タスク起動前)
+# ***_END		: 終了時 (常駐タスク終了後)
+
+# CMD_ENDWAIT_START	: 開始コマンドorスクリプト実行完了後の待ち時間 [秒]
+# CMD_EXEC_START_1～	：開始コマンドorスクリプト (1からの連番)
+
+CMD_ENDWAIT_START = 1
+#CMD_EXEC_START_1 = "start c:\Devcon\devcon_x64.exe disable "@PCI\VEN_10EC&DEV_8168&SUBSYS_76801462&REV_06\4&24CDD727&0&00E4""
+CMD_EXEC_START_1 = c:\Devcon\ng.bat
+
+CMD_ENDWAIT_END = 1
+CMD_EXEC_END_1 = c:\Devcon\ok.bat
+

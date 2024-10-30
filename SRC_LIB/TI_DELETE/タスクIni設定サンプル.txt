@@ -1,0 +1,138 @@
+#=========================================================
+# DB容量管理
+#---------------------------
+# タスク名セッションの中身
+# SESSION_1	: セッション情報 (1～10)
+#---------------------------
+# 各セッションの中身
+# DB_ODBC	: DBセッション名
+# DB_TRAN_SIZE_ERR_ID : トランザクションログサイズ増加時の異常機器ID (0時異常判定処理未実施)
+# DB_TRAN_ERR_SIZE : トランザクションエラー認識サイズ [MByte]
+# TIME_CYCLE	: 定周期実行周期 [分] (0時、チェック無し)
+# TIME_SIZECHECK: DB容量チェック周期 [分] (0時、容量チェック無し)
+# THREAD_COUNT	: DB容量低下時の削除スレッド数 (0時、容量低下で削除しない)
+# DEL_RITU_1	: 削除スレッド実行開始容量 [%-2] (空き容量が指定パーセント以下になるとスレッド実行) (降順)
+# 			スレッドの実行数と同じ数にする事
+# 			最大9コまでとする。(指定した最後のスレッドが起動時は、ホントに容量がやばいと判断して、全力で消しに行くので注意する事)
+#			(0時、チェック無し)
+# TIME_MAX_WAIT	: 書込優先時の待ち時間 [ms]
+# TIME_MIN_WAIT	: 削除優先時の待ち時間 [ms]
+# LOG_SAVEDAY	: ログ保存日数 (0時、LOG_INF削除 実施無し)
+# COIL_DEL_COUNT: 1回での削除コイル件数
+# COILRESULT_TBL: コイル実績テーブル (疵検管理Noが主キーのテーブルを指定する事)
+# COILRESULT_KEY: コイル実績テーブルの主キー (通常疵検管理No)
+# COILRESULT_SORT:コイル実績テーブルのソートキー(ASCでソート)(複数工程疵検管理Noが1テーブルに入っているような場合、疵検管理NoではASCソートできない対応) ※未指定なら 従来どおりCOILRESULT_KEY でソート、 (通常は、空白。設定する場合は、登録日付) 
+#					※ COILRESULT_SORT が 設定されている場合 (且つ COILRESULT_KEY と異なる場合)、バックアップ削除(最後に削除した疵検管理Noよりも小さいものを全部削除)は、停止
+#					   そうしないと、ソートで大きい疵検管理Noが消えた場合、バックアップ削除でそれよりも小さい疵検管理Noが全部消えてしまうため
+# 
+#### 拡張
+# ZI_1		: コイル実績の疵検管理Noを消す時に、一緒に消えていくテーブル (容量により削除) (1～無限)		
+# 			テーブル名, 主キー, サブキー(通常,疵No or ""), 一回の削除件数(0だと疵検管理No全部)
+#  
+# TI_1		: 日付で管理しているテーブル (定周期により削除) (1～無限)
+# 			テーブル名, 日付列(通常,登録日付), 保存日数
+#
+# CI_1		: 主キーの件数で管理しているテーブル (定周期により削除) (1～無限)
+#			テーブル名, 主キー, サブキー(通常,疵No or ""), 一回の削除件数(0だと対象全部), 保存上限数
+#=========================================================
+[TI_DELETE]
+SESSION_1 = TI_DELETE_A
+SESSION_2 = TI_DELETE_B
+
+
+# 統合サーバー取得事後仕様 ------>>>
+# 無害Gr 削除スレッド実行数(1～9) (0のときは、以降一切無処理)
+LOWGR_THREAD_COUNT = 2
+# 何日以前のデータを強制削除するか [日] (0のときは、強制削除しない)
+LOWGR_DELEDAY = 3
+# 一覧テーブルのチェック周期 [分]
+LOWGR_CYCLE = 60
+
+# 一覧テーブルから削除対象キー取得SQL (削除対象主キーを昇順で一覧取得)
+# 無害Gr削除後の一覧テーブル更新SQL (WHERE句には削除した主キーがセットされる) ※ 無くてもOK
+SQL_SELECT_KEY = "SELECT 疵検管理No FROM ACCESS_KIZUSHARE_LOWGR_MGR WHERE 無害Gr削除区分=0 AND [統合サーバー取得区分]=1 ORDER BY 疵検管理No ASC"
+SQL_SELECT_END = "UPDATE ACCESS_KIZUSHARE_LOWGR_MGR SET 無害Gr削除区分=1 WHERE 疵検管理No='%s'"
+
+# テーブル設定 (いろんなところで使用)
+COILRESULT_TBL 	= COIL_RESULT
+COILRESULT_TIME = 登録日付
+MAINKEY_NAME 	= 疵検管理No
+SUBKEY_NAME 	= 疵No
+
+# 無害Gr削除メイン
+# KEY :(通常DEFECT_INF)		テーブル名, 対象抽出WHERE句(単純にAddするだけなのでAND等はつけること)
+# SUB :( TBL_SUB_[KEYに紐付く]_[1からの連番] )	テーブル名 (主キー,サブキーはﾒｲﾝと同じ)
+TBL_KEY_1	= "DEFECT_INF_T, AND 無害一時保存フラグ=1"
+TBL_KEY_2	= "DEFECT_INF_B, AND 無害一時保存フラグ=1"
+TBL_SUB_1_1 = DEFECT_ATTR0_T
+TBL_SUB_1_2 = DEFECT_ATTR1_T
+TBL_SUB_1_3 = DEFECT_ATTR2_T
+TBL_SUB_1_4 = DEFECT_IMG_B
+TBL_SUB_2_1 = DEFECT_ATTR0_B
+TBL_SUB_2_2 = DEFECT_ATTR1_B
+TBL_SUB_2_3 = DEFECT_ATTR2_B
+TBL_SUB_2_4 = DEFECT_IMG_B
+# <<<--------------------
+
+# デフラグ実行仕様 ------>>>
+# デフラグ経過日。この間隔以上空いたときにデフラグ実行 (0のときは、未実行)
+DEFRAG_INTERVAL_DAY = 7
+
+# デフラグ実行可=1, 不可=0となるように単項目のSQL文。※ 操業状態の停止、休止で実行1。
+SQL_DEFRAG_RUN = "SELECT (CASE 機器状態 WHEN 1 THEN 1 WHEN 2 THEN 1 ELSE 0 END) FROM STATUS_INF WHERE 機器ID=277"
+# <<<--------------------
+
+
+[TI_DELETE_A]
+DB_ODBC = DB_A
+DB_TRAN_SIZE_ERR_ID = 97
+DB_TRAN_ERR_SIZE = 50000
+TIME_CYCLE = 10
+TIME_SIZECHECK = 10
+THREAD_COUNT = 0
+DEL_RITU_1 = 0
+TIME_MAX_WAIT = 3000
+TIME_MIN_WAIT = 100
+LOG_SAVEDAY = 180
+COIL_DEL_COUNT = 0
+COILRESULT_TBL 	= COIL_RESULT
+COILRESULT_KEY = 疵検管理No
+COILRESULT_SORT = 登録日付
+
+#### 拡張
+## コイル実績の疵検管理Noを消す時に、一緒に消えていくテーブル達
+# テーブル名, 主キー, サブキー(通常,疵No or ""), 一回の削除件数(0だと疵検管理No全部)
+
+
+## 日付で管理しているテーブル
+# テーブル名, 日付列(通常,登録日付), 保存日数
+TI_1	= BUF_SEQ_R_HOTCOIL,	登録日付,	90
+TI_2	= BUF_SEQ_R_MAKICOIL,	登録日付,	90
+
+
+## 本数で管理しているテーブル
+# テーブル名, 主キー, サブキー(通常,疵No or ""), 一回の削除件数(0だと対象全部),  保存上限数
+CI_1	= INF_IMAGE, 	疵検管理No,		,	50,	3000
+
+[TI_DELETE_B]
+DB_ODBC = DB_B
+DB_TRAN_SIZE_ERR_ID = 98
+DB_TRAN_ERR_SIZE = 50000
+TIME_CYCLE = 60
+TIME_SIZECHECK = 10
+THREAD_COUNT = 0
+DEL_RITU_1 = 0
+TIME_MAX_WAIT = 3000
+TIME_MIN_WAIT = 100
+LOG_SAVEDAY = 180
+COIL_DEL_COUNT = 0
+COILRESULT_TBL = 
+COILRESULT_KEY = 
+
+## 日付で管理しているテーブル
+# テーブル名, 日付列(通常,登録日付), 保存日数
+TI_1	= BUF_SEQ_R_HOTCOIL,	登録日付,	90
+TI_2	= BUF_SEQ_R_MAKICOIL,	登録日付,	90
+
+
+[TI_DELETE_ZI]

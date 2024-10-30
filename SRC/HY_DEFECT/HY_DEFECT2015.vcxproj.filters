@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="MainInctance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="HY_DEFECT.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="HY_DEFECTDlg.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="DataSetBaseManager.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="FileDeleteManager.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSaveManager.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="FolderFunc.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="DataSetManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="MaeManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HY_DEFECT.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="HY_DEFECTDlg.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="DataSetManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="MaeManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="DataSetBaseManager.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="FileDeleteManager.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSaveManager.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="FolderFunc.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\HyTbl.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuCommon.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LibSelect.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LineCommon.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="MainConst.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInctance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{d135fb5b-ef55-457a-869f-cb709872f154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{4577408b-0e15-4f84-9867-4dab50ad8ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Auto">
+      <UniqueIdentifier>{cbf7fca6-cbce-4e3b-90aa-227612771f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\WorkThread">
+      <UniqueIdentifier>{aafafe2a-a53e-4ba0-9b31-28ea550ee260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\完全流用クラス">
+      <UniqueIdentifier>{fea38cda-e6c9-423e-a09a-744e8a239fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\共通ヘッダ">
+      <UniqueIdentifier>{d618d736-d972-4437-90db-40b49d48368a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{31e055ab-6498-4dad-a8ce-bf20965d1402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Auto">
+      <UniqueIdentifier>{851f4923-63ab-4230-b324-8753b3979b33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\WorkThread">
+      <UniqueIdentifier>{33638069-0976-4af4-bb03-eb8c699a6e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\完全流用クラス">
+      <UniqueIdentifier>{5f1be326-f1d6-4361-a0cc-9dab0f494916}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\HY_DEFECT.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HY_DEFECT.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\HY_DEFECT.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+</Project>

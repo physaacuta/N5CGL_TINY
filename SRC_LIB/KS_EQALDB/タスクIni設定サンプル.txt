@@ -1,0 +1,180 @@
+
+#=========================================================
+# DB同期管理
+#---------------------------
+# タスク名セッションの中身
+# SESSION_1	: セッション情報 (1～) [セッション名, TYPE]
+# 		   TYPE : このセッションの動作定義 (同一タイプの最大登録数10個)
+#     		0 ･･･ マスターの同期  (初期時)
+#				TBLの形式１：テーブル名
+#			1 ･･･ 実績の追加コピー (先テーブルの最新をキーに、それ以降の元テーブルのデータを先テーブルにコピー)
+#				TBLの形式１：テーブル名,  1回の追加件数,  主キー1(必須),  主キー2(空白可),  主キー3(空白可)
+#			2 ･･･ 実績の移動
+#				TBLの形式１：テーブル名,  1回の移動件数,  主キー1(必須),  主キー2(空白可)
+#			3 ･･･ 実績の完全同期 (双方のテーブルで、キーが無い項目を補間しあう)  (初期時,A→Bにデータがコピー)
+#				TBLの形式１：テーブル名,  1回の追加件数,  主キー1(必須),  主キー2(空白可),  主キー3(空白可)
+#---------------------------
+# 各セッションの中身
+# DB_ODBC_A	: DBセッション名
+# DB_ODBC_B	: DBセッション名
+# LINK_PATH_AB	: A系のDBに定義されているリンクサーバー経由でB系アクセスする時のパス "[リンクサーバー名].データベース名.dbo."
+# LINK_PATH_BA	: B系のDBに定義されているリンクサーバー経由でA系アクセスする時のパス "[リンクサーバー名].データベース名.dbo."
+#   通常の定周期実行時は、 A→Bの流れでデータが処理される
+#   このタスクを使用する場合は、必ずDBのリンクサーバーの定義をする事。
+#    ・A系には、B系のサーバーを追加。B系には、A系のサーバーを追加する事。
+#    ・リンクサーバーの定義は、 プロパイダ[SQL Native Client、Microsoft OLE DB Pro…SQLServer]
+#				製品名[mySQLServer]    データソース[IPアドレス]   カタログ[DB名]   セキュリティでログイン名とパスを設定する事
+#
+# TIME_FAST	: 初期実行までの時間 (0:定周期無し) [分]
+# TIME_INTERVAL	: ２回目以降の実行周期 [分]
+# MAIL_KEY	: メールスロット受信時に第2引数と一致した場合、強制的に実行される。 (0:未実施)
+# T_1		: テーブル名 (最大50テーブル)
+#
+# FACT_KS_EQALDB_01の起動受信時
+#     data[0]   0:A→B    1:B→A
+#     data[1]  任意の値 (0:無視  1～:MAIL_KEYと一致した場合、強制的に実行される。
+#
+#---------------------------
+#リンクサーバー定義	(A系のDBにはB系にアクセスするために定義を設定させる)
+# [LINKSRV_1]		1～の連番
+# SELECT_ODBC_KEY	追加対象のODBCキー
+# LINK_NAME			リンクサーバー名
+# DBADDLESS			: DB接続アドレス
+# DSNAME			: SQLServerのDB名称
+# USERID			: ユーザー名
+# PASSWORD			: パスワード
+# SRVPRODUCT		製品名 (mySQLServer)固定
+# PROVIDER			プロバイダ (SQLServer2005=SQLNCLI。SQLServer2008=SQLNCLI10 )
+#=========================================================
+[KS_EQALDB]
+SESSION_1 = KS_EQALDB_EQAL_ZI_H, 0
+SESSION_2 = KS_EQALDB_EQAL_ZI_L, 0
+SESSION_3 = KS_EQALDB_COPY_ZI, 1
+SESSION_4 = KS_EQALDB_EQAL_B, 0
+SESSION_5 = KS_EQALDB_MOVE_B, 2
+
+#リンクサーバー定義
+[LINKSRV_1]
+SELECT_ODBC_KEY = DB_A
+LINK_NAME		= TIKUSEKIsub
+DBADDLESS		= 192.9.200.16
+DSNAME			= DATABASE_2CGL
+USERID			= sa
+PASSWORD		= nsc
+SRVPRODUCT		= mySQLServer
+PROVIDER		= SQLNCLI
+
+[LINKSRV_2]
+SELECT_ODBC_KEY = DB_B
+LINK_NAME		= TIKUSEKI
+DBADDLESS		= 192.9.200.15
+DSNAME			= DATABASE_2CGL
+USERID			= sa
+PASSWORD		= nsc
+SRVPRODUCT		= mySQLServer
+PROVIDER		= SQLNCLI
+
+
+#早く実績に反映させるもの
+[KS_EQALDB_EQAL_ZI_H]
+DB_ODBC_A	= DB_A
+DB_ODBC_B	= DB_ZI
+LINK_PATH_AB	= [TIKUSEKIZI].DATABASE_HOTMAKI.dbo.
+LINK_PATH_BA	= [TIKUSEKI].DATABASE_HOTMAKI.dbo.
+TIME_FAST	= 1
+TIME_INTERVAL	= 1
+MAIL_KEY	= 10
+# マスター同期対象テーブル
+T_1	= STATUS_INF
+T_2	= PC_INF
+
+#ゆっくりでもOK
+[KS_EQALDB_EQAL_ZI_L]
+DB_ODBC_A	= DB_A
+DB_ODBC_B	= DB_ZI
+LINK_PATH_AB	= [TIKUSEKIZI].DATABASE_HOTMAKI.dbo.
+LINK_PATH_BA	= [TIKUSEKI].DATABASE_HOTMAKI.dbo.
+TIME_FAST	= 5
+TIME_INTERVAL	= 10
+MAIL_KEY	= 11
+# マスター同期対象テーブル
+T_1	= STATUS_MASTER
+T_2	= LOG_MASTER
+T_3	= PC_MASTER
+T_4	= COMMON_MASTER
+T_5	= ATTR_NAME
+T_6	= TYPE_NAME
+T_7	= GRADE_NAME
+T_8	= SCODE_MASTER
+T_9	= SCODE_JUDGE
+T_10	= SCODE_OUTPUT
+T_11	= PCODE_MASTER
+T_12	= PCODE_JUDGE
+T_13	= PCODE_OUTPUT
+T_14	= PARAM_COMMON
+T_15	= PARAM_SCODE
+T_16	= PARAM_CAMSET
+T_17	= PARAM_CAMSET_SCODE
+T_18	= PARAM_CAMSET_ANGLE
+T_19	= PARAM_CAMANGLE_SCODE
+T_20	= PARAM_CAMSET_ANGLE_SCODE
+T_21	= PCINFO_DESC
+
+# 共通蓄積へ定期的に実績コピー
+[KS_EQALDB_COPY_ZI]
+DB_ODBC_A	= DB_A
+DB_ODBC_B	= DB_ZI
+LINK_PATH_AB	= [TIKUSEKIZI].DATABASE_HOTMAKI.dbo.
+LINK_PATH_BA	= [TIKUSEKI].DATABASE_HOTMAKI.dbo.
+TIME_FAST	= 1
+TIME_INTERVAL	= 2
+MAIL_KEY	= 12
+#実績コピー
+T_1		= LOG_INF,		500,	登録日付, 	AutoNo
+
+# マスターデータをバックアップPCにコピー
+[KS_EQALDB_EQAL_B]
+DB_ODBC_A	= DB_A
+DB_ODBC_B	= DB_B
+LINK_PATH_AB	= [TIKUSEKISUB].DATABASE_HOTMAKI.dbo.
+LINK_PATH_BA	= [TIKUSEKI].DATABASE_HOTMAKI.dbo.
+TIME_FAST	= 1440
+TIME_INTERVAL	= 60
+MAIL_KEY	= 20
+# マスター同期対象テーブル
+T_1	= STATUS_MASTER
+T_2	= LOG_MASTER
+T_3	= PC_MASTER
+T_4	= COMMON_MASTER
+T_5	= ATTR_NAME
+T_6	= TYPE_NAME
+T_7	= GRADE_NAME
+T_8	= SCODE_MASTER
+T_9	= SCODE_JUDGE
+T_10	= SCODE_OUTPUT
+T_11	= PCODE_MASTER
+T_12	= PCODE_JUDGE
+T_13	= PCODE_OUTPUT
+T_14	= PARAM_COMMON
+T_15	= PARAM_SCODE
+T_16	= PARAM_CAMSET
+T_17	= PARAM_CAMSET_SCODE
+T_18	= PARAM_CAMSET_ANGLE
+T_19	= PARAM_CAMANGLE_SCODE
+T_20	= PARAM_CAMSET_ANGLE_SCODE
+T_21	= PCINFO_DESC
+
+T_22	= STATUS_INF
+T_23	= PC_INF
+
+# バックアップPCの実績を統括PCにコピー
+[KS_EQALDB_MOVE_B]
+DB_ODBC_A	= DB_B
+DB_ODBC_B	= DB_A
+LINK_PATH_AB	= [TIKUSEKI].DATABASE_HOTMAKI.dbo.
+LINK_PATH_BA	= [TIKUSEKISUB].DATABASE_HOTMAKI.dbo.
+TIME_FAST	= 1440
+TIME_INTERVAL	= 360
+MAIL_KEY	= 21
+#実績移動
+T_1		= LOG_INF,		500,	登録日付, 	AutoNo

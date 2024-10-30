@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "SwdMMX"
+    </assembly>
+    <members>
+        <member name="M:SwdMMX.MShiftCopy.InsertShiftCopyShear(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>画素挿入と左端削りコピー、斜めずらしも含むバージョン</summary>
+            <param name="src_width">ソース中の有効な画素数</param>
+            <param name="tmp">１行分のバッファ</param>
+            <param name="pitch">dstの幅(dst pitch＝src pitchを仮定)</param>
+            <param name="height">高さ</param>
+            <param name="shift">左にシフトする量（＜16）</param>
+            <param name="insert">何画素拡大するか</param>
+            <param name="left_sft">左端の上端シフト量</param>
+            <param name="right_sft">右端の上端シフト量</param>
+        </member>
+        <member name="M:SwdMMX.MShiftCopy.InsertShiftCopy(System.IntPtr,System.Int32,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>画素挿入と左端削りコピーを行う</summary>
+            <param name="src_width">ソース中の有効な画素数</param>
+            <param name="pitch">dstの幅(=dst pitch=src pitchを仮定)</param>
+            <param name="height">高さ</param>
+            <param name="shift">左にシフトする量（＜16）</param>
+            <param name="insert">何画素拡大するか</param>
+        </member>
+        <member name="M:SwdMMX.MShiftCopy.InsertShiftCopyCalc(System.Int32@,System.Int32@,System.Int32@,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>与えられたsrc_width,pitch,shift,insert_countからsrc_len,src_len_right,copycount_rightを計算する</summary>
+            <param name="src_len">右端以外の転送長</param>
+            <param name="src_len_right">右端の転送長</param>
+            <param name="copycount_right">右端のコピー画素数 </param>
+        </member>
+        <member name="M:SwdMMX.MShiftCopy.ShiftCopy(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            <summary>src_len-shift+copycountをdstに書き込む</summary>
+            <param name="src">コピー元</param>
+            <param name="dst">コピー先</param>
+            <param name="src_len">コピー元の長さ</param>
+            <param name="shift">左を削る量</param>
+            <param name="copycount">右を埋める量</param>
+        </member>
+        <member name="M:SwdMMX.MColorTwist.ColorTwist(System.IntPtr[],System.Int32,System.Int32,System.IntPtr,System.Int32,System.Int32,System.Single[])">
+            <summary>混色分離 兼 Plane変換</summary>
+            <param name="dsts">出力先。 BYTE*[3]</param>
+            <param name="mat">変換行列。float[16]</param>
+        </member>
+        <member name="M:SwdMMX.MColorTwist.ColorTwist(System.IntPtr[],System.Int32,System.Int32,System.IntPtr,System.Int32,System.Int32,System.Single[0:,0:])">
+            <summary>混色分離 兼 Plane変換</summary>
+            <param name="dsts">出力先。 BYTE*[3]</param>
+            <param name="mat">変換行列。float[4,4]</param>
+        </member>
+    </members>
+</doc>

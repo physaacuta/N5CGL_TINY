@@ -1,0 +1,17 @@
+マルチラベル化対応で
+ロジックパラランのみで検証しています。
+
+以下の４ファイルはオンライン後に削除します
+ncl2detect.exe
+ncl2detect.pdb
+gpu_dll.dll
+gpu_dll.pdb
+
+連動して以下のファイルも戻しが必要です。
+C:\N5CGL_TINY\IniSetting_N5CGL_TINY
+p判定PC15 KizuPc.ini
+p判定PC16 KizuPc.ini
+
+※これを戻す
+p判定PC15 KizuPc_本番.ini
+p判定PC16 KizuPc_本番.ini

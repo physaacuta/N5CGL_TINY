@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF4D5D26-382B-43CE-BCC4-99DB63831104}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HY_MEM_TOOL.modMain</StartupObject>
+    <RootNamespace>HY_MEM_TOOL</RootNamespace>
+    <AssemblyName>HY_MEM_TOOL</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OptionStrict>On</OptionStrict>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HY_MEM_TOOL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HY_MEM_TOOL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HY_MEM_TOOL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HY_MEM_TOOL.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KizuLibCLIx32">
+      <HintPath>..\..\EXE\KizuLibCLIx32.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Include\DspCommon.vb">
+      <Link>共通ヘッダ\DspCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\HyTbl.vb">
+      <Link>共通ヘッダ\HyTbl.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommon.vb">
+      <Link>共通ヘッダ\KizuCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommonSelect.vb">
+      <Link>共通ヘッダ\KizuCommonSelect.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuListID.vb">
+      <Link>共通ヘッダ\KizuListID.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\LineCommon.vb">
+      <Link>共通ヘッダ\LineCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\OutInterface.vb">
+      <Link>共通ヘッダ\OutInterface.vb</Link>
+    </Compile>
+    <Compile Include="frmFile.designer.vb">
+      <DependentUpon>frmFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyAlarm.designer.vb">
+      <DependentUpon>frmHyAlarm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyAlarm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyCoilInf.designer.vb">
+      <DependentUpon>frmHyCoilInf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyCoilInf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyCoilResult.designer.vb">
+      <DependentUpon>frmHyCoilResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyCoilResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyDefectInf.designer.vb">
+      <DependentUpon>frmHyDefectInf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyDefectInf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyDefList.designer.vb">
+      <DependentUpon>frmHyDefList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyDefList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyLongPd.designer.vb">
+      <DependentUpon>frmHyLongPd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyLongPd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyMaeInf.Designer.vb">
+      <DependentUpon>frmHyMaeinf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyMaeinf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyMap.designer.vb">
+      <DependentUpon>frmHyMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyPoint.designer.vb">
+      <DependentUpon>frmHyPoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyPoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyStatus.designer.vb">
+      <DependentUpon>frmHyStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="vbMemRead.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmFile.resx">
+      <DependentUpon>frmFile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyAlarm.resx">
+      <DependentUpon>frmHyAlarm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyCoilInf.resx">
+      <DependentUpon>frmHyCoilInf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyCoilResult.resx">
+      <DependentUpon>frmHyCoilResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyDefectInf.resx">
+      <DependentUpon>frmHyDefectInf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyDefList.resx">
+      <DependentUpon>frmHyDefList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyLongPd.resx">
+      <DependentUpon>frmHyLongPd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyMaeInf.resx">
+      <DependentUpon>frmHyMaeinf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyMap.resx">
+      <DependentUpon>frmHyMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyPoint.resx">
+      <DependentUpon>frmHyPoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyStatus.resx">
+      <DependentUpon>frmHyStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\tClassLibrary\tClassLibrary2015.vbproj">
+      <Project>{f8144424-2197-479c-9bb0-89d2da9c5847}</Project>
+      <Name>tClassLibrary2015</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\EXE\KizuLibCLIx32.dll">
+      <Link>KizuLibCLIx32.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\EXE\KizuLibCLIx64.dll">
+      <Link>KizuLibCLIx64.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

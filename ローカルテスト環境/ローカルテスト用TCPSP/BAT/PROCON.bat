@@ -1,0 +1,1 @@
+start C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\Tcp_spVer4.23β.exe C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\DAT\PROCON.dat

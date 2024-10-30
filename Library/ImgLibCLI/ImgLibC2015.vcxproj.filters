@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース">
+      <UniqueIdentifier>{52be34d0-7c74-4447-b301-72331decb3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー">
+      <UniqueIdentifier>{7d85ce8e-141d-4cb9-b1af-8d7395b48ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース">
+      <UniqueIdentifier>{8491f43c-30ec-42e9-99a2-5a5b1f4718d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\01 シェーディング">
+      <UniqueIdentifier>{0dba2556-a4aa-49b6-8ac7-58ee0990e120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー\01 シェーディング">
+      <UniqueIdentifier>{fe320544-b8ee-4cb3-bd88-80f1fbe91d90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース\03 新シェーディング">
+      <UniqueIdentifier>{16c39b7c-7322-477b-b555-bbd091ffc690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー\03 新シェーディング">
+      <UniqueIdentifier>{25e3f3cc-11e6-4c72-b536-78e1451bac93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImgLibC.rc">
+      <Filter>リソース</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\ShdCmp_DeShade.cpp">
+      <Filter>ソース\01 シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ShdCmp_Devide.cpp">
+      <Filter>ソース\01 シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ShdCmp_LowPassFilter.cpp">
+      <Filter>ソース\01 シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgLibCLIx64\ShdCmp_LPF.cpp">
+      <Filter>ソース\01 シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\LPFSAT.cpp">
+      <Filter>ソース\03 新シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgLibCLIx86\ShdCmp_lut2byte.cpp">
+      <Filter>ソース\01 シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\MakeSATasm.cpp">
+      <Filter>ソース\03 新シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="ShdCmp_MainC.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ShdCmp2_MainC.cpp">
+      <Filter>ソース</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgLibCLIx86\ShdCmp_LPF.cpp">
+      <Filter>ソース\01 シェーディング</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\ShdCmp_LowPassFilter.h">
+      <Filter>ヘッダー\01 シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ShdCmp_Main.h">
+      <Filter>ヘッダー\01 シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ShdCmp_Devide.h">
+      <Filter>ヘッダー\01 シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ShdCmp_DeShade.h">
+      <Filter>ヘッダー\01 シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgLibCLIx64\ShdCmp_LPF.h">
+      <Filter>ソース\01 シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgLibCLIx64\ShdCmp_NSimg.h">
+      <Filter>ソース\01 シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ShdCmp2_Main.h">
+      <Filter>ヘッダー\03 新シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgLibCLIx64\MakeSATasm_x64.h">
+      <Filter>ヘッダー\03 新シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\LPFSAT.h">
+      <Filter>ヘッダー\03 新シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\MakeSATasm.h">
+      <Filter>ソース\03 新シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="ShdCmp_MainC.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+    <ClInclude Include="ShdCmp2_MainC.h">
+      <Filter>ヘッダー</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="ImgLibCLIx64\ShdCmp_lut2bytex64.asm">
+      <Filter>ソース\01 シェーディング</Filter>
+    </MASM>
+    <MASM Include="ImgLibCLIx64\ShdCmp_LPFx64.asm">
+      <Filter>ソース\01 シェーディング</Filter>
+    </MASM>
+    <MASM Include="ImgLibCLIx64\MakeSATasm_x64.asm">
+      <Filter>ソース\03 新シェーディング</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

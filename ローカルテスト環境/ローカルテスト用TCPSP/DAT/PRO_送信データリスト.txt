@@ -1,0 +1,7 @@
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\PRO_レスポンス.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\PRO_応答_検査実績.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\PRO_業務_コイル情報.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\PRO_業務_採寸実績.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\PRO_業務_カット実績.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\PRO_業務_イニシャル.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\PRO_業務_ヘルシー.bin

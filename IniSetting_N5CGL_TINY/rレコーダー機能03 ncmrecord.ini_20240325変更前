@@ -1,0 +1,63 @@
+[Common]
+CapLimit=2000  ;空き容量GByte
+NBuff=10
+
+ConfigINI=C:\N5CGL_TINY\APXINI\P4-CC-04K070-AsColor-DECA.ini
+
+[Command]
+RecvUDPPort = 8100
+
+;CoilInfoTotalSize = 212
+CoilInfoTotalSize = 256
+CoilInfoPosCoilNum = 4
+CoilInfoSizeCoilNum = 12
+CoilInfoPosCoilLen = 20
+CoilInfoSizeCoilLen = 4
+
+;SendUDPPort = 8001
+;SendIpAddr  = 192.9.200.31
+
+[Param]
+DB接続文字列=DSN=DATABASE_N5CGL_TINY;UID=sa;PWD=vz;
+担当カメラセット番号=1
+鋼種コード初期値=1
+
+[Camset0]
+Enabled  = 1
+CamsetID = 15	; 1はじまり
+混色分離 = 0	; 0:OFF, 1:ON
+AGC      = 0	; 0:OFF, 1:ON
+BoardID0 = 0	;0はじまり
+BoardCH0 = 1	;1はじまり
+DestDir=d:\cam15\
+FileNameSuffix=cam17_ura_W3
+
+[Camset1]
+Enabled  = 1
+CamsetID = 16	; 1はじまり
+混色分離 = 0	; 0:OFF, 1:ON
+AGC      = 0	; 0:OFF, 1:ON
+BoardID0 = 0	; 0はじまり
+BoardCH0 = 2	; 1はじまり
+DestDir=e:\cam16\
+FileNameSuffix=cam18_ura_W2
+
+[Camset2]
+Enabled  = 0
+CamsetID = 7	; 1はじまり
+混色分離 = 1	; 0:OFF, 1:ON
+AGC      = 0	; 0:OFF, 1:ON
+BoardID0 = 1	; 0はじまり
+BoardCH0 = 1	; 1はじまり
+DestDir=d:\cam07\
+FileNameSuffix=cam07_omote_W3
+
+[Camset3]
+Enabled  = 0
+CamsetID = 8	; 1はじまり
+混色分離 = 1	; 0:OFF, 1:ON
+AGC      = 0	; 0:OFF, 1:ON
+BoardID0 = 1	; 0はじまり
+BoardCH0 = 2	; 1はじまり
+DestDir=d:\cam08\
+FileNameSuffix=cam08_omote_W2

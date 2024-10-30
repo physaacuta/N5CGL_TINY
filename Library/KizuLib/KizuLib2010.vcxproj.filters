@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\01 同期制御関連">
+      <UniqueIdentifier>{fa2e8315-5d88-4516-8d2c-9feafa1f4fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\02 デバック作業効率化">
+      <UniqueIdentifier>{45585781-245e-4ed5-a801-ba8402ef865e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\03 通信・共有メモリ制御">
+      <UniqueIdentifier>{6fb7df4f-c68f-4c4e-a8dd-e7399df5a0e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\99 その他もろもろ">
+      <UniqueIdentifier>{18781beb-6a80-499c-afbe-bd159ffc7e28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\01 同期制御関連">
+      <UniqueIdentifier>{ffabbed4-f958-406c-8132-e3ef417166c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\02 デバック作業効率化">
+      <UniqueIdentifier>{02de6584-7321-4d41-b1ec-26e6b3e8245c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\03 通信・共有メモリ制御">
+      <UniqueIdentifier>{b5983021-f72f-4a00-83df-b0ce1db21a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\00 共通参照ヘッダ">
+      <UniqueIdentifier>{4a2b28bb-ce95-4318-bf52-ede5e937d9f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\99 その他もろもろ">
+      <UniqueIdentifier>{84c4412c-ac9a-4a04-a1a0-e30162209b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KizuLib.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\WorkThread.cpp">
+      <Filter>ソース ファイル\01 同期制御関連</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\KizuPerformanceCounter.cpp">
+      <Filter>ソース ファイル\02 デバック作業効率化</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\MagicPacket.cpp">
+      <Filter>ソース ファイル\03 通信・共有メモリ制御</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\MailSlotManager.cpp">
+      <Filter>ソース ファイル\03 通信・共有メモリ制御</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\PingManager.cpp">
+      <Filter>ソース ファイル\03 通信・共有メモリ制御</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\PipeManager.cpp">
+      <Filter>ソース ファイル\03 通信・共有メモリ制御</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\SmemManager.cpp">
+      <Filter>ソース ファイル\03 通信・共有メモリ制御</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\KizuBitmapManager.cpp">
+      <Filter>ソース ファイル\99 その他もろもろ</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\KizuFunction.cpp">
+      <Filter>ソース ファイル\99 その他もろもろ</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\KizuPcInfManager.cpp">
+      <Filter>ソース ファイル\99 その他もろもろ</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\ProcessManager.cpp">
+      <Filter>ソース ファイル\99 その他もろもろ</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\MailTransManager.cpp">
+      <Filter>ソース ファイル\03 通信・共有メモリ制御</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KizuLib.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\AutoLock.h">
+      <Filter>ヘッダー ファイル\01 同期制御関連</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\ListArray.h">
+      <Filter>ヘッダー ファイル\01 同期制御関連</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\LockManager.h">
+      <Filter>ヘッダー ファイル\01 同期制御関連</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\ThreadQueue.h">
+      <Filter>ヘッダー ファイル\01 同期制御関連</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\WorkThread.h">
+      <Filter>ヘッダー ファイル\01 同期制御関連</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\KizuPerformanceCounter.h">
+      <Filter>ヘッダー ファイル\02 デバック作業効率化</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\ICommunity.h">
+      <Filter>ヘッダー ファイル\03 通信・共有メモリ制御</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\MagicPacket.h">
+      <Filter>ヘッダー ファイル\03 通信・共有メモリ制御</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\MailSlotManager.h">
+      <Filter>ヘッダー ファイル\03 通信・共有メモリ制御</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\PingManager.h">
+      <Filter>ヘッダー ファイル\03 通信・共有メモリ制御</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\PipeManager.h">
+      <Filter>ヘッダー ファイル\03 通信・共有メモリ制御</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\SmemManager.h">
+      <Filter>ヘッダー ファイル\03 通信・共有メモリ制御</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuCommon.h">
+      <Filter>ヘッダー ファイル\00 共通参照ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\KizuBitmapManager.h">
+      <Filter>ヘッダー ファイル\99 その他もろもろ</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\KizuFunction.h">
+      <Filter>ヘッダー ファイル\99 その他もろもろ</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\KizuMacro.h">
+      <Filter>ヘッダー ファイル\99 その他もろもろ</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\KizuPcInfManager.h">
+      <Filter>ヘッダー ファイル\99 その他もろもろ</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\ProcessManager.h">
+      <Filter>ヘッダー ファイル\99 その他もろもろ</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\MailTransManager.h">
+      <Filter>ヘッダー ファイル\03 通信・共有メモリ制御</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KizuLib.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8144424-2197-479C-9BB0-89D2DA9C5847}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>tClassLibrary</RootNamespace>
+    <AssemblyName>tClassLibrary</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>tClassLibrary.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>tClassLibrary.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>tClassLibrary.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>tClassLibrary.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Excel, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExcelDll2000\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExcelDll2000\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Plugin\PropertiesBase.vb" />
+    <Compile Include="Plugin\RpiPluginInterface.vb" />
+    <Compile Include="Plugin\RpiPluginManager.vb" />
+    <Compile Include="tClass\FontInfo.vb" />
+    <Compile Include="tClass\tClass_Array.vb" />
+    <Compile Include="tClass\tClass_BinarySerializ.vb" />
+    <Compile Include="tClass\tClass_BmpJpeg.vb" />
+    <Compile Include="tClass\tClass_CmbItem.vb" />
+    <Compile Include="tClass\tClass_Comparer.vb" />
+    <Compile Include="tClass\tClass_CycleFileManager.vb" />
+    <Compile Include="tClass\tClass_Excel.vb" />
+    <Compile Include="tClass\tClass_Excel_Base.vb" />
+    <Compile Include="tClass\tClass_FileBinary.vb" />
+    <Compile Include="tClass\tClass_GlovalMemory.vb" />
+    <Compile Include="tClass\tClass_HeadCopy.vb" />
+    <Compile Include="tClass\tClass_ImageDsp.vb" />
+    <Compile Include="tClass\tClass_ImageDspBase.vb" />
+    <Compile Include="tClass\tClass_ImputCheck.vb" />
+    <Compile Include="tClass\tClass_LogManager.vb" />
+    <Compile Include="tClass\tClass_MapBase.vb" />
+    <Compile Include="tClass\tClass_Oracle.vb" />
+    <Compile Include="tClass\tClass_PerformanceCounter.vb" />
+    <Compile Include="tClass\tClass_Queue.vb" />
+    <Compile Include="tClass\tClass_Shutdown.vb" />
+    <Compile Include="tClass\tClass_FileStream.vb" />
+    <Compile Include="tClass\tClass_Socket.vb" />
+    <Compile Include="tClass\tClass_SQLServer.vb" />
+    <Compile Include="tClass\tClass_TaskCheck.vb" />
+    <Compile Include="tClass\tClass_WorkerThPool.vb" />
+    <Compile Include="tClass\tClass_WorkThread.vb" />
+    <Compile Include="tCnt\tCnt_DataGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tCnt\tCnt_HScrollBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tCnt\tCnt_TabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tCnt\tCnt_VScrollBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tIface\tIface_Comparer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tIface\tIface_Find.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tMod\tMod_Common.vb" />
+    <Compile Include="tMod\tMod_CommonStrictOff.vb" />
+    <Compile Include="tMod\tMod_IniFile.vb" />
+    <Compile Include="tMod\tMod_MemSet.vb" />
+    <Compile Include="WIC\WicAccessMgr.vb" />
+    <Compile Include="WIC\WicBitmap.vb" />
+    <Compile Include="WIC\WicDecoder.vb" />
+    <Compile Include="WIC\WicFactory.vb" />
+    <Compile Include="WIC\WicStream.vb" />
+    <Compile Include="Win32API\ShellIFileOperation.vb" />
+    <Compile Include="Win32API\NativeDll.vb" />
+    <Compile Include="Win32API\ShellSHFileOperation.vb" />
+    <Compile Include="Win32API\vbMemRead.vb" />
+    <Compile Include="疵検Only\BinaryRW.vb" />
+    <Compile Include="疵検Only\LacManager.vb" />
+    <Compile Include="疵検Only\SimpleMemori.vb" />
+    <Compile Include="疵検Only\tClass_ImageCutDsp.vb" />
+    <Compile Include="疵検Only\tClass_ImageRawCutDsp.vb" />
+    <Compile Include="疵検Only\tClass_ImgResize.vb" />
+    <Compile Include="疵検Only\tClass_ReadRPI.vb" />
+    <Compile Include="疵検Only\tClass_ReadRpiFile.vb" />
+    <Compile Include="疵検Only\tClass_ReadRpiFrame.vb" />
+    <Compile Include="疵検Only\tClass_RpiDecoder.vb" />
+    <Compile Include="疵検Only\tClass_ViewRPI.vb" />
+    <Compile Include="疵検Only\tClass_ViewRpiThread.vb" />
+    <Compile Include="疵検Only\tRpi_ImageCache.vb" />
+    <Compile Include="疵検Only\tRpi_MultiThreadDecoder.vb" />
+    <Compile Include="疵検対象外\CommonQue.vb" />
+    <Compile Include="疵検対象外\MailSlot.vb" />
+    <Compile Include="疵検対象外\tClass_232C.vb" />
+    <Compile Include="疵検対象外\tClass_MailSlot.vb" />
+    <Compile Include="疵検対象外\tClass_MailSlot_Base.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

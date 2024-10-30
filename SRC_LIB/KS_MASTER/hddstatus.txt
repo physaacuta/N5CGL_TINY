@@ -1,0 +1,56 @@
+RAID Controller #1
+ID                         : 0
+Vendor                     : LSI Corporation
+Model                      : LSI MegaRAID SAS 9264-8i
+Firmware Version           : 2.0.83-1327
+Cache Size                 : 256MB
+Battery Status             : Not Present
+Rebuild Priority           : Low
+Consistency Check Priority : Low
+Patrol Read                : Enable
+Patrol Read Priority       : Low
+Buzzer Setting             : Disable
+
+RAID Controller #1 Disk Array #1 
+ID                         : 0
+Physical Device Number     : 1, 2
+Capacity                   : 271GB
+Unused Capacity            : 0GB
+
+RAID Controller #1 Logical Drive #1
+ID                         : 0
+Physical Device Number     : 1, 2
+Disk Array Information     : 1 (order 1/1)
+RAID Level                 : RAID 1
+Capacity                   : 135GB
+Stripe Size                : 64KB
+Cache Mode (Setting)       : Write Through
+Cache Mode (Current)       : Write Through
+Status                     : Online
+
+RAID Controller #1 Physical Device #1
+ID                         : 0
+Enclosure                  : 1
+Slot                       : 1
+Device Type                : HDD
+Interface                  : SAS
+Vendor/Model               : TOSHIBA MBF2300RC       
+Firmware Version           : 010A
+Serial Number              : EB20PC100GFF
+Capacity                   : 135GB
+Status                     : Online
+S.M.A.R.T.                 : Normal
+
+RAID Controller #1 Physical Device #2
+ID                         : 1
+Enclosure                  : 1
+Slot                       : 2
+Device Type                : HDD
+Interface                  : SAS
+Vendor/Model               : TOSHIBA MBF2300RC       
+Firmware Version           : 010A
+Serial Number              : EB20PC100DB4
+Capacity                   : 135GB
+Status                     : Online
+S.M.A.R.T.                 : Normal
+

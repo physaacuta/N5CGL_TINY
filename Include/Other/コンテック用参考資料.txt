@@ -1,0 +1,22 @@
+・OSx64bit版には、WMD版のドライバのみ対応している
+
+【PC98版】
+・CNT
+\\tokatu\c$\Program Files\CONTEC\API-PAC(W32)\CNT\Samples\inc		APICNT8M.H
+\\tokatu\c$\Program Files\CONTEC\API-PAC(W32)\CNT\Samples\lib		APICNT.lib
+・PIO
+\\tokatu\c$\Program Files\CONTEC\API-PAC(W32)\Dio\Samples\Inc		APIDIO.H
+\\tokatu\c$\Program Files\CONTEC\API-PAC(W32)\Dio\Samples\Lib		APIDIO.lib
+
+【WMD版】
+・CNT
+D:\Program Files (x86)\CONTEC\API-PAC(W32)\CNTWDM\Samples\Inc		CCnt.h
+D:\Program Files (x86)\CONTEC\API-PAC(W32)\CNTWDM\Samples\Lib_amd64	CCNT.lib
+・PIO
+D:\Program Files (x86)\CONTEC\API-PAC(W32)\DIOWDM\Samples\Inc		CDio.h
+D:\Program Files (x86)\CONTEC\API-PAC(W32)\DIOWDM\Samples\Lib_amd64	CDIO.lib
+
+
+【リモートＰＩＯ】
+C:\Program Files\CONTEC\API-CAP(W32)\Samples\Inc	ccapdio.h	
+C:\Program Files\CONTEC\API-CAP(W32)\Samples\Lib	ccapdio.lib

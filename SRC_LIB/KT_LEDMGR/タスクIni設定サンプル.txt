@@ -1,0 +1,97 @@
+
+#=========================================================
+# 対LED照明装置 (アイテック製 TCP/IP)
+#   2分30秒 通信がなければ、LED照明側が回線切断する。PCいきなり死亡対策。
+# ### 共通仕様
+#  BLOCK		：配光ブロック数　　 CHごとに設定しない場合、この値を用いる(MAX256)
+#  TEMP_UNIT 		：LED温度計測点数　　CHごとに設定しない場合、この値を用いる(MAX9)
+#  TEMP_THR		：温度閾値 (これ以上はエラーとなる) [度]
+#  TEMP_THR_DOWN	：強制OFF温度閾値 (これ以上はエラー+LED消灯となる) [度]
+#  TIMER_CYCLE		：温度取り込み周期 [秒]
+#  NAME_*		：セッションの末の部分となる (インスタンスの名前にもなる) MAX8コ
+# 
+# ### 個別仕様
+# -装置単位-----------------
+#   ・片面に複数の電源装置が設置された場合に対応して、CH_STARTを追加
+#     電源装置の先頭CHが、面単位で何番目のCHかを定義する。
+#     例)　4PL_Cの場合
+#          電源1台目              電源2台目
+#          CH_START = 1           CH_START = 4
+#          CH1 (R)                CH1 (空)
+#          CH2 (G左)              CH2 (B左)
+#          CH3 (G右)              CH3 (B右)
+#
+#  MEN			：面 (0:表 1:裏)
+#  CH_NUM		：管理対象チャンネル数 (最大4CH)
+#  CH_START		：先頭チャンネルの片面単位のID(1オリジン)
+#  LED_CONNECT_ID	：照明装置 通信状態
+#  SAVE_IP		：デフォルト 192.168.0.99
+#  SAVE_PORT		：デフォルト 5001
+#
+# -チャンネル単位-----------------
+#   ・高輝度LED（１列に対して複数CH使うLED照明）対応の為、INDEXを追加。
+#   　１列に複数CH使う場合、同じINDEXにすることで、１回のメールスロットで
+#   　同時にコマンドを投げることが出来る。
+#　　 例)　4PL_Cの場合
+#          電源1台目　　　　　　　電源2台目
+#          CH1 (R)   = INDEX1     CH1 (空)  CH単位のセクション未定義
+#          CH2 (G左) = INDEX2     CH2 (B左) = INDEX3
+#          CH3 (G右) = INDEX2     CH3 (B右) = INDEX3
+#
+#   ・配光補正値の展開方向を追加。
+#     (通常は、DBから読み出したバイナリ列をDS→WS方向に展開。逆展開するとWS→DS方向になる)
+#
+# [タスク名_セッション名_CH1]
+#  INDEX		：CHに対応するINDEX   定義しない場合、CH番号を使用
+#  BLOCK		：配光ブロック数  定義しない場合、共通設定を使用
+#  TEMP_UNIT		：LED温度計測点数 定義しない場合、共通設定を使用
+#  LR			：配光補正値左右展開(0=そのまま展開、1=逆展開)　定義しない場合、0(そのまま展開)
+#  LED_BREAK_ID		：断線
+#  LED_HOTWAR_ID	：加熱検出
+#  LED_HOTERR_ID	：加熱シャットダウン
+#  LED_ONOFF_ID		：LED点灯消灯状態
+#  LED_VALNOW_ID	：現在設定輝度値
+#  LED_TOTALTIME_ID	：稼動累計時間
+#  LED_TEMP_ST_1_ID 	：温度状態 (L,C,R)
+#  LED_TEMP_1_ID 	：温度 (L,C,R)
+#=========================================================
+[KT_LEDMGR]
+BLOCK 		   = 28
+TEMP_UNIT 	   = 3
+TEMP_THR           = 70
+TEMP_THR_DOWN	   = 95
+TIMER_CYCLE        = 180
+NAME_1             = TOP
+#NAME_2      	   = BOT
+
+[KT_LEDMGR_TOP]
+# 基本設定
+MEN		   = 1
+CH_NUM		   = 3
+CH_START	   = 1
+LED_CONNECT_ID	   = 1
+# TCP/IP設定
+SAVE_IP		   = 127.0.0.1
+SAVE_PORT	   = 5001
+
+# CH単位
+[KT_LEDMGR_TOP_CH1]
+INDEX		   = 1
+BLOCK		   = 40
+TEMP_UNIT	   = 3
+LR		   = 0
+
+LED_BREAK_ID       = 1
+LED_HOTWAR_ID      = 1
+LED_HOTERR_ID      = 1
+LED_ONOFF_ID       = 1
+LED_VALNOW_ID      = 1
+LED_TOTALTIME_ID   = 1
+
+LED_TEMP_ST_1_ID   = 5
+LED_TEMP_ST_2_ID   = 5
+LED_TEMP_ST_3_ID   = 5
+LED_TEMP_1_ID      = 5
+LED_TEMP_2_ID      = 5
+LED_TEMP_3_ID      = 5
+

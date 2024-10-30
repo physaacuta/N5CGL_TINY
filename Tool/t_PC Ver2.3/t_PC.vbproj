@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BE873AC-2C68-4F97-BC99-23ACC9497D69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>t_PC</RootNamespace>
+    <AssemblyName>t_PC</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OptionStrict>On</OptionStrict>
+    <ApplicationIcon>t_PC.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>t_PC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>t_PC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>t_PC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>t_PC.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Include\KizuCommon.vb">
+      <Link>KizuCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommonSelect.vb">
+      <Link>KizuCommonSelect.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuListID.vb">
+      <Link>KizuListID.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Library\tClassLibrary\tClass\tClass_Array.vb">
+      <Link>tClassLibraryリンク\tClass_Array.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Library\tClassLibrary\tClass\tClass_Shutdown.vb">
+      <Link>tClassLibraryリンク\tClass_Shutdown.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Library\tClassLibrary\tClass\tClass_Socket.vb">
+      <Link>tClassLibraryリンク\tClass_Socket.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Library\tClassLibrary\tClass\tClass_WorkThread.vb">
+      <Link>tClassLibraryリンク\tClass_WorkThread.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Library\tClassLibrary\tIface\tIface_Find.vb">
+      <Link>tClassLibraryリンク\tIface_Find.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Library\tClassLibrary\tMod\tMod_Common.vb">
+      <Link>tClassLibraryリンク\tMod_Common.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Library\tClassLibrary\tMod\tMod_IniFile.vb">
+      <Link>tClassLibraryリンク\tMod_IniFile.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Library\tClassLibrary\疵検対象外\tClass_MailSlot.vb">
+      <Link>tClassLibraryリンク\tClass_MailSlot.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Library\tClassLibrary\疵検対象外\tClass_MailSlot_Base.vb">
+      <Link>tClassLibraryリンク\tClass_MailSlot_Base.vb</Link>
+    </Compile>
+    <Compile Include="AllUserLogOff.vb" />
+    <Compile Include="frmChat.Designer.vb">
+      <DependentUpon>frmChat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopup.Designer.vb">
+      <DependentUpon>frmPopup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmChat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t_PC.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmPopup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t_PCchatrecv.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

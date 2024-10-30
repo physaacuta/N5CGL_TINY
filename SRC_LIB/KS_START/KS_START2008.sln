@@ -1,0 +1,168 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KS_START", "KS_START2008.vcproj", "{25C5217B-7C62-41D1-A784-BE8151280A91}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FD98B562-8945-42AA-9F80-A672D6893A23} = {FD98B562-8945-42AA-9F80-A672D6893A23}
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141} = {6412CB7D-BDE1-4944-8C4E-A9C7AF053141}
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E} = {F1AC4980-774C-4FAF-AD15-FF810E9E492E}
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD} = {BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07} = {3916A2AB-5105-411A-A9BD-CA740CE84A07}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KizuLib", "..\..\Library\KizuLib\KizuLib2008.vcproj", "{F1AC4980-774C-4FAF-AD15-FF810E9E492E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KizuLibMFC", "..\..\Library\KizuLibMFC\KizuLibMFC2008.vcproj", "{3916A2AB-5105-411A-A9BD-CA740CE84A07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KizuODBC", "..\..\Library\KizuODBC\KizuODBC2008.vcproj", "{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KS_START_ODBC", "KS_START_ODBC\KS_START_ODBC2008.vcproj", "{FD98B562-8945-42AA-9F80-A672D6893A23}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KS_START_ODBCx64", "KS_START_ODBC\KS_START_ODBCx642008.vcproj", "{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FD98B562-8945-42AA-9F80-A672D6893A23} = {FD98B562-8945-42AA-9F80-A672D6893A23}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_x64で32bit用を作る|Win32 = Debug_x64で32bit用を作る|Win32
+		Debug_x64で32bit用を作る|x64 = Debug_x64で32bit用を作る|x64
+		Debug_x86で64bit用を作る|Win32 = Debug_x86で64bit用を作る|Win32
+		Debug_x86で64bit用を作る|x64 = Debug_x86で64bit用を作る|x64
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release_x64で32bit用を作る|Win32 = Release_x64で32bit用を作る|Win32
+		Release_x64で32bit用を作る|x64 = Release_x64で32bit用を作る|x64
+		Release_x86で64bit用を作る|Win32 = Release_x86で64bit用を作る|Win32
+		Release_x86で64bit用を作る|x64 = Release_x86で64bit用を作る|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug_x64で32bit用を作る|Win32.ActiveCfg = Debug|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug_x64で32bit用を作る|x64.ActiveCfg = Debug|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug_x64で32bit用を作る|x64.Build.0 = Debug|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug_x86で64bit用を作る|Win32.ActiveCfg = Debug|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug_x86で64bit用を作る|x64.ActiveCfg = Debug|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug_x86で64bit用を作る|x64.Build.0 = Debug|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug|Win32.Build.0 = Debug|Win32
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug|x64.ActiveCfg = Debug|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Debug|x64.Build.0 = Debug|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release_x64で32bit用を作る|Win32.ActiveCfg = Release|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release_x64で32bit用を作る|x64.ActiveCfg = Release|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release_x64で32bit用を作る|x64.Build.0 = Release|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release_x86で64bit用を作る|Win32.ActiveCfg = Release|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release_x86で64bit用を作る|x64.ActiveCfg = Release|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release_x86で64bit用を作る|x64.Build.0 = Release|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release|Win32.ActiveCfg = Release|Win32
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release|Win32.Build.0 = Release|Win32
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release|x64.ActiveCfg = Release|x64
+		{25C5217B-7C62-41D1-A784-BE8151280A91}.Release|x64.Build.0 = Release|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug_x64で32bit用を作る|Win32.ActiveCfg = Debug|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug_x64で32bit用を作る|x64.ActiveCfg = Debug|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug_x64で32bit用を作る|x64.Build.0 = Debug|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug_x86で64bit用を作る|Win32.ActiveCfg = Debug|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug_x86で64bit用を作る|x64.ActiveCfg = Debug|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug_x86で64bit用を作る|x64.Build.0 = Debug|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug|Win32.Build.0 = Debug|Win32
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug|x64.ActiveCfg = Debug|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Debug|x64.Build.0 = Debug|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release_x64で32bit用を作る|Win32.ActiveCfg = Release|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release_x64で32bit用を作る|x64.ActiveCfg = Release|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release_x64で32bit用を作る|x64.Build.0 = Release|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release_x86で64bit用を作る|Win32.ActiveCfg = Release|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release_x86で64bit用を作る|x64.ActiveCfg = Release|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release_x86で64bit用を作る|x64.Build.0 = Release|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release|Win32.ActiveCfg = Release|Win32
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release|Win32.Build.0 = Release|Win32
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release|x64.ActiveCfg = Release|x64
+		{F1AC4980-774C-4FAF-AD15-FF810E9E492E}.Release|x64.Build.0 = Release|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug_x64で32bit用を作る|Win32.ActiveCfg = Debug|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug_x64で32bit用を作る|x64.ActiveCfg = Debug|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug_x64で32bit用を作る|x64.Build.0 = Debug|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug_x86で64bit用を作る|Win32.ActiveCfg = Debug|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug_x86で64bit用を作る|x64.ActiveCfg = Debug|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug_x86で64bit用を作る|x64.Build.0 = Debug|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug|Win32.Build.0 = Debug|Win32
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug|x64.ActiveCfg = Debug|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Debug|x64.Build.0 = Debug|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release_x64で32bit用を作る|Win32.ActiveCfg = Release|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release_x64で32bit用を作る|x64.ActiveCfg = Release|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release_x64で32bit用を作る|x64.Build.0 = Release|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release_x86で64bit用を作る|Win32.ActiveCfg = Release|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release_x86で64bit用を作る|x64.ActiveCfg = Release|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release_x86で64bit用を作る|x64.Build.0 = Release|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release|Win32.ActiveCfg = Release|Win32
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release|Win32.Build.0 = Release|Win32
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release|x64.ActiveCfg = Release|x64
+		{3916A2AB-5105-411A-A9BD-CA740CE84A07}.Release|x64.Build.0 = Release|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug_x64で32bit用を作る|Win32.ActiveCfg = Debug|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug_x64で32bit用を作る|x64.ActiveCfg = Debug|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug_x64で32bit用を作る|x64.Build.0 = Debug|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug_x86で64bit用を作る|Win32.ActiveCfg = Debug|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug_x86で64bit用を作る|x64.ActiveCfg = Debug|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug_x86で64bit用を作る|x64.Build.0 = Debug|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug|Win32.Build.0 = Debug|Win32
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug|x64.ActiveCfg = Debug|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Debug|x64.Build.0 = Debug|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release_x64で32bit用を作る|Win32.ActiveCfg = Release|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release_x64で32bit用を作る|x64.ActiveCfg = Release|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release_x64で32bit用を作る|x64.Build.0 = Release|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release_x86で64bit用を作る|Win32.ActiveCfg = Release|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release_x86で64bit用を作る|x64.ActiveCfg = Release|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release_x86で64bit用を作る|x64.Build.0 = Release|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release|Win32.ActiveCfg = Release|Win32
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release|Win32.Build.0 = Release|Win32
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release|x64.ActiveCfg = Release|x64
+		{BAC927A2-921F-4D38-89A3-DA4DDDACF8CD}.Release|x64.Build.0 = Release|x64
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug_x64で32bit用を作る|Win32.ActiveCfg = Debug_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug_x64で32bit用を作る|Win32.Build.0 = Debug_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug_x64で32bit用を作る|x64.ActiveCfg = Debug_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug_x86で64bit用を作る|Win32.ActiveCfg = Debug_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug_x86で64bit用を作る|Win32.Build.0 = Debug_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug_x86で64bit用を作る|x64.ActiveCfg = Debug_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug|Win32.Build.0 = Debug|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug|x64.ActiveCfg = Debug_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Debug|x64.Build.0 = Debug_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release_x64で32bit用を作る|Win32.ActiveCfg = Release_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release_x64で32bit用を作る|Win32.Build.0 = Release_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release_x64で32bit用を作る|x64.ActiveCfg = Release_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release_x86で64bit用を作る|Win32.ActiveCfg = Release_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release_x86で64bit用を作る|Win32.Build.0 = Release_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release_x86で64bit用を作る|x64.ActiveCfg = Release_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release|Win32.ActiveCfg = Release|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release|Win32.Build.0 = Release|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release|x64.ActiveCfg = Release_x64で32bit用を作る|Win32
+		{FD98B562-8945-42AA-9F80-A672D6893A23}.Release|x64.Build.0 = Release_x64で32bit用を作る|Win32
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug_x64で32bit用を作る|Win32.ActiveCfg = Debug_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug_x64で32bit用を作る|x64.ActiveCfg = Debug_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug_x64で32bit用を作る|x64.Build.0 = Debug_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug_x86で64bit用を作る|Win32.ActiveCfg = Debug_x86で64bit用を作る|Win32
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug_x86で64bit用を作る|Win32.Build.0 = Debug_x86で64bit用を作る|Win32
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug_x86で64bit用を作る|x64.ActiveCfg = Debug_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug_x86で64bit用を作る|x64.Build.0 = Debug_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug|Win32.ActiveCfg = Debug_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug|Win32.Build.0 = Debug_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug|x64.ActiveCfg = Debug|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Debug|x64.Build.0 = Debug|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release_x64で32bit用を作る|Win32.ActiveCfg = Release_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release_x64で32bit用を作る|x64.ActiveCfg = Release_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release_x64で32bit用を作る|x64.Build.0 = Release_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release_x86で64bit用を作る|Win32.ActiveCfg = Release_x86で64bit用を作る|Win32
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release_x86で64bit用を作る|Win32.Build.0 = Release_x86で64bit用を作る|Win32
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release_x86で64bit用を作る|x64.ActiveCfg = Release_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release_x86で64bit用を作る|x64.Build.0 = Release_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release|Win32.ActiveCfg = Release_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release|Win32.Build.0 = Release_x86で64bit用を作る|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release|x64.ActiveCfg = Release|x64
+		{6412CB7D-BDE1-4944-8C4E-A9C7AF053141}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

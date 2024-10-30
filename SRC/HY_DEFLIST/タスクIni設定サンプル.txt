@@ -1,0 +1,39 @@
+#=========================================================
+# 重欠陥一覧画面
+# DEBUG           : デバッグフラグ(0:オンライン,1:デバッグモード(画面の移動可、疵情報にrec,pnt,KizuNo表示)
+# PCDIV           : PC区分(0:表面検査台,1:裏面検査台)
+# DSP_INTERVAL 	  : 定周期共有メモリ取得タイマー[msec]
+# DSP_TYPE        : 画面表示タイプ(0:表裏両面,1:表のみ,2:裏のみ)
+# IMAGE_DIRECT_TOP: 疵画像の表示欄反転[表](0:左がDS、1:左がWS)
+# IMGAE_DIRECT_BOT: 疵画像の表示欄反転[裏](0:左がDS、1:左がWS)
+# IMAGE_UP_TOP    : 疵画像上下反転[表](0:反転なし,1:反転あり)
+# IMAGE_UP_BOT    : 疵画像上下反転[裏](0:反転なし,1:反転あり)
+# IMAGE_SIDE_TOP  : 疵画像左右反転[表](0:反転なし,1:反転あり)
+# IMAGE_SIDE_BOT  : 疵画像左右反転[裏](0:反転なし,1:反転あり)
+# DSP_POS_TOP     : 画面表示位置[表](モニター番号:1～)
+# DSP_POS_BOT     : 画面表示位置[裏](モニター番号:1～)
+# DSP_FILTER      : フィルタボタン表示設定(0:表裏両面,1:表のみ,2:裏のみ,3:なし)
+# IMAGE_WIDTH     : 画像100pixel横幅設定       (1～:100pixel横幅を指定[mm])
+# IMAGE_RATE_05   : 画像表示倍率( 5疵表示用)(1倍は100を設定、1/2倍は50、2倍は200・・・)
+# IMAGE_RATE_14   : 画像表示倍率(14疵表示用)(1倍は100を設定、1/2倍は50、2倍は200・・・)
+# IMAGE_RATE_30   : 画像表示倍率(30疵表示用)(1倍は100を設定、1/2倍は50、2倍は200・・・)
+# ※各タイマーの設定値はKizuLocal.iniに設定
+#=========================================================
+[HY_DEFLIST]
+DEBUG            = 0
+PCDIV            = 0
+DSP_INTERVAL     = 1000
+DSP_TYPE         = 0
+IMAGE_DIRECT_TOP = 1
+IMAGE_DIRECT_BOT = 1
+IMAGE_UP_TOP     = 0
+IMAGE_UP_BOT     = 0
+IMAGE_SIDE_TOP   = 1
+IMAGE_SIDE_BOT   = 1
+DSP_POS_TOP      = 1
+DSP_POS_BOT      = 2
+DSP_FILTER       = 1
+IMAGE_WIDTH      = 25
+IMAGE_RATE_05    = 100
+IMAGE_RATE_14    = 75
+IMAGE_RATE_30    = 50

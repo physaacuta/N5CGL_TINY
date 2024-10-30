@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\01 Socket関連%28PC間%29">
+      <UniqueIdentifier>{a819e66e-f1ba-4004-9895-ed092d87ae52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\02 Socket関連%28外部機器間%29">
+      <UniqueIdentifier>{6b102607-bbdb-4f11-b2ac-c69256988206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\00 共通参照ヘッダ">
+      <UniqueIdentifier>{e247e0fb-e87b-4c70-80f8-41a074196feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\01 Socket関連%28PC間%29">
+      <UniqueIdentifier>{7f0a7368-7f5d-443c-b10b-3cb1388d8261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\02 Socket関連%28外部機器間%29">
+      <UniqueIdentifier>{222b0738-2e96-4ca0-a417-5f539353213c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DBSaveManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="KikiManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="KizuJpegManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracking.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackingList.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="KizuDefaultRecv.cpp">
+      <Filter>ソース ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClCompile>
+    <ClCompile Include="KizuHtRecv.cpp">
+      <Filter>ソース ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClCompile>
+    <ClCompile Include="KizuOpSend.cpp">
+      <Filter>ソース ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClCompile>
+    <ClCompile Include="KizuToSend.cpp">
+      <Filter>ソース ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseTcpIp.cpp">
+      <Filter>ソース ファイル\02 Socket関連%28外部機器間%29</Filter>
+    </ClCompile>
+    <ClCompile Include="BasePipe.cpp">
+      <Filter>ソース ファイル\02 Socket関連%28外部機器間%29</Filter>
+    </ClCompile>
+    <ClCompile Include="SockOneToAnyRecv.cpp">
+      <Filter>ソース ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClCompile>
+    <ClCompile Include="SockOneToAnySend.cpp">
+      <Filter>ソース ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClCompile>
+    <ClCompile Include="ContecCnt8mManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ContecPioBaseManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ContecPioManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ContecPioNetManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="KizuLjtJpegManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DBSaveManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="KikiManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="KizuJpegManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracking.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackingList.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuCommon.h">
+      <Filter>ヘッダー ファイル\00 共通参照ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LibSelect.h">
+      <Filter>ヘッダー ファイル\00 共通参照ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="KizuDefaultRecv.h">
+      <Filter>ヘッダー ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClInclude>
+    <ClInclude Include="KizuHtRecv.h">
+      <Filter>ヘッダー ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClInclude>
+    <ClInclude Include="KizuOpSend.h">
+      <Filter>ヘッダー ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClInclude>
+    <ClInclude Include="KizuToSend.h">
+      <Filter>ヘッダー ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseTcpIp.h">
+      <Filter>ヘッダー ファイル\02 Socket関連%28外部機器間%29</Filter>
+    </ClInclude>
+    <ClInclude Include="BasePipe.h">
+      <Filter>ヘッダー ファイル\02 Socket関連%28外部機器間%29</Filter>
+    </ClInclude>
+    <ClInclude Include="SockOneToAny.h">
+      <Filter>ヘッダー ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClInclude>
+    <ClInclude Include="SockOneToAnySend.h">
+      <Filter>ヘッダー ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClInclude>
+    <ClInclude Include="SockOneToAnyRecv.h">
+      <Filter>ヘッダー ファイル\01 Socket関連%28PC間%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ContecCnt8mManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ContecPioNetManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ContecPioBaseManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ContecPioManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="tjheader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="KizuLjtJpegManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DefectLib.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

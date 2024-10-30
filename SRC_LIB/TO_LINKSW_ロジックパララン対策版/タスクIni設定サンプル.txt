@@ -1,0 +1,120 @@
+#=========================================================
+# 対カメラリンクスイッチ通信
+#
+# ### 共通仕様
+#  TIMER_CYCLE		：定周期チェックタイマ周期 [秒]
+#
+# ### 個別仕様
+# [タスク名_スイッチFPGAボードID]
+#  FPGADIE_TEMP_LIMIT	：FPGAダイ温度上限 [℃]
+#  FPGADIE_TEMP_ID	：FPGAダイ温度 ID
+#  FPGADIE_TEMP_ST_ID	：FPGAダイ温度状態 ID
+#  AMBIENT_TEMP_LIMIT	：周囲温度上限 [℃]
+#  AMBIENT_TEMP_ID	：周囲温度 ID
+#  AMBIENT_TEMP_ST_ID	：周囲温度状態 ID
+#  OPTCLINKx_B_ST_ID	：Opt-C:Link B   ステータス ID (x:1～4) (※ スイッチFPGAマスタならCH1～4、スイッチFPGAスレーブならCH5～6に相当)
+#  OPTCLINKx_MF_ST_ID	：Opt-C:Link M/F ステータス ID (x:1～4) (※ スイッチFPGAマスタならCH1～4、スイッチFPGAスレーブならCH5～6に相当)
+#=========================================================
+[TO_LINKSW]
+com=COM6
+baud=96
+parity=n
+data=8
+stop=1
+to=off
+dtr=off
+rts=off
+idsr=off
+octs=off
+
+# 定周期チェックタイマ周期 [秒]
+TIMER_CYCLE = 180
+
+# 高速通信(115200bps)（有効=1。未定義時、無効）
+#ENABLE_SPEED_CHANGE = 1
+
+# ハーフ版カメラリンクSWフラグ
+#--------------------------------------
+# HALF_FLG_x = a
+#--------------------------------------
+# x … ユニット番号(1オリジン、最大 NUM_CAMLINKSW)
+# a … 0: フル版（デフォルト）、1:ハーフ版
+HALF_FLG_1 = 1
+HALF_FLG_2 = 1
+
+# 各ボードのカメラ入力CH
+# テスト的に画像パラ撮りする時などに使用
+#--------------------------------------
+# FPGA_x_BOARD_y = a, b
+#--------------------------------------
+# x … ボードID(0オリジン)
+# y … 出力ch(1オリジン)
+# a … 選択カメラ(-8 ～ 8)
+#      0 = 無視
+#       1～ 8 = Masterとして選択
+#      -1～-8 = Slaveとして選択
+# b … 表裏区分(0:表, 1:裏)
+
+FPGA_0_BOARD_1 = 0, 0
+FPGA_0_BOARD_2 = 0, 0
+FPGA_0_BOARD_3 = 0, 0
+FPGA_0_BOARD_4 = 0, 0
+FPGA_0_BOARD_5 = 0, 0
+FPGA_0_BOARD_6 = 0, 0
+FPGA_0_BOARD_7 = 0, 0
+FPGA_0_BOARD_8 = 0, 0
+FPGA_0_BOARD_9 = 0, 0
+FPGA_0_BOARD_10 = 0, 0
+FPGA_0_BOARD_11 = 0, 0
+FPGA_0_BOARD_12 = 0, 0
+FPGA_0_BOARD_13 = 0, 0
+FPGA_0_BOARD_14 = 0, 0
+FPGA_0_BOARD_15 = 0, 0
+
+FPGA_1_BOARD_1 = 0, 1
+FPGA_1_BOARD_2 = 0, 1
+FPGA_1_BOARD_3 = 0, 1
+FPGA_1_BOARD_4 = 0, 1
+FPGA_1_BOARD_5 = 0, 1
+FPGA_1_BOARD_6 = 0, 1
+FPGA_1_BOARD_7 = 0, 1
+FPGA_1_BOARD_8 = 0, 1
+FPGA_1_BOARD_9 = 0, 1
+FPGA_1_BOARD_10 = 0, 1
+FPGA_1_BOARD_11 = 0, 1
+FPGA_1_BOARD_12 = 0, 1
+FPGA_1_BOARD_13 = 0, 1
+FPGA_1_BOARD_14 = 0, 1
+FPGA_1_BOARD_15 = 0, 1
+
+[TO_LINKSW_0]
+FPGADIE_TEMP_LIMIT	= 50
+FPGADIE_TEMP_ID		= 259
+FPGADIE_TEMP_ST_ID	= 257
+AMBIENT_TEMP_LIMIT	= 50
+AMBIENT_TEMP_ID		= 263
+AMBIENT_TEMP_ST_ID	= 261
+OPTCLINK1_B_ST_ID	= 0
+OPTCLINK1_MF_ST_ID	= 0
+OPTCLINK2_B_ST_ID	= 0
+OPTCLINK2_MF_ST_ID	= 0
+OPTCLINK3_B_ST_ID	= 0
+OPTCLINK3_MF_ST_ID	= 0
+OPTCLINK4_B_ST_ID	= 0
+OPTCLINK4_MF_ST_ID	= 0
+
+[TO_LINKSW_1]
+FPGADIE_TEMP_LIMIT	= 50
+FPGADIE_TEMP_ID		= 260
+FPGADIE_TEMP_ST_ID	= 258
+AMBIENT_TEMP_LIMIT	= 50
+AMBIENT_TEMP_ID		= 264
+AMBIENT_TEMP_ST_ID	= 262
+OPTCLINK1_B_ST_ID	= 0
+OPTCLINK1_MF_ST_ID	= 0
+OPTCLINK2_B_ST_ID	= 0
+OPTCLINK2_MF_ST_ID	= 0
+OPTCLINK3_B_ST_ID	= 0
+OPTCLINK3_MF_ST_ID	= 0
+OPTCLINK4_B_ST_ID	= 0
+OPTCLINK4_MF_ST_ID	= 0

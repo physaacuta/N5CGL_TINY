@@ -1,0 +1,209 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\KT_LEDMGR.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\KT_LEDMGR.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_KT_LEDMGR_DIALOG DIALOGEX 0, 0, 263, 239
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "対LED照明装置(TCP/IP通信) [KT_LEDMGR]"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "強制終了",IDOK,208,0,50,16
+    LISTBOX         IDC_LIST1,0,199,260,40,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "対象装置",IDC_STATIC,4,4,32,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_CMB_DISP,36,4,72,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "LED照明装置",IDC_STATIC,0,20,120,132
+    LTEXT           "状態",IDC_STATIC,4,48,32,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "モード",IDC_STATIC,4,60,32,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "scode",IDC_STATIC,4,137,20,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "全体調光",IDC_STATIC,48,137,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STAT_CONNECT,36,48,80,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_STAT_MODE,36,60,80,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NOWSCODE,24,137,20,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NOWLEDBASE,84,137,32,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "消灯点灯",IDC_STATIC,4,76,32,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "温度状態",IDC_STATIC,4,88,32,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATEONOFF,36,76,24,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_STATETEMP,36,88,80,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "断線状態",IDC_STATIC,60,76,32,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATEBREAK,92,76,24,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "デバック実行",IDC_DEBUG_MANUAL,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,124,28,40,16
+    GROUPBOX        "デバック",IDC_STATIC,120,20,140,132
+    PUSHBUTTON      "全状態･輝度取得",IDC_DEBAG_STATE,124,70,56,12
+    PUSHBUTTON      "点灯",IDC_DEBAG_ON,200,70,24,12
+    PUSHBUTTON      "消灯",IDC_DEBAG_OFF,232,70,24,12
+    LTEXT           "scode",IDC_STATIC,124,102,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "全体調光",IDC_STATIC,124,114,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_SET_SCODE,180,102,20,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SET_HOSEI_BLOCK,188,126,16,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SET_BASE,180,114,20,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "scode指定 設定",IDC_DEBAG_LED_SCODE,200,102,56,12
+    PUSHBUTTON      "全体調光 設定",IDC_DEBAG_LED_VAL,200,114,56,12
+    LTEXT           "←凹時のみ、 有効となります。",IDC_STATIC,172,28,44,20
+    PUSHBUTTON      "LED温度",IDC_DEBAG_TEMP,124,86,56,12
+    PUSHBUTTON      "累積時間リセット",IDC_DEBAG_RESET,200,86,56,12
+    COMBOBOX        IDC_CMB_DEBAG_CH,164,54,40,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "チャンネル",IDC_STATIC,124,54,40,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "0:全CH             1～:指定CHのみ",IDC_STATIC,208,50,48,16
+    LTEXT           "チャンネル",IDC_STATIC,4,32,32,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_CMB_CH,36,32,40,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_VAL,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,155,260,44
+    LTEXT           "補正(ﾌﾞﾛｯｸ 1～/値)",IDC_STATIC,124,126,64,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_SET_HOSEI_VAL,204,126,16,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "個別",IDC_DEBAG_LED_HOSEI,220,126,16,12
+    PUSHBUTTON      "一括",IDC_DEBAG_LED_HOSEI_ALL,240,126,16,12
+    CONTROL         "",IDC_LIST_TEMP,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,100,112,36
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,3,4,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "3.3.3.0"
+            VALUE "InternalName", "KT_LEDMGR.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "KT_LEDMGR.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_KT_LEDMGR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\KT_LEDMGR.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

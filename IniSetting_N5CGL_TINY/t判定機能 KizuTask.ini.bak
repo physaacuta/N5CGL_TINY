@@ -1,0 +1,255 @@
+#////////////////////////////////////////////////////////////////////
+# 機能単位の設定ファイル
+#  ※ 名前の付け方 [t統括機能 kizuTask.ini]
+#////////////////////////////////////////////////////////////////////
+
+#**************************************************************************************
+# ライブラリ使用 部
+#**************************************************************************************
+#=========================================================
+# データベース情報
+#  DBADDLESS	: DB接続アドレス (VBでしか使用しない)
+#  ODBCNAME	: ODBCの名称 (C のみ使用)
+#  DSNAME	: SQLServerのDB名称(VB のみ使用)
+#  USERID	: ユーザー名
+#  PASSWORD	: パスワード
+#=========================================================
+# オンライン実行中DB
+[DB]
+DBADDLESS= 192.9.200.31
+#DBADDLESS= 192.9.200.216\vz2005
+ODBCNAME = DATABASE_N5CGL_TINY
+DSNAME   = DATABASE_N5CGL_TINY
+USERID   = sa
+PASSWORD = vz
+# A系DB
+[DB_A]
+DBADDLESS= 192.9.200.31
+ODBCNAME = DATABASE_N5CGL_TINY
+DSNAME   = DATABASE_N5CGL_TINY
+USERID   = sa
+PASSWORD = vz
+# B系DB
+[DB_B]
+DBADDLESS= 192.9.200.32
+ODBCNAME = DATABASE_N5CGL_TINYsub
+DSNAME   = DATABASE_N5CGL_TINY
+USERID   = sa
+PASSWORD = vz
+
+#=========================================================
+# 共通設定
+#  LINEID	: ライン区分(コンパイル無しでタスクの切替等で使用可能) (0:5CGL極微小φω 1:ロジックパララン)
+#  NOA		: NOA接続フラグ (0:オンライン  1:遠隔  -1:解析用  9:デバック)
+#=========================================================
+[COMMON]
+LINEID = 0
+NOA = 0
+
+#=========================================================
+# 機器ID定義
+#  各機能での機器IDを定義 (共通支援機能での機器IDは除く)
+#=========================================================
+[STATUS]
+# 判定機能App
+HT_APP_1_ID  = 1
+HT_APP_2_ID  = 2
+HT_APP_3_ID  = 3
+HT_APP_4_ID  = 4
+HT_APP_5_ID  = 5
+HT_APP_6_ID  = 6
+HT_APP_7_ID  = 7
+HT_APP_8_ID  = 8
+HT_APP_9_ID  = 9
+HT_APP_10_ID = 10
+PR_APP_1_ID  = 11
+PR_APP_2_ID  = 12
+
+# 判定PC 続行不能
+HT_CANNOT_1_ID  = 13
+HT_CANNOT_2_ID  = 14
+HT_CANNOT_3_ID  = 15
+HT_CANNOT_4_ID  = 16
+HT_CANNOT_5_ID  = 17
+HT_CANNOT_6_ID  = 18
+HT_CANNOT_7_ID  = 19
+HT_CANNOT_8_ID  = 20
+HT_CANNOT_9_ID  = 21
+HT_CANNOT_10_ID = 22
+HT_CANNOT_11_ID = 23
+HT_CANNOT_12_ID = 24
+HT_CANNOT_13_ID = 25
+HT_CANNOT_14_ID = 26
+HT_CANNOT_15_ID = 27
+HT_CANNOT_16_ID = 28
+
+# カメラ画像入力異常
+#===============================
+# HT_GRAB_x_y_ID
+# x : カメラペア(表DS～裏WS)
+# y : 接続カメラ順番
+#===============================
+HT_GRAB_1_1_ID  = 172
+HT_GRAB_2_1_ID  = 173
+HT_GRAB_3_1_ID  = 174
+HT_GRAB_4_1_ID  = 175
+HT_GRAB_5_1_ID  = 176
+HT_GRAB_6_1_ID  = 177
+HT_GRAB_7_1_ID  = 178
+HT_GRAB_8_1_ID  = 179
+HT_GRAB_9_1_ID  = 180
+HT_GRAB_10_1_ID = 181
+HT_GRAB_11_1_ID = 182
+HT_GRAB_12_1_ID = 183
+HT_GRAB_13_1_ID = 184
+HT_GRAB_14_1_ID = 185
+HT_GRAB_15_1_ID = 186
+HT_GRAB_16_1_ID = 187
+HT_GRAB_17_1_ID = 188
+HT_GRAB_18_1_ID = 189
+HT_GRAB_19_1_ID = 190
+HT_GRAB_20_1_ID = 191
+
+#=========================================================
+# 共有メモリ情報 (1～50まで)
+#  MEM1_NAME	: 共有メモリ名
+#  MEM1_SIZE	: サイズ
+#=========================================================
+[MEM]
+#MEM1_NAME = SO_STATUSTBL
+#MEM1_SIZE = 16
+
+#=========================================================
+# プロセス情報 (1～50まで)
+#  TASK1	: 起動タスク名, 起動プロセス(0:通常 1:最小化 2:最大化 3:非表示), ホントの起動EXE名称(起動タスク名と同じなら無しでOK)
+#=========================================================
+[EXECUTE]
+TASK1=KS_EVTLOG, 1, KS_EVTLOGx64
+TASK2=KS_HDDCHK, 1, KS_HDDCHKx64
+TASK3=HT_DEFECT, 0
+
+#**************************************************************************************
+# 各タスク 部
+#**************************************************************************************
+#=========================================================
+# 判定管理
+#=========================================================
+[HT_DEFECT]
+# 画像処理ソフトのフルパス
+DETECT_EXE = ".\ncl2detect.exe"
+#DETECT_EXE = ".\ZZ_EPC.exe"
+DETECT_PD_EXE = ".\ncl2detect.exe"
+#DETECT_PD_EXE = ".\ZZ_EPC.exe"
+DETECT_PR_EXE = ".\ncl2detect.exe"
+#DETECT_PR_EXE = ".\ZZ_EPC.exe"
+
+# iPortViewerソフトのフルパス
+#IPORTVIEWER_EXE = "..\\iPortViewer\iPortViewer.exe"
+#IPORTVIEWER_PD_EXE = "..\\iPortViewer\iPortViewer.exe"
+#IPORTVIEWER_PR_EXE = "..\\iPortViewer\iPortViewer.exe"
+IPORTVIEWER_PATH = "..\\iCaV"
+IPORTVIEWER_PD_PATH = "..\\iCaV"
+IPORTVIEWER_PR_PATH = "..\\iCaV" 
+IPORTVIEWER_EXE = "..\\iCaV\ICaViewer.exe"
+IPORTVIEWER_PD_EXE = "..\\iCaV\ICaViewer.exe"
+IPORTVIEWER_PR_EXE = "..\\iCaV\ICaViewer.exe" 
+
+# 統括通信用回線
+[HT_DEFECT_TO_0]
+SAVE_IP		= 192.9.200.31
+SAVE_PORT	= 10000
+[HT_DEFECT_TO_1]
+SAVE_IP		= 192.9.200.31
+SAVE_PORT	= 10001
+
+[HT_DEFECT_PD_TO_0]
+SAVE_IP		= 192.9.200.31
+SAVE_PORT	= 10010
+[HT_DEFECT_PD_TO_1]
+SAVE_IP		= 192.9.200.31
+SAVE_PORT	= 10011
+
+
+
+# 全長通信用回線
+#  HT_DEFECT_RPI_TO_[表裏]_[カメラ番号]
+[HT_DEFECT_RPI_TO_0_0]
+SAVE_IP		= 192.9.211.51
+SAVE_PORT	= 11000
+[HT_DEFECT_RPI_TO_0_1]
+SAVE_IP		= 192.9.212.51
+SAVE_PORT	= 11001
+[HT_DEFECT_RPI_TO_0_2]
+SAVE_IP		= 192.9.211.51
+SAVE_PORT	= 11002
+[HT_DEFECT_RPI_TO_0_3]
+SAVE_IP		= 192.9.212.51
+SAVE_PORT	= 11003
+[HT_DEFECT_RPI_TO_0_4]
+SAVE_IP		= 192.9.211.51
+SAVE_PORT	= 11004
+[HT_DEFECT_RPI_TO_0_5]
+SAVE_IP		= 192.9.212.51
+SAVE_PORT	= 11005
+[HT_DEFECT_RPI_TO_0_6]
+SAVE_IP		= 192.9.211.51
+SAVE_PORT	= 11006
+[HT_DEFECT_RPI_TO_0_7]
+SAVE_IP		= 192.9.212.51
+SAVE_PORT	= 11007
+[HT_DEFECT_RPI_TO_0_8]
+SAVE_IP		= 192.9.211.51
+SAVE_PORT	= 11008
+[HT_DEFECT_RPI_TO_0_9]
+SAVE_IP		= 192.9.212.51
+SAVE_PORT	= 11009
+
+
+[HT_DEFECT_RPI_TO_1_0]
+SAVE_IP		= 192.9.211.52
+SAVE_PORT	= 11010
+[HT_DEFECT_RPI_TO_1_1]
+SAVE_IP		= 192.9.212.52
+SAVE_PORT	= 11011
+[HT_DEFECT_RPI_TO_1_2]
+SAVE_IP		= 192.9.211.52
+SAVE_PORT	= 11012
+[HT_DEFECT_RPI_TO_1_3]
+SAVE_IP		= 192.9.212.52
+SAVE_PORT	= 11013
+[HT_DEFECT_RPI_TO_1_4]
+SAVE_IP		= 192.9.211.52
+SAVE_PORT	= 11014
+[HT_DEFECT_RPI_TO_1_5]
+SAVE_IP		= 192.9.212.52
+SAVE_PORT	= 11015
+[HT_DEFECT_RPI_TO_1_6]
+SAVE_IP		= 192.9.211.52
+SAVE_PORT	= 11016
+[HT_DEFECT_RPI_TO_1_7]
+SAVE_IP		= 192.9.212.52
+SAVE_PORT	= 11017
+[HT_DEFECT_RPI_TO_1_8]
+SAVE_IP		= 192.9.211.52
+SAVE_PORT	= 11018
+[HT_DEFECT_RPI_TO_1_9]
+SAVE_IP		= 192.9.212.52
+SAVE_PORT	= 11019
+
+
+
+#=========================================================
+# 疑似エンジン
+#  疵情報設定 (1～5まで)
+#  PUT_KIZU_1	: 疵個数
+#  PUT_TYPE_1	: 疵種(EdasysID)
+#  PUT_GRADE_1	: グレード(EdasysID)
+#  PUT_FRAME_1	: 疵発生フレーム間隔
+#  PUT_CYCLE_1	: 周期フラグ(0:単発,1:簡易周期)
+#=========================================================
+[ZZ_EPC]
+PUT_KIZU_1 = 1
+PUT_TYPE_1 = 1
+PUT_GRADE_1 = 15
+PUT_FRAME_1 = 1000
+PUT_CYCLE_1 = 0

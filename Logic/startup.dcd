@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<ClassifierDiag>
+  <TermList Version="2.0">
+    <DefectNames>
+      <TermItem Id="1" Color="ffff0000">端疵</TermItem>
+      <TermItem Id="2" Color="ffff0000">ｽﾘﾊﾞｰ</TermItem>
+      <TermItem Id="3" Color="ffff0000">CCS</TermItem>
+      <TermItem Id="4" Color="ffff0000">ﾊｲﾃﾝｴｯｼﾞﾍｹﾞ</TermItem>
+      <TermItem Id="5" Color="ffff0000">電車道</TermItem>
+      <TermItem Id="6" Color="ffff0000">ﾍｹﾞ</TermItem>
+      <TermItem Id="7" Color="ffff0000">ｽｹｰﾙ残り</TermItem>
+      <TermItem Id="8" Color="ffff0000">咬込ｽｹｰﾙ</TermItem>
+      <TermItem Id="9" Color="ffff0000">ｶﾞｳｼﾞ</TermItem>
+      <TermItem Id="10" Color="ffff0000">絞り_ﾛｰﾙ</TermItem>
+      <TermItem Id="11" Color="ffff0000">ｶｰﾎﾞﾝﾏｰｸ_ﾛｰﾙ</TermItem>
+      <TermItem Id="12" Color="ffff0000">耳しわ</TermItem>
+      <TermItem Id="13" Color="ffff0000">耳割れ</TermItem>
+      <TermItem Id="14" Color="ffff0000">ｴｯｼﾞｶｯﾄ</TermItem>
+      <TermItem Id="15" Color="ffff0000">ｶｷ疵</TermItem>
+      <TermItem Id="16" Color="ffff0000">ｽﾘ疵</TermItem>
+      <TermItem Id="17" Color="ffff0000">腰折</TermItem>
+      <TermItem Id="18" Color="ffff0000">押疵</TermItem>
+      <TermItem Id="19" Color="ffff0000">流れﾊﾞｯｸﾙ</TermItem>
+      <TermItem Id="20" Color="ffff0000">水切不良</TermItem>
+      <TermItem Id="21" Color="ffff0000">異物汚れ</TermItem>
+      <TermItem Id="22" Color="ffff0000">溶接</TermItem>
+      <TermItem Id="23" Color="ffff0000">ﾎﾞﾀ落ち汚れ</TermItem>
+      <TermItem Id="24" Color="ffff0000">当り疵</TermItem>
+      <TermItem Id="25" Color="ffff0000">ﾌﾞﾗｼﾏｰｸ</TermItem>
+      <TermItem Id="26" Color="ffff0000">孔</TermItem>
+      <TermItem Id="27" Color="ffff0000">HOTﾛｰﾙ疵</TermItem>
+      <TermItem Id="28" Color="ffff0000">ｺﾞﾑ付着</TermItem>
+      <TermItem Id="29" Color="ffff0000">ﾊﾟﾝﾁ穴</TermItem>
+      <TermItem Id="30" Color="ffff0000">ｽﾄｯﾌﾟﾏｰｸ</TermItem>
+      <TermItem Id="31" Color="ffff0000">Pﾚｽ汚れ</TermItem>
+      <TermItem Id="32" Color="ffff0000">E汚れ</TermItem>
+      <TermItem Id="33" Color="ffff0000">ﾊｲﾃﾝ汚れ</TermItem>
+      <TermItem Id="34" Color="ffff0000">無害その１</TermItem>
+      <TermItem Id="35" Color="ffff0000">有害その１</TermItem>
+      <TermItem Id="36" Color="ffff0000">ｴｯｼﾞ線状疵</TermItem>
+      <TermItem Id="37" Color="ffff0000">CAPL汚れ</TermItem>
+      <TermItem Id="38" Color="ffff0000">ﾌﾟﾘﾝﾄﾏｰｸ</TermItem>
+      <TermItem Id="39" Color="ffff0000">圧延油汚れ</TermItem>
+      <TermItem Id="40" Color="ffff0000">2ｸﾗｽ無害</TermItem>
+      <TermItem Id="41" Color="ffff0000">多ｸﾗｽ無害</TermItem>
+      <TermItem Id="42" Color="ffff0000">ｽﾊﾟｯﾀ</TermItem>
+      <TermItem Id="51" Color="ffff0000">裏ｽﾘﾊﾞｰ</TermItem>
+      <TermItem Id="52" Color="ffff0000">裏ﾍｹﾞ</TermItem>
+      <TermItem Id="53" Color="ffff0000">HR疵</TermItem>
+      <TermItem Id="54" Color="ffff0000">SVM4</TermItem>
+      <TermItem Id="55" Color="ffff0000">SVM5</TermItem>
+      <TermItem Id="56" Color="ffff0000">SVM6</TermItem>
+      <TermItem Id="57" Color="ffff0000">SVM7</TermItem>
+      <TermItem Id="58" Color="ffff0000">咬込＿補</TermItem>
+      <TermItem Id="59" Color="ffff0000">異物＿補</TermItem>
+      <TermItem Id="60" Color="ffff0000">先後端ｴｯｼﾞ無害</TermItem>
+      <TermItem Id="70" Color="ffff0000">周期疵</TermItem>
+      <TermItem Id="71" Color="ffff0000">周期疵無害</TermItem>
+      <TermItem Id="72" Color="ffff0000">SVM_CM1</TermItem>
+      <TermItem Id="73" Color="ffff0000">SVM_CM2</TermItem>
+      <TermItem Id="74" Color="ffff0000">SVM_CM3</TermItem>
+      <TermItem Id="75" Color="ffff0000">SVM_CM4</TermItem>
+      <TermItem Id="76" Color="ffff0000">SVM_CM5</TermItem>
+      <TermItem Id="80" Color="ffff0000">疵候補</TermItem>
+      <TermItem Id="81" Color="ffff0000">有害Gr</TermItem>
+      <TermItem Id="82" Color="ffff0000">無害Gr</TermItem>
+      <TermItem Id="90" Color="ffff0000">縦ﾉｲｽﾞ</TermItem>
+      <TermItem Id="91" Color="ffff0000">横ﾉｲｽﾞ</TermItem>
+      <TermItem Id="92" Color="ffff0000">ｴｯｼﾞﾍｹﾞ</TermItem>
+    </DefectNames>
+    <SevirityNames>
+      <TermItem Id="1" Color="ffffffff">無害</TermItem>
+      <TermItem Id="11" Color="ffffffff">Gr1</TermItem>
+      <TermItem Id="12" Color="ffffffff">Gr2</TermItem>
+      <TermItem Id="13" Color="ffffffff">Gr3</TermItem>
+      <TermItem Id="14" Color="ff0080ff">Gr4</TermItem>
+      <TermItem Id="15" Color="ffffff00">Gr5</TermItem>
+      <TermItem Id="16" Color="ffff8000">Gr6</TermItem>
+      <TermItem Id="17" Color="ffff0000">Gr7</TermItem>
+    </SevirityNames>
+    <GroupNames />
+    <NumericFeatureNames>
+      <TermItem Id="1" Color="00000000">外接幅[mm]</TermItem>
+      <TermItem Id="2" Color="00000000">外接長さ[mm]</TermItem>
+      <TermItem Id="3" Color="00000000">フレーム内疵中心X[mm]</TermItem>
+      <TermItem Id="11" Color="00000000">外接幅[pixel]</TermItem>
+      <TermItem Id="12" Color="00000000">外接長さ[pixel]</TermItem>
+      <TermItem Id="13" Color="00000000">ピクセル縦横比</TermItem>
+      <TermItem Id="14" Color="00000000">最小輝度(乱)</TermItem>
+      <TermItem Id="15" Color="00000000">最大輝度(乱)</TermItem>
+      <TermItem Id="16" Color="00000000">平均輝度(乱)</TermItem>
+      <TermItem Id="17" Color="00000000">輝度標準偏差(乱)</TermItem>
+      <TermItem Id="18" Color="00000000">最大輝度－最小輝度(乱)</TermItem>
+      <TermItem Id="22" Color="00000000">最大輝度(正)</TermItem>
+      <TermItem Id="23" Color="00000000">最小輝度(正)</TermItem>
+      <TermItem Id="24" Color="00000000">平均輝度(正)</TermItem>
+      <TermItem Id="25" Color="00000000">輝度標準偏差(正)</TermItem>
+      <TermItem Id="26" Color="00000000">最大輝度－最小輝度(正)</TermItem>
+      <TermItem Id="27" Color="00000000">外接Xmin[pixel]</TermItem>
+      <TermItem Id="28" Color="00000000">外接Xmax[pixel]</TermItem>
+      <TermItem Id="33" Color="00000000">外接縦横比</TermItem>
+      <TermItem Id="34" Color="00000000">カメラ座標疵幅位置X[mm]</TermItem>
+      <TermItem Id="35" Color="00000000">左エッジからの距離[mm]</TermItem>
+      <TermItem Id="36" Color="00000000">右エッジからの距離[mm]</TermItem>
+      <TermItem Id="37" Color="00000000">外接Ymin[pixel]</TermItem>
+      <TermItem Id="38" Color="00000000">外接Ymax[pixel]</TermItem>
+      <TermItem Id="42" Color="00000000">フレーム内疵中心Y[mm]</TermItem>
+      <TermItem Id="43" Color="00000000">面積[mm2]</TermItem>
+      <TermItem Id="44" Color="00000000">コイル先頭からの疵長手位置[mm]</TermItem>
+      <TermItem Id="45" Color="00000000">フレーム内最大疵面積比</TermItem>
+      <TermItem Id="46" Color="00000000">フレーム内平均疵面積比</TermItem>
+      <TermItem Id="47" Color="00000000">フレーム内最小疵面積比</TermItem>
+      <TermItem Id="50" Color="00000000">フレーム長手位置[mm]</TermItem>
+      <TermItem Id="51" Color="00000000">コイル残り長さ[mm]</TermItem>
+      <TermItem Id="52" Color="00000000">自己検出エッジ位置[pixel]</TermItem>
+      <TermItem Id="53" Color="00000000">ラベル番号</TermItem>
+      <TermItem Id="54" Color="00000000">左エッジ位置[mm]</TermItem>
+      <TermItem Id="55" Color="00000000">右エッジ位置[mm]</TermItem>
+      <TermItem Id="56" Color="00000000">ライン速度[mms]</TermItem>
+      <TermItem Id="57" Color="00000000">フレーム番号</TermItem>
+      <TermItem Id="58" Color="00000000">ラベリング個数</TermItem>
+      <TermItem Id="59" Color="00000000">周期長さ[mm]</TermItem>
+      <TermItem Id="60" Color="00000000">疵種ID</TermItem>
+      <TermItem Id="61" Color="00000000">グレードID</TermItem>
+      <TermItem Id="62" Color="00000000">フラグ</TermItem>
+      <TermItem Id="63" Color="00000000">カメラセット番号</TermItem>
+      <TermItem Id="64" Color="00000000">二値化閾値拡大量</TermItem>
+      <TermItem Id="65" Color="00000000">周期疵連番</TermItem>
+      <TermItem Id="66" Color="00000000">先頭周期疵からの距離[mm]</TermItem>
+      <TermItem Id="67" Color="00000000">シャーカットからの距離[mm]</TermItem>
+      <TermItem Id="68" Color="00000000">疵グループID</TermItem>
+      <TermItem Id="69" Color="00000000">SCODE(鋼種表面グループ)</TermItem>
+      <TermItem Id="70" Color="00000000">第一段判定疵種ID</TermItem>
+      <TermItem Id="71" Color="00000000">カメラセット毎疵番号</TermItem>
+      <TermItem Id="72" Color="00000000">反対面疵X偏差[mm]</TermItem>
+      <TermItem Id="73" Color="00000000">反対面疵Y偏差[mm]</TermItem>
+      <TermItem Id="74" Color="00000000">反対面疵カメラセット</TermItem>
+      <TermItem Id="75" Color="00000000">反対面疵番号</TermItem>
+      <TermItem Id="76" Color="00000000">反対面疵種ID</TermItem>
+      <TermItem Id="77" Color="00000000">反対面疵グレードID</TermItem>
+      <TermItem Id="85" Color="00000000">縦分解能[mm]</TermItem>
+      <TermItem Id="86" Color="00000000">横分解能[mm]</TermItem>
+      <TermItem Id="88" Color="00000000">表裏識別</TermItem>
+      <TermItem Id="89" Color="00000000">疵中心カメラビット位置(正)</TermItem>
+      <TermItem Id="90" Color="00000000">疵中心カメラビット位置(乱)</TermItem>
+      <TermItem Id="92" Color="00000000">フレーム内画像左上X[mm]</TermItem>
+      <TermItem Id="93" Color="00000000">フレーム内画像左上Y[mm]</TermItem>
+      <TermItem Id="102" Color="00000000">X0からの距離[mm]</TermItem>
+      <TermItem Id="103" Color="00000000">X1からの距離[mm]</TermItem>
+      <TermItem Id="104" Color="00000000">X2からの距離[mm]</TermItem>
+      <TermItem Id="105" Color="00000000">SPM信号状態</TermItem>
+      <TermItem Id="106" Color="00000000">ライン速度[mpm]</TermItem>
+      <TermItem Id="107" Color="00000000">二値縦プロジェクション長[pixel]</TermItem>
+      <TermItem Id="108" Color="00000000">二値横プロジェクション長[pixel]</TermItem>
+      <TermItem Id="109" Color="00000000">フレーム内順位</TermItem>
+      <TermItem Id="110" Color="00000000">スライス特徴黒0(正)</TermItem>
+      <TermItem Id="111" Color="00000000">スライス特徴黒1(正)</TermItem>
+      <TermItem Id="112" Color="00000000">スライス特徴黒2(正)</TermItem>
+      <TermItem Id="113" Color="00000000">スライス特徴黒3(正)</TermItem>
+      <TermItem Id="114" Color="00000000">スライス特徴白0(正)</TermItem>
+      <TermItem Id="115" Color="00000000">スライス特徴白1(正)</TermItem>
+      <TermItem Id="116" Color="00000000">スライス特徴白2(正)</TermItem>
+      <TermItem Id="117" Color="00000000">スライス特徴白3(正)</TermItem>
+      <TermItem Id="118" Color="00000000">スライス特徴黒0(乱)</TermItem>
+      <TermItem Id="119" Color="00000000">スライス特徴黒1(乱)</TermItem>
+      <TermItem Id="120" Color="00000000">スライス特徴黒2(乱)</TermItem>
+      <TermItem Id="121" Color="00000000">スライス特徴黒3(乱)</TermItem>
+      <TermItem Id="122" Color="00000000">スライス特徴白0(乱)</TermItem>
+      <TermItem Id="123" Color="00000000">スライス特徴白1(乱)</TermItem>
+      <TermItem Id="124" Color="00000000">スライス特徴白2(乱)</TermItem>
+      <TermItem Id="125" Color="00000000">スライス特徴白3(乱)</TermItem>
+      <TermItem Id="130" Color="00000000">縦プロジェクション最小(正)</TermItem>
+      <TermItem Id="131" Color="00000000">縦プロジェクション最大(正)</TermItem>
+      <TermItem Id="132" Color="00000000">縦プロジェクション平均(正)</TermItem>
+      <TermItem Id="133" Color="00000000">縦プロジェクション最小(乱)</TermItem>
+      <TermItem Id="134" Color="00000000">縦プロジェクション最大(乱)</TermItem>
+      <TermItem Id="135" Color="00000000">縦プロジェクション平均(乱)</TermItem>
+      <TermItem Id="136" Color="00000000">フレーム内最大疵面積[mm2]</TermItem>
+      <TermItem Id="137" Color="00000000">フレーム内平均疵面積[mm2]</TermItem>
+      <TermItem Id="138" Color="00000000">フレーム内最小疵面積[mm2]</TermItem>
+      <TermItem Id="139" Color="00000000">フレーム内最小輝度平均(正)</TermItem>
+      <TermItem Id="140" Color="00000000">フレーム内最大輝度平均(正)</TermItem>
+      <TermItem Id="141" Color="00000000">フレーム内平均輝度平均(正)</TermItem>
+      <TermItem Id="142" Color="00000000">フレーム内最小輝度平均(乱)</TermItem>
+      <TermItem Id="143" Color="00000000">フレーム内最大輝度平均(乱)</TermItem>
+      <TermItem Id="144" Color="00000000">フレーム内平均輝度平均(乱)</TermItem>
+      <TermItem Id="147" Color="00000000">画素単位面積[pixel]</TermItem>
+      <TermItem Id="150" Color="00000000">画素単位周囲長[pixel]</TermItem>
+      <TermItem Id="151" Color="00000000">画素単位疵丸さ[pixel]</TermItem>
+      <TermItem Id="152" Color="00000000">重心モーメントXX[mm2]</TermItem>
+      <TermItem Id="153" Color="00000000">重心モーメントYY[mm2]</TermItem>
+      <TermItem Id="154" Color="00000000">重心モーメントXY[mm2]</TermItem>
+      <TermItem Id="155" Color="00000000">主軸方向[度]</TermItem>
+      <TermItem Id="156" Color="00000000">主軸長さ[mm]</TermItem>
+      <TermItem Id="157" Color="00000000">第二軸長さ[mm]</TermItem>
+      <TermItem Id="158" Color="00000000">生画像縦平均左右差(正)</TermItem>
+      <TermItem Id="159" Color="00000000">生画像縦平均左右差(乱)</TermItem>
+      <TermItem Id="160" Color="00000000">スライス面積黒0[mm2](正)</TermItem>
+      <TermItem Id="161" Color="00000000">スライス面積黒1[mm2](正)</TermItem>
+      <TermItem Id="162" Color="00000000">スライス面積黒2[mm2](正)</TermItem>
+      <TermItem Id="163" Color="00000000">スライス面積黒3[mm2](正)</TermItem>
+      <TermItem Id="164" Color="00000000">スライス面積白0[mm2](正)</TermItem>
+      <TermItem Id="165" Color="00000000">スライス面積白1[mm2](正)</TermItem>
+      <TermItem Id="166" Color="00000000">スライス面積白2[mm2](正)</TermItem>
+      <TermItem Id="167" Color="00000000">スライス面積白3[mm2](正)</TermItem>
+      <TermItem Id="168" Color="00000000">スライス面積黒0[mm2](乱)</TermItem>
+      <TermItem Id="169" Color="00000000">スライス面積黒1[mm2](乱)</TermItem>
+      <TermItem Id="170" Color="00000000">スライス面積黒2[mm2](乱)</TermItem>
+      <TermItem Id="171" Color="00000000">スライス面積黒3[mm2](乱)</TermItem>
+      <TermItem Id="172" Color="00000000">スライス面積白0[mm2](乱)</TermItem>
+      <TermItem Id="173" Color="00000000">スライス面積白1[mm2](乱)</TermItem>
+      <TermItem Id="174" Color="00000000">スライス面積白2[mm2](乱)</TermItem>
+      <TermItem Id="175" Color="00000000">スライス面積白3[mm2](乱)</TermItem>
+      <TermItem Id="176" Color="00000000">横プロジェクション最小(正)</TermItem>
+      <TermItem Id="177" Color="00000000">横プロジェクション最大(正)</TermItem>
+      <TermItem Id="178" Color="00000000">横プロジェクション平均(正)</TermItem>
+      <TermItem Id="179" Color="00000000">横プロジェクション最小(乱)</TermItem>
+      <TermItem Id="180" Color="00000000">横プロジェクション最大(乱)</TermItem>
+      <TermItem Id="181" Color="00000000">横プロジェクション平均(乱)</TermItem>
+      <TermItem Id="182" Color="00000000">縦プロジェクション最大－最小(正)</TermItem>
+      <TermItem Id="183" Color="00000000">縦プロジェクション最大－最小(乱)</TermItem>
+      <TermItem Id="184" Color="00000000">横プロジェクション最大－最小(正)</TermItem>
+      <TermItem Id="185" Color="00000000">横プロジェクション最大－最小(乱)</TermItem>
+      <TermItem Id="186" Color="00000000">スライス面積総和黒0[mm2](正)</TermItem>
+      <TermItem Id="187" Color="00000000">スライス面積総和黒1[mm2](正)</TermItem>
+      <TermItem Id="188" Color="00000000">スライス面積総和黒2[mm2](正)</TermItem>
+      <TermItem Id="189" Color="00000000">スライス面積総和黒3[mm2](正)</TermItem>
+      <TermItem Id="190" Color="00000000">スライス面積総和白0[mm2](正)</TermItem>
+      <TermItem Id="191" Color="00000000">スライス面積総和白1[mm2](正)</TermItem>
+      <TermItem Id="192" Color="00000000">スライス面積総和白2[mm2](正)</TermItem>
+      <TermItem Id="193" Color="00000000">スライス面積総和白3[mm2](正)</TermItem>
+      <TermItem Id="194" Color="00000000">スライス面積総和黒0[mm2](乱)</TermItem>
+      <TermItem Id="195" Color="00000000">スライス面積総和黒1[mm2](乱)</TermItem>
+      <TermItem Id="196" Color="00000000">スライス面積総和黒2[mm2](乱)</TermItem>
+      <TermItem Id="197" Color="00000000">スライス面積総和黒3[mm2](乱)</TermItem>
+      <TermItem Id="198" Color="00000000">スライス面積総和白0[mm2](乱)</TermItem>
+      <TermItem Id="199" Color="00000000">スライス面積総和白1[mm2](乱)</TermItem>
+      <TermItem Id="200" Color="00000000">スライス面積総和白2[mm2](乱)</TermItem>
+      <TermItem Id="201" Color="00000000">スライス面積総和白3[mm2](乱)</TermItem>
+      <TermItem Id="218" Color="00000000">非零スライス個数黒0(正)</TermItem>
+      <TermItem Id="219" Color="00000000">非零スライス個数黒1(正)</TermItem>
+      <TermItem Id="220" Color="00000000">非零スライス個数黒2(正)</TermItem>
+      <TermItem Id="221" Color="00000000">非零スライス個数黒3(正)</TermItem>
+      <TermItem Id="222" Color="00000000">非零スライス個数白0(正)</TermItem>
+      <TermItem Id="223" Color="00000000">非零スライス個数白1(正)</TermItem>
+      <TermItem Id="224" Color="00000000">非零スライス個数白2(正)</TermItem>
+      <TermItem Id="225" Color="00000000">非零スライス個数白3(正)</TermItem>
+      <TermItem Id="226" Color="00000000">非零スライス個数黒0(乱)</TermItem>
+      <TermItem Id="227" Color="00000000">非零スライス個数黒1(乱)</TermItem>
+      <TermItem Id="228" Color="00000000">非零スライス個数黒2(乱)</TermItem>
+      <TermItem Id="229" Color="00000000">非零スライス個数黒3(乱)</TermItem>
+      <TermItem Id="230" Color="00000000">非零スライス個数白0(乱)</TermItem>
+      <TermItem Id="231" Color="00000000">非零スライス個数白1(乱)</TermItem>
+      <TermItem Id="232" Color="00000000">非零スライス個数白2(乱)</TermItem>
+      <TermItem Id="233" Color="00000000">非零スライス個数白3(乱)</TermItem>
+      <TermItem Id="234" Color="00000000">疵部ヒスト特徴1(正)</TermItem>
+      <TermItem Id="235" Color="00000000">疵部ヒスト特徴2(正)</TermItem>
+      <TermItem Id="236" Color="00000000">疵部ヒスト特徴3(正)</TermItem>
+      <TermItem Id="237" Color="00000000">疵部ヒスト特徴4(正)</TermItem>
+      <TermItem Id="238" Color="00000000">疵部ヒスト特徴5(正)</TermItem>
+      <TermItem Id="239" Color="00000000">疵部ヒストピーク輝度(正)</TermItem>
+      <TermItem Id="240" Color="00000000">疵部ヒストピーク画素数(正)</TermItem>
+      <TermItem Id="241" Color="00000000">疵部ヒスト1/2幅(正)</TermItem>
+      <TermItem Id="242" Color="00000000">疵部ヒスト1/5幅(正)</TermItem>
+      <TermItem Id="243" Color="00000000">疵部ヒスト特徴1(乱)</TermItem>
+      <TermItem Id="244" Color="00000000">疵部ヒスト特徴2(乱)</TermItem>
+      <TermItem Id="245" Color="00000000">疵部ヒスト特徴3(乱)</TermItem>
+      <TermItem Id="246" Color="00000000">疵部ヒスト特徴4(乱)</TermItem>
+      <TermItem Id="247" Color="00000000">疵部ヒスト特徴5(乱)</TermItem>
+      <TermItem Id="248" Color="00000000">疵部ヒストピーク輝度(乱)</TermItem>
+      <TermItem Id="249" Color="00000000">疵部ヒストピーク画素数(乱)</TermItem>
+      <TermItem Id="250" Color="00000000">疵部ヒスト1/2幅(乱)</TermItem>
+      <TermItem Id="251" Color="00000000">疵部ヒスト1/5幅(乱)</TermItem>
+      <TermItem Id="252" Color="00000000">外接ヒスト特徴1(正)</TermItem>
+      <TermItem Id="253" Color="00000000">外接ヒスト特徴2(正)</TermItem>
+      <TermItem Id="254" Color="00000000">外接ヒスト特徴3(正)</TermItem>
+      <TermItem Id="255" Color="00000000">外接ヒスト特徴4(正)</TermItem>
+      <TermItem Id="256" Color="00000000">外接ヒスト特徴5(正)</TermItem>
+      <TermItem Id="257" Color="00000000">外接ヒストピーク輝度(正)</TermItem>
+      <TermItem Id="258" Color="00000000">外接ヒストピーク画素数(正)</TermItem>
+      <TermItem Id="259" Color="00000000">外接ヒスト1/2幅(正)</TermItem>
+      <TermItem Id="260" Color="00000000">外接ヒスト1/5幅(正)</TermItem>
+      <TermItem Id="261" Color="00000000">外接ヒスト特徴1(乱)</TermItem>
+      <TermItem Id="262" Color="00000000">外接ヒスト特徴2(乱)</TermItem>
+      <TermItem Id="263" Color="00000000">外接ヒスト特徴3(乱)</TermItem>
+      <TermItem Id="264" Color="00000000">外接ヒスト特徴4(乱)</TermItem>
+      <TermItem Id="265" Color="00000000">外接ヒスト特徴5(乱)</TermItem>
+      <TermItem Id="266" Color="00000000">外接ヒストピーク輝度(乱)</TermItem>
+      <TermItem Id="267" Color="00000000">外接ヒストピーク画素数(乱)</TermItem>
+      <TermItem Id="268" Color="00000000">外接ヒスト1/2幅(乱)</TermItem>
+      <TermItem Id="269" Color="00000000">外接ヒスト1/5幅(乱)</TermItem>
+      <TermItem Id="270" Color="00000000">生画像フレーム内平均輝度(正)</TermItem>
+      <TermItem Id="271" Color="00000000">生画像フレーム内平均輝度(乱)</TermItem>
+      <TermItem Id="272" Color="00000000">フレーム内重心位置X[mm]</TermItem>
+      <TermItem Id="273" Color="00000000">フレーム内重心位置Y[mm]</TermItem>
+      <TermItem Id="274" Color="00000000">輝度２乗和(正)</TermItem>
+      <TermItem Id="275" Color="00000000">輝度２乗和(乱)</TermItem>
+      <TermItem Id="276" Color="00000000">X座標和[pixel]</TermItem>
+      <TermItem Id="277" Color="00000000">Y座標和[pixel]</TermItem>
+      <TermItem Id="278" Color="00000000">X座標２乗和[pixel]</TermItem>
+      <TermItem Id="279" Color="00000000">Y座標２乗和[pixel]</TermItem>
+      <TermItem Id="280" Color="00000000">XY座標積和[pixel]</TermItem>
+      <TermItem Id="281" Color="00000000">幅方向絶対位置[mm]</TermItem>
+      <TermItem Id="282" Color="00000000">マージ個数</TermItem>
+      <TermItem Id="283" Color="00000000">スライス長さ黒0(正)</TermItem>
+      <TermItem Id="284" Color="00000000">スライス長さ黒1(正)</TermItem>
+      <TermItem Id="285" Color="00000000">スライス長さ黒2(正)</TermItem>
+      <TermItem Id="286" Color="00000000">スライス長さ黒3(正)</TermItem>
+      <TermItem Id="287" Color="00000000">スライス長さ白0(正)</TermItem>
+      <TermItem Id="288" Color="00000000">スライス長さ白1(正)</TermItem>
+      <TermItem Id="289" Color="00000000">スライス長さ白2(正)</TermItem>
+      <TermItem Id="290" Color="00000000">スライス長さ白3(正)</TermItem>
+      <TermItem Id="291" Color="00000000">スライス長さ黒0(乱)</TermItem>
+      <TermItem Id="292" Color="00000000">スライス長さ黒1(乱)</TermItem>
+      <TermItem Id="293" Color="00000000">スライス長さ黒2(乱)</TermItem>
+      <TermItem Id="294" Color="00000000">スライス長さ黒3(乱)</TermItem>
+      <TermItem Id="295" Color="00000000">スライス長さ白0(乱)</TermItem>
+      <TermItem Id="296" Color="00000000">スライス長さ白1(乱)</TermItem>
+      <TermItem Id="297" Color="00000000">スライス長さ白2(乱)</TermItem>
+      <TermItem Id="298" Color="00000000">スライス長さ白3(乱)</TermItem>
+      <TermItem Id="299" Color="00000000">スライス幅黒0(正)</TermItem>
+      <TermItem Id="300" Color="00000000">スライス幅黒1(正)</TermItem>
+      <TermItem Id="301" Color="00000000">スライス幅黒2(正)</TermItem>
+      <TermItem Id="302" Color="00000000">スライス幅黒3(正)</TermItem>
+      <TermItem Id="303" Color="00000000">スライス幅白0(正)</TermItem>
+      <TermItem Id="304" Color="00000000">スライス幅白1(正)</TermItem>
+      <TermItem Id="305" Color="00000000">スライス幅白2(正)</TermItem>
+      <TermItem Id="306" Color="00000000">スライス幅白3(正)</TermItem>
+      <TermItem Id="307" Color="00000000">スライス幅黒0(乱)</TermItem>
+      <TermItem Id="308" Color="00000000">スライス幅黒1(乱)</TermItem>
+      <TermItem Id="309" Color="00000000">スライス幅黒2(乱)</TermItem>
+      <TermItem Id="310" Color="00000000">スライス幅黒3(乱)</TermItem>
+      <TermItem Id="311" Color="00000000">スライス幅白0(乱)</TermItem>
+      <TermItem Id="312" Color="00000000">スライス幅白1(乱)</TermItem>
+      <TermItem Id="313" Color="00000000">スライス幅白2(乱)</TermItem>
+      <TermItem Id="314" Color="00000000">スライス幅白3(乱)</TermItem>
+      <TermItem Id="317" Color="00000000">うねり縦位置σ(正)</TermItem>
+      <TermItem Id="318" Color="00000000">うねり縦輝度σ(正)</TermItem>
+      <TermItem Id="319" Color="00000000">うねり横位置σ(正)</TermItem>
+      <TermItem Id="320" Color="00000000">うねり横輝度σ(正)</TermItem>
+      <TermItem Id="321" Color="00000000">うねり縦位置σ(乱)</TermItem>
+      <TermItem Id="322" Color="00000000">うねり縦輝度σ(乱)</TermItem>
+      <TermItem Id="323" Color="00000000">うねり横位置σ(乱)</TermItem>
+      <TermItem Id="324" Color="00000000">うねり横輝度σ(乱)</TermItem>
+      <TermItem Id="325" Color="00000000">微小疵総個数</TermItem>
+      <TermItem Id="326" Color="00000000">微小疵正白乱白個数</TermItem>
+      <TermItem Id="327" Color="00000000">微小疵正白乱黒個数</TermItem>
+      <TermItem Id="328" Color="00000000">微小疵正黒乱黒個数</TermItem>
+      <TermItem Id="329" Color="00000000">微小疵正黒乱白個数</TermItem>
+      <TermItem Id="330" Color="00000000">微小疵正白乱薄個数</TermItem>
+      <TermItem Id="331" Color="00000000">微小疵正黒乱薄個数</TermItem>
+      <TermItem Id="332" Color="00000000">微小疵正薄乱白個数</TermItem>
+      <TermItem Id="333" Color="00000000">微小疵正薄乱黒個数</TermItem>
+      <TermItem Id="334" Color="00000000">生画像最小輝度(正)</TermItem>
+      <TermItem Id="335" Color="00000000">生画像最大輝度(正)</TermItem>
+      <TermItem Id="336" Color="00000000">生画像平均輝度(正)</TermItem>
+      <TermItem Id="337" Color="00000000">生画像標準偏差(正)</TermItem>
+      <TermItem Id="338" Color="00000000">生画像最小輝度(乱)</TermItem>
+      <TermItem Id="339" Color="00000000">生画像最大輝度(乱)</TermItem>
+      <TermItem Id="340" Color="00000000">生画像平均輝度(乱)</TermItem>
+      <TermItem Id="341" Color="00000000">生画像標準偏差(乱)</TermItem>
+      <TermItem Id="342" Color="00000000">フレーム内輝度標準偏差(正)</TermItem>
+      <TermItem Id="343" Color="00000000">フレーム内輝度標準偏差(乱)</TermItem>
+      <TermItem Id="344" Color="00000000">生画像フレーム内輝度標準偏差(正)</TermItem>
+      <TermItem Id="345" Color="00000000">生画像フレーム内輝度標準偏差(乱)</TermItem>
+      <TermItem Id="346" Color="00000000">上辺輝度(正)</TermItem>
+      <TermItem Id="347" Color="00000000">下辺輝度(正)</TermItem>
+      <TermItem Id="348" Color="00000000">左辺輝度(正)</TermItem>
+      <TermItem Id="349" Color="00000000">右辺輝度(正)</TermItem>
+      <TermItem Id="350" Color="00000000">上辺輝度(乱)</TermItem>
+      <TermItem Id="351" Color="00000000">下辺輝度(乱)</TermItem>
+      <TermItem Id="352" Color="00000000">左辺輝度(乱)</TermItem>
+      <TermItem Id="353" Color="00000000">右辺輝度(乱)</TermItem>
+      <TermItem Id="354" Color="00000000">生画像上辺輝度(正)</TermItem>
+      <TermItem Id="355" Color="00000000">生画像下辺輝度(正)</TermItem>
+      <TermItem Id="356" Color="00000000">生画像左辺輝度(正)</TermItem>
+      <TermItem Id="357" Color="00000000">生画像右辺輝度(正)</TermItem>
+      <TermItem Id="358" Color="00000000">生画像上辺輝度(乱)</TermItem>
+      <TermItem Id="359" Color="00000000">生画像下辺輝度(乱)</TermItem>
+      <TermItem Id="360" Color="00000000">生画像左辺輝度(乱)</TermItem>
+      <TermItem Id="361" Color="00000000">生画像右辺輝度(乱)</TermItem>
+      <TermItem Id="362" Color="00000000">生画像輝度２乗和(正)</TermItem>
+      <TermItem Id="363" Color="00000000">生画像輝度２乗和(乱)</TermItem>
+      <TermItem Id="364" Color="00000000">画像ズレ量X(正)</TermItem>
+      <TermItem Id="365" Color="00000000">画像ズレ量Y(正)</TermItem>
+      <TermItem Id="366" Color="00000000">画像ズレ相関係数(正)</TermItem>
+      <TermItem Id="367" Color="00000000">画像ズレ量X(乱)</TermItem>
+      <TermItem Id="368" Color="00000000">画像ズレ量Y(乱)</TermItem>
+      <TermItem Id="369" Color="00000000">画像ズレ相関係数(乱)</TermItem>
+      <TermItem Id="370" Color="00000000">最大輝度X座標[pixel](正)</TermItem>
+      <TermItem Id="371" Color="00000000">最大輝度Y座標[pixel](正)</TermItem>
+      <TermItem Id="372" Color="00000000">最小輝度X座標[pixel](正)</TermItem>
+      <TermItem Id="373" Color="00000000">最小輝度Y座標[pixel](正)</TermItem>
+      <TermItem Id="374" Color="00000000">最大輝度X座標[pixel](乱)</TermItem>
+      <TermItem Id="375" Color="00000000">最大輝度Y座標[pixel](乱)</TermItem>
+      <TermItem Id="376" Color="00000000">最小輝度X座標[pixel](乱)</TermItem>
+      <TermItem Id="377" Color="00000000">最小輝度Y座標[pixel](乱)</TermItem>
+      <TermItem Id="378" Color="00000000">縦proj第一正ピーク(正)</TermItem>
+      <TermItem Id="379" Color="00000000">縦proj第二正ピーク(正)</TermItem>
+      <TermItem Id="380" Color="00000000">縦proj正ピーク間距離[pixel](正)</TermItem>
+      <TermItem Id="381" Color="00000000">縦proj正ピーク間最小(正)</TermItem>
+      <TermItem Id="382" Color="00000000">縦proj第一負ピーク(正)</TermItem>
+      <TermItem Id="383" Color="00000000">縦proj第二負ピーク(正)</TermItem>
+      <TermItem Id="384" Color="00000000">縦proj負ピーク間距離[pixel](正)</TermItem>
+      <TermItem Id="385" Color="00000000">縦proj負ピーク間最大(正)</TermItem>
+      <TermItem Id="386" Color="00000000">縦proj第一正ピーク(乱)</TermItem>
+      <TermItem Id="387" Color="00000000">縦proj第二正ピーク(乱)</TermItem>
+      <TermItem Id="388" Color="00000000">縦proj正ピーク間距離[pixel](乱)</TermItem>
+      <TermItem Id="389" Color="00000000">縦proj正ピーク間最小(乱)</TermItem>
+      <TermItem Id="390" Color="00000000">縦proj第一負ピーク(乱)</TermItem>
+      <TermItem Id="391" Color="00000000">縦proj第二負ピーク(乱)</TermItem>
+      <TermItem Id="392" Color="00000000">縦proj負ピーク間距離[pixel](乱)</TermItem>
+      <TermItem Id="393" Color="00000000">縦proj負ピーク間最大(乱)</TermItem>
+      <TermItem Id="401" Color="00000000">計算特徴量1</TermItem>
+      <TermItem Id="402" Color="00000000">計算特徴量2</TermItem>
+      <TermItem Id="403" Color="00000000">計算特徴量3</TermItem>
+      <TermItem Id="404" Color="00000000">計算特徴量4</TermItem>
+      <TermItem Id="405" Color="00000000">計算特徴量5</TermItem>
+      <TermItem Id="406" Color="00000000">計算特徴量6</TermItem>
+      <TermItem Id="407" Color="00000000">計算特徴量7</TermItem>
+      <TermItem Id="408" Color="00000000">計算特徴量8</TermItem>
+      <TermItem Id="409" Color="00000000">Ｃ～左エッジへの疵位置[mm]</TermItem>
+      <TermItem Id="410" Color="00000000">Ｃ～右エッジへの疵位置[mm]</TermItem>
+      <TermItem Id="411" Color="00000000">(正最大-最小)+(乱最大-最小輝度)</TermItem>
+      <TermItem Id="412" Color="00000000">幅[mm]*(正最大-最小輝度)</TermItem>
+      <TermItem Id="413" Color="00000000">幅[mm]*(乱最大-最小輝度)</TermItem>
+      <TermItem Id="414" Color="00000000">幅[mm]*[(正最大-最小)+(乱最大-最小)]</TermItem>
+      <TermItem Id="415" Color="00000000">長さ[mm]*(正最大-最小輝度)</TermItem>
+      <TermItem Id="416" Color="00000000">長さ[mm]*(乱最大-最小輝度)</TermItem>
+      <TermItem Id="417" Color="00000000">長さ[mm]*[(正最大-最小)+(乱最大-最小)]</TermItem>
+      <TermItem Id="418" Color="00000000">面積[mm2]*(正最大-最小輝度)</TermItem>
+      <TermItem Id="419" Color="00000000">面積[mm2]*(乱最大-最小輝度)</TermItem>
+      <TermItem Id="420" Color="00000000">面積[mm2]*[(正最大-最小)+(乱最大-最小)]</TermItem>
+      <TermItem Id="421" Color="00000000">計算特徴量11</TermItem>
+      <TermItem Id="422" Color="00000000">計算特徴量12</TermItem>
+      <TermItem Id="423" Color="00000000">計算特徴量13</TermItem>
+      <TermItem Id="424" Color="00000000">計算特徴量14</TermItem>
+      <TermItem Id="425" Color="00000000">計算特徴量15</TermItem>
+      <TermItem Id="426" Color="00000000">計算特徴量16</TermItem>
+      <TermItem Id="427" Color="00000000">計算特徴量17</TermItem>
+      <TermItem Id="428" Color="00000000">計算特徴量18</TermItem>
+      <TermItem Id="429" Color="00000000">計算特徴量19</TermItem>
+      <TermItem Id="430" Color="00000000">計算特徴量20</TermItem>
+      <TermItem Id="431" Color="00000000">計算特徴量21</TermItem>
+      <TermItem Id="432" Color="00000000">計算特徴量22</TermItem>
+      <TermItem Id="433" Color="00000000">計算特徴量23</TermItem>
+      <TermItem Id="434" Color="00000000">計算特徴量24</TermItem>
+      <TermItem Id="435" Color="00000000">計算特徴量25</TermItem>
+      <TermItem Id="436" Color="00000000">計算特徴量26</TermItem>
+      <TermItem Id="437" Color="00000000">計算特徴量27</TermItem>
+      <TermItem Id="438" Color="00000000">計算特徴量28</TermItem>
+      <TermItem Id="439" Color="00000000">計算特徴量29</TermItem>
+      <TermItem Id="440" Color="00000000">計算特徴量30</TermItem>
+      <TermItem Id="441" Color="00000000">計算特徴量31</TermItem>
+      <TermItem Id="442" Color="00000000">計算特徴量32</TermItem>
+      <TermItem Id="443" Color="00000000">計算特徴量33</TermItem>
+      <TermItem Id="444" Color="00000000">計算特徴量34</TermItem>
+      <TermItem Id="445" Color="00000000">計算特徴量35</TermItem>
+      <TermItem Id="446" Color="00000000">計算特徴量36</TermItem>
+      <TermItem Id="447" Color="00000000">計算特徴量37</TermItem>
+      <TermItem Id="448" Color="00000000">計算特徴量38</TermItem>
+      <TermItem Id="449" Color="00000000">計算特徴量39</TermItem>
+      <TermItem Id="450" Color="00000000">計算特徴量40</TermItem>
+      <TermItem Id="451" Color="00000000">計算特徴量41</TermItem>
+      <TermItem Id="452" Color="00000000">計算特徴量42</TermItem>
+      <TermItem Id="453" Color="00000000">計算特徴量43</TermItem>
+      <TermItem Id="454" Color="00000000">計算特徴量44</TermItem>
+      <TermItem Id="455" Color="00000000">計算特徴量45</TermItem>
+      <TermItem Id="456" Color="00000000">計算特徴量46</TermItem>
+      <TermItem Id="457" Color="00000000">計算特徴量47</TermItem>
+      <TermItem Id="458" Color="00000000">計算特徴量48</TermItem>
+      <TermItem Id="459" Color="00000000">計算特徴量49</TermItem>
+      <TermItem Id="460" Color="00000000">計算特徴量50</TermItem>
+      <TermItem Id="501" Color="00000000">材料板幅(mm)</TermItem>
+      <TermItem Id="502" Color="00000000">現工程トリム幅(mm)</TermItem>
+      <TermItem Id="506" Color="00000000">送信位置</TermItem>
+      <TermItem Id="509" Color="00000000">注文板厚(μm)</TermItem>
+      <TermItem Id="511" Color="00000000">注文板幅(mm)</TermItem>
+      <TermItem Id="512" Color="00000000">SPM伸び率(10-2%)</TermItem>
+      <TermItem Id="513" Color="00000000">TLV伸び率(10-2%)</TermItem>
+      <TermItem Id="516" Color="00000000">入側フロント端板長さ(mm)</TermItem>
+      <TermItem Id="517" Color="00000000">入側テール端板長さ(mm)</TermItem>
+      <TermItem Id="523" Color="00000000">コイル長(m)</TermItem>
+      <TermItem Id="524" Color="00000000">材料板厚(mm)</TermItem>
+      <TermItem Id="542" Color="00000000">SPMワークロール径上(10-1mm)</TermItem>
+      <TermItem Id="543" Color="00000000">SPMワークロール径下(10-1mm)</TermItem>
+      <TermItem Id="700" Color="00000000">周期疵多重度</TermItem>
+      <TermItem Id="701" Color="00000000">圧下ONOFF</TermItem>
+      <TermItem Id="702" Color="00000000">同期加算index</TermItem>
+      <TermItem Id="703" Color="00000000">同期加算最大輝度</TermItem>
+      <TermItem Id="704" Color="00000000">同期加算最小輝度</TermItem>
+      <TermItem Id="705" Color="00000000">同期加算最大輝度平均</TermItem>
+      <TermItem Id="706" Color="00000000">同期加算最小輝度平均</TermItem>
+    </NumericFeatureNames>
+    <StringFeatureNames>
+      <TermItem Id="500" Color="00000000">生産No.</TermItem>
+      <TermItem Id="503" Color="00000000">検査基準_表</TermItem>
+      <TermItem Id="504" Color="00000000">品種</TermItem>
+      <TermItem Id="505" Color="00000000">命令No.</TermItem>
+      <TermItem Id="507" Color="00000000">メッキ種類</TermItem>
+      <TermItem Id="508" Color="00000000">主材質</TermItem>
+      <TermItem Id="510" Color="00000000">目付規格</TermItem>
+      <TermItem Id="514" Color="00000000">Ni付着量</TermItem>
+      <TermItem Id="515" Color="00000000">TCMロール粗度区分</TermItem>
+      <TermItem Id="519" Color="00000000">SPM圧下有無</TermItem>
+      <TermItem Id="520" Color="00000000">検査基準_裏</TermItem>
+      <TermItem Id="521" Color="00000000">クロメート命令_種類</TermItem>
+      <TermItem Id="522" Color="00000000">クロメート命令_有無</TermItem>
+      <TermItem Id="525" Color="00000000">ディファレンシャルマーク</TermItem>
+      <TermItem Id="526" Color="00000000">原板区分</TermItem>
+      <TermItem Id="527" Color="00000000">メッキサイクル</TermItem>
+      <TermItem Id="528" Color="00000000">レベラー_インラインSPM</TermItem>
+      <TermItem Id="529" Color="00000000">化学処理塗油</TermItem>
+      <TermItem Id="530" Color="00000000">オフラインSPM圧下率</TermItem>
+      <TermItem Id="531" Color="00000000">メッキ区分</TermItem>
+      <TermItem Id="532" Color="00000000">表面処理1桁目</TermItem>
+      <TermItem Id="533" Color="00000000">表面処理2桁目</TermItem>
+      <TermItem Id="534" Color="00000000">塗油</TermItem>
+      <TermItem Id="535" Color="00000000">工程記号予備</TermItem>
+      <TermItem Id="536" Color="00000000">CAPL主材質</TermItem>
+      <TermItem Id="537" Color="00000000">計画次工程コード</TermItem>
+      <TermItem Id="538" Color="00000000">向先</TermItem>
+      <TermItem Id="539" Color="00000000">用途</TermItem>
+      <TermItem Id="540" Color="00000000">CAPL表面仕上げ</TermItem>
+      <TermItem Id="541" Color="00000000">CAPL酸洗有無</TermItem>
+    </StringFeatureNames>
+  </TermList>
+  <Diagram Version="1.1">
+    <Module Name="最上位レベル">
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <Size>
+        <W>45</W>
+        <H>50</H>
+      </Size>
+      <Sizable>True</Sizable>
+      <FillColor>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </FillColor>
+      <Shape>26</Shape>
+      <LineWidth>1</LineWidth>
+      <LineColor>
+        <R>0</R>
+        <G>0</G>
+        <B>0</B>
+      </LineColor>
+      <Links N="3">
+        <Link SrcElement="スタートポイント_0" SrcOutPortIndex="0" DestElement="LogicTable_0" DestInPortIndex="0" />
+        <Link SrcElement="LogicTable_0" SrcOutPortIndex="0" DestElement="LogicTable_1" DestInPortIndex="0" />
+        <Link SrcElement="LogicTable_0" SrcOutPortIndex="1" DestElement="LogicTable_1_0" DestInPortIndex="0" />
+      </Links>
+      <Elements N="4">
+        <Element ElementClass="startpoint" Name="スタートポイント_0">
+          <Location>
+            <X>68</X>
+            <Y>121</Y>
+          </Location>
+          <Size>
+            <W>45</W>
+            <H>50</H>
+          </Size>
+          <Sizable>False</Sizable>
+          <FillColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+          </FillColor>
+          <Shape>11</Shape>
+          <LineWidth>1</LineWidth>
+          <LineColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </LineColor>
+          <InPorts N="0" />
+          <OutPorts N="1">
+            <OutPort Name="out" />
+          </OutPorts>
+          <Context>
+            <StartPoint />
+          </Context>
+        </Element>
+        <Element ElementClass="logictable" Name="LogicTable_0">
+          <Location>
+            <X>206</X>
+            <Y>63</Y>
+          </Location>
+          <Size>
+            <W>126</W>
+            <H>146</H>
+          </Size>
+          <Sizable>True</Sizable>
+          <FillColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+          </FillColor>
+          <Shape>36</Shape>
+          <LineWidth>1</LineWidth>
+          <LineColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </LineColor>
+          <InPorts N="1">
+            <InPort Name="in" />
+          </InPorts>
+          <OutPorts N="2">
+            <OutPort Name="ｽﾘﾊﾞｰ" />
+            <OutPort Name="無害Gr" />
+          </OutPorts>
+          <Context>
+            <PortMap N="2">
+              <Port>2</Port>
+              <Port>82</Port>
+            </PortMap>
+            <LogicTable Version="1.0" ClassType="DefectType">
+              <Comment />
+              <Columns N="2">
+                <NumericColumn FeatureNum="1" />
+                <NumericColumn FeatureNum="2" />
+              </Columns>
+              <Rows N="2">
+                <Row ClassNum="2" N="0" />
+                <Row ClassNum="82" N="0" />
+              </Rows>
+            </LogicTable>
+          </Context>
+        </Element>
+        <Element ElementClass="logictable" Name="LogicTable_1">
+          <Location>
+            <X>426</X>
+            <Y>26</Y>
+          </Location>
+          <Size>
+            <W>106</W>
+            <H>142</H>
+          </Size>
+          <Sizable>True</Sizable>
+          <FillColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+          </FillColor>
+          <Shape>36</Shape>
+          <LineWidth>1</LineWidth>
+          <LineColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </LineColor>
+          <InPorts N="1">
+            <InPort Name="in" />
+          </InPorts>
+          <OutPorts N="2">
+            <OutPort Name="Gr5" />
+            <OutPort Name="Gr1" />
+          </OutPorts>
+          <Context>
+            <PortMap N="2">
+              <Port>15</Port>
+              <Port>11</Port>
+            </PortMap>
+            <LogicTable Version="1.0" ClassType="DefectSevirity">
+              <Comment />
+              <Columns N="1">
+                <NumericColumn FeatureNum="2" />
+              </Columns>
+              <Rows N="2">
+                <Row ClassNum="15" N="0" />
+                <Row ClassNum="11" N="0" />
+              </Rows>
+            </LogicTable>
+          </Context>
+        </Element>
+        <Element ElementClass="logictable" Name="LogicTable_1_0">
+          <Location>
+            <X>434</X>
+            <Y>176</Y>
+          </Location>
+          <Size>
+            <W>106</W>
+            <H>142</H>
+          </Size>
+          <Sizable>True</Sizable>
+          <FillColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+          </FillColor>
+          <Shape>36</Shape>
+          <LineWidth>1</LineWidth>
+          <LineColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </LineColor>
+          <InPorts N="1">
+            <InPort Name="in" />
+          </InPorts>
+          <OutPorts N="1">
+            <OutPort Name="Gr1" />
+          </OutPorts>
+          <Context>
+            <PortMap N="1">
+              <Port>11</Port>
+            </PortMap>
+            <LogicTable Version="1.0" ClassType="DefectSevirity">
+              <Comment />
+              <Columns N="1">
+                <NumericColumn FeatureNum="2" />
+              </Columns>
+              <Rows N="2">
+                <Row ClassNum="11" N="0" />
+                <Row ClassNum="11" N="0" />
+              </Rows>
+            </LogicTable>
+          </Context>
+        </Element>
+      </Elements>
+    </Module>
+  </Diagram>
+</ClassifierDiag>

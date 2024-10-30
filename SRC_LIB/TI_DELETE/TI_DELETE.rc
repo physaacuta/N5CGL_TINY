@@ -1,0 +1,204 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\TI_DELETE.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TI_DELETE.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TI_DELETE_DIALOG DIALOGEX 0, 0, 366, 213
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DB容量管理 [TI_DELETE]"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "強制終了",IDOK,312,4,50,16
+    LISTBOX         IDC_LIST1,0,68,364,144,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "DB容量管理",IDC_STATIC,124,8,88,52
+    LTEXT           "総容量",IDC_STATIC,128,24,24,8
+    LTEXT           "空き容量",IDC_STATIC,128,36,28,8
+    LTEXT           "空き率",IDC_STATIC,128,48,24,8
+    EDITTEXT        IDC_HDD_TOTAL,156,20,28,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_HDD_FREE,156,32,28,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_HDD_RITU,156,44,28,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "[GByte]",IDC_STATIC,184,24,24,8
+    LTEXT           "[GByte]",IDC_STATIC,184,36,24,8
+    LTEXT           "[％]",IDC_STATIC,184,48,24,8
+    GROUPBOX        "スレッド状態",IDC_STATIC,216,8,88,52
+    LTEXT           "03",IDC_STATIC,220,44,12,12,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "02",IDC_STATIC,220,32,12,12,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "01",IDC_STATIC,220,20,12,12,WS_BORDER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_TH_1,232,20,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TH_2,232,32,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TH_3,232,44,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "06",IDC_STATIC,248,44,12,12,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "05",IDC_STATIC,248,32,12,12,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "04",IDC_STATIC,248,20,12,12,WS_BORDER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_TH_4,260,20,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TH_5,260,32,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TH_6,260,44,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "09",IDC_STATIC,276,44,12,12,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "08",IDC_STATIC,276,32,12,12,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "07",IDC_STATIC,276,20,12,12,WS_BORDER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_TH_7,288,20,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TH_8,288,32,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TH_9,288,44,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "削除優先",IDC_STATIC,4,44,44,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STATE_DELETE,48,44,32,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "設定情報",IDC_STATIC,0,0,308,64
+    LTEXT           "設定Session",IDC_STATIC,4,12,44,12,WS_BORDER,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_CMB_DISP,48,12,68,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "読込セッション",IDC_STATIC,4,32,44,12,WS_BORDER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_DSP_ODBC,48,32,64,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "定周期スレッド",IDC_STATIC,312,32,44,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_TH_0,312,44,12,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,1,4,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "3.1.3.0"
+            VALUE "InternalName", "TI_DELETE.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "TI_DELETE.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TI_DELETE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\TI_DELETE.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

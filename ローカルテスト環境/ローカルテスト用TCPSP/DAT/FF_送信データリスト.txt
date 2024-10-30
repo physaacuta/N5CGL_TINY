@@ -1,0 +1,7 @@
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\FF_実績応答_表.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\FF_実績応答_裏.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\FF_検査状態応答_表.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\FF_検査状態応答_裏.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\FF_前工程_表.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\FF_前工程_裏.bin
+C:\N5CGL_TINY\ローカルテスト環境\ローカルテスト用TCPSP\BIN\FF_ヘルシー.bin

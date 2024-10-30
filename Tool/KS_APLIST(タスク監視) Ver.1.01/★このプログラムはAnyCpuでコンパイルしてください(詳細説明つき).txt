@@ -1,0 +1,15 @@
+タスク管理ツール「KS_APLIST」は、
+ProcessクラスのGetProcessesメソッドを使ってローカルコンピュータ上で実行されているすべてのプロセスを取得しています。
+
+このコード「GetProcesses」は、
+プラットフォームターゲット「x86」でビルドした実行ファイルを64ビット環境で実行すると、
+Process.MainModuleプロパティを呼び出す箇所でエラーが発生（例外Win32Exceptionをスロー）しプロセスが取得できないことが判りました。
+4PLは、64bit環境
+なおRCLは、32bit環境
+
+これを回避する対策として、プラットフォームターゲットを「Any CPU」にしてコンパイルすることで
+64bit環境でも問題なくプロセスを取得できることを確認いたしました。
+
+＜参考URL＞
+http://dobon.net/vb/dotnet/process/getprocesses.html
+

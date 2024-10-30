@@ -1,0 +1,7 @@
+C:\NCTL\Tool\通信TCPIPテスト環境一式\TO_PROCON\(0)伝文レスポンス.bin
+C:\NCTL\Tool\通信TCPIPテスト環境一式\TO_PROCON\①Rイニシャル伝文.bin
+C:\NCTL\Tool\通信TCPIPテスト環境一式\TO_PROCON\②Rコイル情報伝文.bin
+C:\NCTL\Tool\通信TCPIPテスト環境一式\TO_PROCON\④R格付実績伝文.bin
+C:\NCTL\Tool\通信TCPIPテスト環境一式\TO_PROCON\⑤R採寸実績伝文.bin
+C:\NCTL\Tool\通信TCPIPテスト環境一式\TO_PROCON\⑥SRヘルシー伝文.bin
+C:\NCTL\Tool\通信TCPIPテスト環境一式\TO_PROCON\⑦Rテスト伝文(PC→検査装置).bin

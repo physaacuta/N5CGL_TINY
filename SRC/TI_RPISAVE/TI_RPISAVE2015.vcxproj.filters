@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Auto">
+      <UniqueIdentifier>{900dc222-8951-4ed9-ac2e-d3e1c2896b94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\WorkThread">
+      <UniqueIdentifier>{2ee0f049-4f56-46e0-929c-8872d96de68c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Auto">
+      <UniqueIdentifier>{cc569acb-61c3-4d99-b773-cfe61eb972e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\WorkThread">
+      <UniqueIdentifier>{2a2d8c6e-869c-4d7e-ae2e-897a6537737f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\共通ヘッダ">
+      <UniqueIdentifier>{fa5fb9c3-7a69-4153-a5b9-05c2f0adfa28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Proc">
+      <UniqueIdentifier>{fc812af8-f72b-4a65-8ce3-1c0b17d2bb46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proc\Common">
+      <UniqueIdentifier>{7b908b4b-483e-42e6-815c-0aa635dc5cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="librpi">
+      <UniqueIdentifier>{7bbf179a-f85a-49f1-8eab-3f801fbb1236}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainInctance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="TI_RPISAVE.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="TI_RPISAVEDlg.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="HddManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="RpiFileManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LibPG\Lac\LacManager.cpp">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClCompile>
+    <ClCompile Include="CoilControlProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="DispProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameDataManager.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgBufProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgCompProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgSyncProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgUnionProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="RpiControlProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="RpiWriteProc.cpp">
+      <Filter>Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LibPG\LibRpi\rpi_impl.cpp">
+      <Filter>librpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LibPG\LibRpi\RpiWriter.cpp">
+      <Filter>librpi</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyFrame.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainConst.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInctance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TI_RPISAVE.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TI_RPISAVEDlg.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="HddManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="RpiFileManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LibPG\Lac\LacManager.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\OutIF_HT_RAW.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="CoilControlProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="DispProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameDataManager.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgBufProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgCompProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgSyncProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgUnionProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="RpiControlProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="RpiWriteProc.h">
+      <Filter>Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessQueImpl.h">
+      <Filter>Proc\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessQueThread.h">
+      <Filter>Proc\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LibPG\LibRpi\rpi.h">
+      <Filter>librpi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LibPG\LibRpi\rpi_impl.h">
+      <Filter>librpi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LibPG\LibRpi\RpiWriter.h">
+      <Filter>librpi</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyFrame.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaAlloc.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TI_RPISAVE.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TI_RPISAVE.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TI_RPISAVE.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Auto">
+      <UniqueIdentifier>{f7c6dc2b-4e17-403c-94ee-0abcf6ad50ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Auto">
+      <UniqueIdentifier>{2cc86e8d-1c4f-4a0a-a5be-f9fee6a9e3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Function">
+      <UniqueIdentifier>{a62d26f6-5216-4fad-b644-09144a5e4df8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\完全流用クラス">
+      <UniqueIdentifier>{ef038f7c-13e7-4503-bdc0-751e0221257b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\WorkThread">
+      <UniqueIdentifier>{36c3ea07-dc96-4f40-bcfe-eba1e76d25c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\完全流用ベース">
+      <UniqueIdentifier>{0a97e9d6-8b01-45bd-b462-151f1c3cc464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Function">
+      <UniqueIdentifier>{736d88c0-5264-4a79-bee2-f66384d49285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\WorkThread">
+      <UniqueIdentifier>{5be65fb7-3147-4f56-8808-dac3be8b8f98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\完全流用ベース">
+      <UniqueIdentifier>{3277a67e-aafd-4f07-8de0-ebeadfd5689f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\共通ヘッダ">
+      <UniqueIdentifier>{931bd67f-0a80-4c0f-97c6-d2a1c82ce265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\完全流用クラス">
+      <UniqueIdentifier>{e08b8acd-1b92-4a8d-b66b-178080c5ab46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\共通ヘッダ\EPC">
+      <UniqueIdentifier>{4660df95-4c45-473f-bf15-57a2cd9e363a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TO_DEFECT.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TO_DEFECTDlg.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="MainConst.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\EPC\NCL2attr.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ\EPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\EPC\NCL2DETECT_if.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ\EPC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\HyTbl.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuCommonSelect.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LibSelect.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LineCommon.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\OutIF_HT_RAW.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\OutInterface.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\ToHtCommon.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBaseManager.h">
+      <Filter>ヘッダー ファイル\完全流用ベース</Filter>
+    </ClInclude>
+    <ClInclude Include="CoilBaseManager.h">
+      <Filter>ヘッダー ファイル\完全流用ベース</Filter>
+    </ClInclude>
+    <ClInclude Include="DbBaseManager.h">
+      <Filter>ヘッダー ファイル\完全流用ベース</Filter>
+    </ClInclude>
+    <ClInclude Include="HtRecvBaseManager.h">
+      <Filter>ヘッダー ファイル\完全流用ベース</Filter>
+    </ClInclude>
+    <ClInclude Include="WarpMatchImage.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="EdgePosControl.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="IfRpiSave.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="IPortViewerManager.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeManager.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="SListBox.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="SogyoManager.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusLogFunc.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="ToOutMailSender.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInstance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DBManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="OpSendFunc.h">
+      <Filter>ヘッダー ファイル\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackingFrame.h">
+      <Filter>ヘッダー ファイル\完全流用クラス</Filter>
+    </ClInclude>
+    <ClInclude Include="MaeManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="CoilManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="PlgManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="SeqFrameRecv.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="DmemManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="HtRecv.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="DefectDumpManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmeManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="CamLinkSpeedManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSender.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="EdgeRestrictSender.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\OutIF_KizuCollabo.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuCommon.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="BcpSaveManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="ToLinkswUtil.h">
+      <Filter>ヘッダー ファイル\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicParaRunFunc.h">
+      <Filter>ヘッダー ファイル\Function</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="TO_DEFECT.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="TO_DEFECTDlg.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBaseManager.cpp">
+      <Filter>ソース ファイル\完全流用ベース</Filter>
+    </ClCompile>
+    <ClCompile Include="CoilBaseManager.cpp">
+      <Filter>ソース ファイル\完全流用ベース</Filter>
+    </ClCompile>
+    <ClCompile Include="DbBaseManager.cpp">
+      <Filter>ソース ファイル\完全流用ベース</Filter>
+    </ClCompile>
+    <ClCompile Include="HtRecvBaseManager.cpp">
+      <Filter>ソース ファイル\完全流用ベース</Filter>
+    </ClCompile>
+    <ClCompile Include="ToOutMailSender.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="WarpMatchImage.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="IfRpiSave.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="IPortViewerManager.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeManager.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="SListBox.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="SogyoManager.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusLogFunc.cpp">
+      <Filter>ソース ファイル\完全流用クラス</Filter>
+    </ClCompile>
+    <ClCompile Include="MainInstance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DBManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="OpSendFunc.cpp">
+      <Filter>ソース ファイル\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="MaeManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="CoilManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="PlgManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="SeqFrameRecv.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="DmemManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="HtRecv.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="DefectDumpManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmeManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeRestrictSender.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="CamLinkSpeedManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSender.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgePosControl.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="BcpSaveManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="ToLinkswUtil.cpp">
+      <Filter>ソース ファイル\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicParaRunFunc.cpp">
+      <Filter>ソース ファイル\Function</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TO_DEFECT.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TO_DEFECT.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TO_DEFECT.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

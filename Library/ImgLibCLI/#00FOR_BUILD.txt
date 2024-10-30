@@ -1,0 +1,6 @@
+ImgLibCLIについて。
+
+Net2用のDLLは、VS2005でのみ可能。
+VS 2010, 2015ではNet4用のDLLができる。
+
+

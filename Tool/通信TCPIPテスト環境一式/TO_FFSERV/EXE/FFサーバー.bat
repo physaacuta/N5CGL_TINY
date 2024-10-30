@@ -1,0 +1,1 @@
+start .\Tcp_spVer4.24β.exe .\FFサーバー(NCTL).dat

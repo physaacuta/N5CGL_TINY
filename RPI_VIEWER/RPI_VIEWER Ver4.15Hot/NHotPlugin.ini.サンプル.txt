@@ -1,0 +1,31 @@
+#熱延系統ロール
+[HotRoll]
+HM1=100
+HM2=200
+HM3=300
+RRM1=400
+RRM2=500
+RRM3=600
+RRM4=700
+
+#RRM5のロール長.単位はmm
+RRM5=800
+#RRM5の入側材料厚み.単位はum
+RRM5.umAtu = 6000
+
+R5=900
+
+#他ライン系統ロール
+
+[RefRoll]
+#名前=長さ(mm)
+#名前は任意。
+3PL.MILL1 = 3000
+3PL.MILL2 = 6000
+
+
+[DrawRollPitch]
+FontSize=16
+LineWidth=1
+LineStyle=0
+GlobalFunctionKey=0

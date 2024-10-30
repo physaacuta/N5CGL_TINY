@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Auto">
+      <UniqueIdentifier>{21a73f0e-f284-4182-9557-348a0fc84e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Auto">
+      <UniqueIdentifier>{721a62f6-4a92-45e8-b304-4bea2e52232e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\WorkThread">
+      <UniqueIdentifier>{157380ac-ebe1-40fc-8441-0efaad86fadc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\WorkThread">
+      <UniqueIdentifier>{16ef96ef-0d68-464e-991a-e2640d5e43ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\共通ヘッダ">
+      <UniqueIdentifier>{fb9a993a-d853-4061-89eb-537d3c0bbee8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TI_TEST.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TI_TESTDlg.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInctance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainConst.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CullManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="TestManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuCommon.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LineCommon.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TI_TEST.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="TI_TESTDlg.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="MainInctance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CullManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="TestManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TI_TEST.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TI_TEST.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TI_TEST.ico">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,207 @@
+[RPI_VIEWER]
+# 開発フラグ (開発時:1) ※開発時は、左欄の詳細情報表示可能
+DEBUG = 1
+# 制約 (0無し 1:サンプル公開 9)
+LOCK=1
+
+
+
+##########################################################################################
+# 基本方針
+
+# 描画方式 (0:API  1:ImgLibCLI)
+DRAW_MODE=0
+# 描画方式 (0:低画質(早い)  1:高画質(非常に重い))
+DRAW_QUARITY=0
+
+# 先読みバッファ数
+RESV_NUM_PER  = 2
+RESV_NUM_NEXT = 12
+# 並列処理スレッド数 (１～：その数固定。CPUスレッドよりも多い場合は、CPUスレッド数-1まで)
+EXEC_THREAD_NUM = 10
+# 描画周期 (0:最速 1:普通 2:ゆっくり) ※ 早ければCPUパワーが必要。あまりCPUが無いやつでは難しい
+DISP_INTERVAL = 0
+
+
+# 疵接近ランプ
+OPT_RANP = 0
+# 自動減速
+OPT_AUTODOWN = 0
+# ジャンプ画面 ※ジャンプファンクションは有効
+OPT_JUMP=0
+# 任意選択
+OPT_KIRIINPUT=0
+# 各種設定画面
+OPT_SETTING=0
+# 位置連携(手入力)
+OPT_INTPU_LIST=1
+
+# 位置連携用保存フォルダ (相対パス許可)  ※最後の\必須
+INPUT_LIST_PATH=".\INPUT_LIST\"
+
+##########################################################################################
+# MailSlot設定
+# メールスロット受付 (0:受信無し  1:受信有り)
+MAIL=0
+
+
+##########################################################################################
+# コイル検索用
+[FORM_SIZE]
+#プログラムフォーム名=sizeW,sizeW
+#frmPopCoilSearch =2000,1000
+
+##########################################################################################
+# コイル検索用
+[LINE]
+# 名称, 対象ラインのセクション名
+#L_1 = 1CGL, DB_N1CGL
+L_1 = 2CGL, DB_N2CGL
+L_2 = 2PL, DB_N2PL
+L_3 = 3PL, DB_N3PL
+L_4 = HOT_MAKI, DB_NHOT_MAKI
+
+
+##########################################################################################
+# 各疵検用
+[DB_N2PL]
+# DBアクセス有無。(疵オーバーレイの描画有無)
+ENABLE_DB = 0
+
+#【オプション】
+# 簡易連動
+OPT_SYNC=1
+
+//---------------------------------------------------------------
+#【データベース情報】
+#DBADDLESS=tikuseki\db2005
+DBADDLESS=10.25.129.4
+ODBCNAME =DATABASE_2PL
+DSNAME   =DATABASE_2PL
+USERID   =sa
+PASSWORD =nsc
+
+//---------------------------------------------------------------
+#【コイル検索用】
+# フォルダパス(表0裏1, 1～連番複数フォルダ)
+S_0_1 = \\10.25.130.3\f$\RPI\
+S_1_1 = \\10.25.130.3\g$\RPI\
+
+# RPI参照フォルダのアクセス権限設定(無しでも可) Ver4.5.8～
+ACCESS_TARGET=10.25.130.3
+ACCESS_USER = sa
+ACCESS_PASS = nsc
+
+
+# RPIファイルの片面辺りの数
+RPI_NUM = 1
+# RPIファイルボタン名称
+RPI_IDX_NAME= "R,B,G,差"
+# RPIファイルフォーマット (疵検管理No,面,角度or色)
+RPI_FORMAT = "{0}@men={1}@Angle={2}"
+# DBキー
+KEY_NO = "疵検管理No"
+KEY_COILINF ="COIL_INF"
+KEY_COILRES ="COIL_RESULT"
+
+
+# コイル情報
+	# SELECT コイルNo, 疵検実測長, コイル幅
+SQL_COIL_DATA ="SELECT ISNULL(c.生産No,''), r.疵検実測長, c.材料板幅 FROM COIL_RESULT as r INNER JOIN COIL_INF as c ON r.疵検管理No=c.疵検管理No WHERE r.疵検管理No='{0}'"
+
+# 検索SQL拡張部 (COIL_INF as c, COIL_RESULT as r, SCODE_MASTER as s)
+#   コイル検索情報設定(リスト表示名;  SELECT句;  WHERE句引数(最大2);  WHERE句)   ※ SELECT句で名前が付かないものは AS で名前をつけることが必須
+#   拡張部は0～4(前半)  5～9(後半)
+COIL_S_KEY  =疵検管理No;r.疵検管理No;1;r.疵検管理No LIKE('{0}')
+COIL_S_NAME =コイルNo;ISNULL(c.生産No,'') as c;1;c.生産No LIKE('{0}')
+COIL_S_DAY  =登録日付;r.登録日付;2;(r.登録日付>='{0}' AND r.登録日付<='{1}')
+COIL_S_SCODE=検査表面状態;CAST(r.検査表面状態No_表 as varchar(4))+'/'+CAST(r.検査表面状態No_裏 as varchar(4)) as s;2;(r.検査表面状態No_表 LIKE({0}) OR r.検査表面状態No_裏 LIKE({1}) )
+# 実績の管理NoとRPIファイル管理Noが異なるとき。普通は無し。
+#COIL_S_RPI_KEY=r.管理No_基準側
+
+COIL_S_0 =命令No;ISNULL(c.命令No,'');1;c.命令No LIKE('{0}')
+
+
+# 検索SQL (SELECT：日付,コイルNo,疵検管理No,scode表/裏)
+COIL_SELECT = "SELECT {0} FROM COIL_RESULT as r INNER JOIN COIL_INF as c ON r.疵検管理No=c.疵検管理No INNER JOIN SCODE_MASTER s ON r.検査表面状態No_表=s.scode OR r.検査表面状態No_裏=s.scode WHERE {1} ORDER BY r.登録日付 DESC"
+
+//---------------------------------------------------------------
+#【疵情報】
+# 疵情報 取得用SQL
+	# 疵No, 判定疵種, 判定グレード, カメラセット, フレームNo, 
+	# フレーム外接Xmin, フレーム外接Xmax, フレーム外接Ymin, フレーム外接Ymax, 外接Xmin, 外接Xmax, 外接Ymin, 外接Ymax, 
+	# 長手位置, cast(DS位置 as int), cast(WS位置 as int)
+SELECT_INF_0 = 表
+SELECT_INF_1 = 裏
+
+//---------------------------------------------------------------
+#【疵画像】			※ CNT=0で切り出し画像ポップアップ無し
+SELECT_IMG_CNT = 画像枚数
+SELECT_IMG_NAME = カンマ区切り
+
+# 疵画像 取得用SQL
+	# 縦分解能, 横分解能, 縦画素数, 横画素数, 疵中心位置X, 疵中心位置Y,
+	# 画像サイズ正, 画像サイズ乱, 画像サイズ乱2, 画像サイズ乱3,				// 画像枚数分
+	# 正画像, 乱画像, 乱画像2, 乱画像3										// 画像枚数分
+SELECT_IMG_0 = 表
+SELECT_IMG_1 = 裏
+
+//---------------------------------------------------------------
+#【特徴量】			※ NUM=0で特徴量の無しでも動く
+# 特徴量名称マスター取得用SQL (Angle,Enum,EdasysID,Name)
+ATTR_NUM =1
+SELECT_ATTR_NAME = "SELECT Angle, Enum, EdasysID, Name FROM ATTR_NAME ORDER BY Angle asc, Enum asc"
+# 特徴量ﾃｰﾌﾞﾙ名 表裏(0ｵﾘｼﾞﾝ)_Angle(0ｵﾘｼﾞﾝ)
+ATTR_INF_0_0 = "SELECT * FROM DEFECT_ATTR0_T WHERE 疵検管理No='{0}' AND 疵No={1}"
+ATTR_INF_0_1 = "SELECT * FROM DEFECT_ATTR1_T WHERE 疵検管理No='{0}' AND 疵No={1}"
+ATTR_INF_1_0 = "SELECT * FROM DEFECT_ATTR0_B WHERE 疵検管理No='{0}' AND 疵No={1}"
+ATTR_INF_1_1 = "SELECT * FROM DEFECT_ATTR1_B WHERE 疵検管理No='{0}' AND 疵No={1}"
+
+//---------------------------------------------------------------
+#【疵種、Gr】
+# 疵種
+	# EdasysID, 優先度, Name, マップ表示名称
+SELECT_TYPE  =
+# グレード
+	# EdasysID, 優先度, Name, マップ表示色
+SELECT_GRADE =
+# 検査表面状態
+	# scode, 検査表面状態名称
+SELECT_SCODE =
+
+
+//---------------------------------------------------------------
+#【付帯機能】
+# ジャンプ初期値	※無しでもOK
+#   SELECT ロール径 int[mm]
+SELECT_JUMP = "SELECT CAST(材料板厚 as int) FROM COIL_INF WHERE 疵検管理No='{0}'"
+# カット線			※無しでもOK
+#   SELECT カット位置 int[mm]
+SELECT_CUT = "SELECT 位置 FROM COIL_CUT_POS  WHERE 疵検管理No='{0}'"
+# コイル情報独自追加
+SELECT_COIL_ITEM = "SELECT 位置 FROM COIL_CUT_POS  WHERE 疵検管理No='{0}'"
+
+
+//---------------------------------------------------------------
+#【表示設定】
+# 左右文字指定
+STRING_L =DS
+STRING_R =WS
+
+# 面判別が出来ない場合
+# 初期表示 DS/WS反転(1指定)
+# 初期表示 FT反転(1指定)
+# 初期表示 90度回転(1指定)
+DorW = 0
+TorB = 0
+Rotate =0 
+#面別対応 コッチが優先
+DorW_0 = 0
+DorW_1 = 1
+TorB_0 = 0
+TorB_1 = 0
+Rotate_0 =0 
+Rotate_1 =0 
+
+
+

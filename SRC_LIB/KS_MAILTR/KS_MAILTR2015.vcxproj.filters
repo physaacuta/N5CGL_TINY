@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="KS_MAILTRDlg.cpp">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="KS_MAILTR.cpp">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="MainInctance.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TransUdpManager.cpp">
+      <Filter>ソースファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KS_MAILTRDlg.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="KS_MAILTR.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LineCommon.h">
+      <Filter>ヘッダーファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="MainConst.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInctance.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TransUdpManager.h">
+      <Filter>ヘッダーファイル\WorkThread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\KS_MAILTR.ico">
+      <Filter>リソースファイル</Filter>
+    </None>
+    <None Include="res\KS_MAILTR.rc2">
+      <Filter>リソースファイル</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ソースファイル">
+      <UniqueIdentifier>{d8e40872-5a9a-4a24-b285-b834a010a727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル">
+      <UniqueIdentifier>{51ac0869-2f02-410e-ab4f-f2d4f4ca8d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソースファイル">
+      <UniqueIdentifier>{f9e889ae-f54a-451f-ac9d-ef43781374e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Auto">
+      <UniqueIdentifier>{fb211288-6c35-4018-9498-78868ac0a15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\WorkThread">
+      <UniqueIdentifier>{c40899c1-1e26-4d92-956c-ea6e6abd1ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\Auto">
+      <UniqueIdentifier>{55cdff6f-269c-4dea-bd9d-bcbb3592cc81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\共通ヘッダ">
+      <UniqueIdentifier>{d8f5d137-5edd-47c7-9580-22d90f3b36e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\WorkThread">
+      <UniqueIdentifier>{b4de4a11-f668-4cc5-ae4a-327bce835e6f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KS_MAILTR.rc">
+      <Filter>リソースファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

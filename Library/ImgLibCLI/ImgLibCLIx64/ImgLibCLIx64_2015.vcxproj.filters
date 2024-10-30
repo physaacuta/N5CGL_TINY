@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\01 シェーリング補正関係">
+      <UniqueIdentifier>{fdee7c6a-0e65-45a7-a1e1-bceb26e55b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\01 シェーリング補正関係\MASM">
+      <UniqueIdentifier>{4fcdf2c3-f497-40f0-9a31-eb97ec955bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\01 シェーリング補正関係\common">
+      <UniqueIdentifier>{e27d37d5-f1b7-4d3c-b396-10f00c09689e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\02高速画像縮小">
+      <UniqueIdentifier>{275ba915-58b0-4e03-973e-2a81ec42e343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\03新シェーディング">
+      <UniqueIdentifier>{a28041db-8932-4d25-8273-46df16c09596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\03新シェーディング\masm">
+      <UniqueIdentifier>{4ccb9fec-a4fc-47d0-8398-83fada06a4f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\01 シェーリング補正関係">
+      <UniqueIdentifier>{0e8ec03d-5fc8-4b5f-9682-adca02bb1909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\03新シェーディング">
+      <UniqueIdentifier>{97aea839-01a1-4aa7-8b74-da9251f09861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ShdCmp_LPF.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShdCmp_Main.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShdCmp_DeShade.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShdCmp_Devide.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShdCmp_LowPassFilter.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\IppResize.cpp">
+      <Filter>ソース ファイル\02高速画像縮小</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\resize.c">
+      <Filter>ソース ファイル\02高速画像縮小</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LPFSAT.cpp">
+      <Filter>ソース ファイル\03新シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MakeSATasm.cpp">
+      <Filter>ソース ファイル\03新シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShdCmp2_Main.cpp">
+      <Filter>ソース ファイル\03新シェーディング</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\IppResize.h">
+      <Filter>ソース ファイル\02高速画像縮小</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeSATasm_x64.h">
+      <Filter>ソース ファイル\03新シェーディング\masm</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp_DeShade.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp_Devide.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp_LowPassFilter.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="ShdCmp_LPF.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp_Main.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="ShdCmp_NSimg.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LPFSAT.h">
+      <Filter>ヘッダー ファイル\03新シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MakeSATasm.h">
+      <Filter>ヘッダー ファイル\03新シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp2_Main.h">
+      <Filter>ヘッダー ファイル\03新シェーディング</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImgLibCLIx64.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ShdCmp_LPFx64.asm">
+      <Filter>ソース ファイル\01 シェーリング補正関係\MASM</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ShdCmp_lut2bytex64.asm">
+      <Filter>ソース ファイル\01 シェーリング補正関係\MASM</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MakeSATasm_x64.asm">
+      <Filter>ソース ファイル\03新シェーディング\masm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

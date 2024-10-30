@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtDataSourceN5CGL_TINY", "ExtDataSourceN5CGL_TINY.csproj", "{5D04A2A9-7686-46A0-837D-0B026CBC6FBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBAccessN5CGL_TINY", "..\DBAccessN5CGL_TINY\DBAccessN5CGL_TINY.csproj", "{7B05C6C8-BD0D-4C57-B326-E9BCC2886D49}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupExtDataSourceN5CGL_TINY", "..\SetupExtDataSourceN5CGL_TINY\SetupExtDataSourceN5CGL_TINY.vdproj", "{D44D878E-19B6-424A-BB68-3208DFB6E679}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D04A2A9-7686-46A0-837D-0B026CBC6FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D04A2A9-7686-46A0-837D-0B026CBC6FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D04A2A9-7686-46A0-837D-0B026CBC6FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D04A2A9-7686-46A0-837D-0B026CBC6FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B05C6C8-BD0D-4C57-B326-E9BCC2886D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B05C6C8-BD0D-4C57-B326-E9BCC2886D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B05C6C8-BD0D-4C57-B326-E9BCC2886D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B05C6C8-BD0D-4C57-B326-E9BCC2886D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44D878E-19B6-424A-BB68-3208DFB6E679}.Debug|Any CPU.ActiveCfg = Debug
+		{D44D878E-19B6-424A-BB68-3208DFB6E679}.Debug|Any CPU.Build.0 = Debug
+		{D44D878E-19B6-424A-BB68-3208DFB6E679}.Release|Any CPU.ActiveCfg = Release
+		{D44D878E-19B6-424A-BB68-3208DFB6E679}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

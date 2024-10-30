@@ -1,0 +1,32 @@
+{
+  "CaptureSetting": {
+    "FilenameFormat": "",
+    "PathExt": "jpeg",
+    "SavePath": "C:\\Users\\Administrator\\Pictures",
+    "nSave": 1,
+    "target": 1
+  },
+  "DisplayAllAreaProfile": false,
+  "DisplayBitmapSelection": 7,
+  "DummyInterval": 0,
+  "NextCamset": 2,
+  "NextScode": 64,
+  "PCNO": 0,
+  "dp2rp_ratio_x": 4,
+  "dp2rp_ratio_y": 4,
+  "exp": [
+    450,
+    500,
+    550,
+    0
+  ],
+  "fixzoom_x": 0,
+  "fixzoom_y": 0,
+  "gain": [
+    5,
+    5,
+    5,
+    0
+  ],
+  "source": 4
+}

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\WorkThread">
+      <UniqueIdentifier>{3dd1757b-ae82-4070-8d35-bb49068ed0ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\WorkThread">
+      <UniqueIdentifier>{b20f4642-4de1-42e4-b3b9-f6880ca52786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KS_EQALDB.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="KS_EQALDBDlg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MainInctance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="KizuSyncroManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncopyManager.cpp">
+      <Filter>ソース ファイル\WorkThread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KS_EQALDB.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="KS_EQALDBDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInctance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CopyManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="KizuSyncroManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncopyManager.h">
+      <Filter>ヘッダー ファイル\WorkThread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\KS_EQALDB.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="res\KS_EQALDB.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="タスクIni設定サンプル.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KS_EQALDB.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

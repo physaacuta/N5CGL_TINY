@@ -1,0 +1,188 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\KT_CHILER.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\KT_CHILER.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_KT_CHILER_DIALOG DIALOGEX 0, 0, 235, 165
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "対チラー通信 [KT_CHILER]"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "強制終了",IDOK,184,4,46,16
+    LISTBOX         IDC_LIST1,0,108,232,56,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "対象装置",IDC_STATIC,4,4,32,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_CMB_DISP,36,4,80,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "デバック実行",IDC_DEBUG_MANUAL,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,56,72,48,16
+    GROUPBOX        "チラー装置",IDC_STATIC,0,20,232,88
+    EDITTEXT        IDC_STAT_OPEN,40,32,28,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "回線状態",IDC_STATIC,4,32,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_STAT_CONNECT,40,44,28,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "接続状態",IDC_STATIC,4,44,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "通信状態",IDC_STATIC,4,56,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_MAIN_MODE,40,56,72,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "運転状態",IDC_STATIC,120,32,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_UNTEN,156,32,72,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "液温測定値",IDC_STATIC,120,44,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_GET_TEMP,156,44,36,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "度",IDC_STATIC,196,44,8,12,SS_CENTERIMAGE
+    LTEXT           "液温設定値",IDC_STATIC,120,56,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "警報番号",IDC_STATIC,120,68,36,12,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_SET_TEMP,156,56,36,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "度",IDC_STATIC,196,56,8,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_ERR,156,68,36,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "[ステータス要求]",IDC_STATIC,4,80,52,8
+    PUSHBUTTON      "運転状態",IDC_REQ_UNTEN,8,92,40,12
+    PUSHBUTTON      "液温測定値",IDC_REQ_NOWTEMP,52,92,40,12
+    PUSHBUTTON      "液温設定値",IDC_REQ_SETTEMP,96,92,40,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,2,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "1.0.2.0"
+            VALUE "InternalName", "KT_CHILER.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "KT_CHILER.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_KT_CHILER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\KT_CHILER.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

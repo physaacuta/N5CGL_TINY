@@ -1,0 +1,8 @@
+{
+  "CoilChangeDetector": "CoilChangeByCoilReceive",
+  "CoilChangeParameters": { },
+  "GrabberClass": "AvalGrabberColor",
+  "GrabberParameters": { },
+  "NumCamset": 1,
+  "SaveParameters": [ ]
+}

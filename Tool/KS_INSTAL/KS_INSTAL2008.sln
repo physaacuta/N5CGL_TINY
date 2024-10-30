@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "KS_INSTAL2008", "KS_INSTAL2008.vbproj", "{1595669E-8D2B-4648-8046-E6AC39B2C180}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "tClassLibrary2008", "..\..\Library\tClassLibrary\tClassLibrary2008.vbproj", "{F8144424-2197-479C-9BB0-89D2DA9C5847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1595669E-8D2B-4648-8046-E6AC39B2C180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1595669E-8D2B-4648-8046-E6AC39B2C180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1595669E-8D2B-4648-8046-E6AC39B2C180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1595669E-8D2B-4648-8046-E6AC39B2C180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8144424-2197-479C-9BB0-89D2DA9C5847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8144424-2197-479C-9BB0-89D2DA9C5847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8144424-2197-479C-9BB0-89D2DA9C5847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8144424-2197-479C-9BB0-89D2DA9C5847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

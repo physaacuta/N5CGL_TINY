@@ -1,0 +1,141 @@
+{
+  "MainWindow#0": {
+    "CustomProps": { },
+    "OutRect": {
+      "height": 582,
+      "width": 686,
+      "x": 633,
+      "y": 0
+    },
+    "WindowState": 2,
+    "bOutWindow": false
+  },
+  "LogWindow#0": {
+    "CustomProps": { },
+    "OutRect": {
+      "height": 262,
+      "width": 689,
+      "x": 429,
+      "y": 651
+    },
+    "WindowState": 0,
+    "bOutWindow": false
+  },
+  "AvalConfigUI#0": {
+    "CustomProps": {
+      "BoardIdx": "0",
+      "Channel": "1",
+      "IniFile": "\\\\tokatu\\c$\\N5CGL_TINY\\APXINI\\P4-CC-04K070-AsColor-DECA.ini"
+    },
+    "OutRect": {
+      "height": 0,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    },
+    "WindowState": 0,
+    "bOutWindow": false
+  },
+  "ShadingFilterUI#0": {
+    "CustomProps": {
+      "lpf-width": "32",
+      "lpf-height": "32",
+      "target0": "128",
+      "target1": "128",
+      "target2": "128",
+      "target3": "128"
+    },
+    "OutRect": {
+      "height": 0,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    },
+    "WindowState": 0,
+    "bOutWindow": false
+  },
+  "HistogramForm#0": {
+    "CustomProps": {
+      "Area.Left": "1308, 976",
+      "Area.Top": "2284, 1382"
+    },
+    "OutRect": {
+      "height": 507,
+      "width": 483,
+      "x": 749,
+      "y": 263
+    },
+    "WindowState": 0,
+    "bOutWindow": true
+  },
+  "BitmapSelectorUI#0": {
+    "CustomProps": { },
+    "OutRect": {
+      "height": 0,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    },
+    "WindowState": 0,
+    "bOutWindow": false
+  },
+  "GainExpUI#0": {
+    "CustomProps": {
+      "Gain0": "5",
+      "Gain1": "5",
+      "Gain2": "5",
+      "Gain3": "0",
+      "Expo0": "450",
+      "Expo1": "500",
+      "Expo2": "550",
+      "Expo3": "0"
+    },
+    "OutRect": {
+      "height": 0,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    },
+    "WindowState": 0,
+    "bOutWindow": false
+  },
+  "LightControlUI#0": {
+    "CustomProps": {
+      "LED0.Level": "70",
+      "LED1.Level": "180",
+      "LED2.Level": "180",
+      "LED3.Level": "0"
+    },
+    "OutRect": {
+      "height": 0,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    },
+    "WindowState": 0,
+    "bOutWindow": false
+  },
+  "FormSerial#0": {
+    "CustomProps": { },
+    "OutRect": {
+      "height": 394,
+      "width": 413,
+      "x": 396,
+      "y": 229
+    },
+    "WindowState": 0,
+    "bOutWindow": false
+  },
+  "CamlinkSwUI#0": {
+    "CustomProps": {
+    },
+    "OutRect": {
+      "height": 0,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    },
+    "WindowState": 0,
+    "bOutWindow": false
+  }
+}

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7804679D-F0D1-4C19-BDD3-11E6BDCE4030}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KizuForm</RootNamespace>
+    <AssemblyName>KizuForm</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KizuForm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KizuForm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>KizuForm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>KizuForm.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KizuLibCLI, Version=1.0.2646.33919, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EXE\KizuLibCLI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Include\KizuCommon.vb">
+      <Link>リンク\KizuCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommonSelect.vb">
+      <Link>リンク\KizuCommonSelect.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuListID.vb">
+      <Link>リンク\KizuListID.vb</Link>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_Dummy.Designer.vb">
+      <DependentUpon>frmMain_Dummy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_Dummy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_Ras2.Designer.vb">
+      <DependentUpon>frmMain_Ras2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_Ras2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_DbCheck.Designer.vb">
+      <DependentUpon>frmPop_DbCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_DbCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_LogComment.Designer.vb">
+      <DependentUpon>frmPop_LogComment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_LogComment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_TimeSet.designer.vb">
+      <DependentUpon>frmPop_TimeSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_TimeSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="疵検固有コントロール部品\ucStatusAria.Designer.vb">
+      <DependentUpon>ucStatusAria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有コントロール部品\ucStatusAria.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_Log.designer.vb">
+      <DependentUpon>frmMain_Log.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_Log.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_ParSet.Designer.vb">
+      <DependentUpon>frmMain_ParSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_ParSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_ParSet_UpList.Designer.vb">
+      <DependentUpon>frmMain_ParSet_UpList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_ParSet_UpList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_Ras.Designer.vb">
+      <DependentUpon>frmMain_Ras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmMain_Ras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_Search.Designer.vb">
+      <DependentUpon>frmPop_Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_Search2.Designer.vb">
+      <DependentUpon>frmPop_Search2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵検固有フォーム\frmPop_Search2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="疵検固有フォーム\frmMain_Dummy.resx">
+      <DependentUpon>frmMain_Dummy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmMain_Ras2.resx">
+      <DependentUpon>frmMain_Ras2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmPop_DbCheck.resx">
+      <DependentUpon>frmPop_DbCheck.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmPop_LogComment.resx">
+      <DependentUpon>frmPop_LogComment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmPop_TimeSet.resx">
+      <DependentUpon>frmPop_TimeSet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有コントロール部品\ucStatusAria.resx">
+      <DependentUpon>ucStatusAria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmMain_Log.resx">
+      <DependentUpon>frmMain_Log.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmMain_ParSet.resx">
+      <DependentUpon>frmMain_ParSet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmMain_ParSet_UpList.resx">
+      <DependentUpon>frmMain_ParSet_UpList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmMain_Ras.resx">
+      <DependentUpon>frmMain_Ras.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmPop_Search.resx">
+      <DependentUpon>frmPop_Search.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵検固有フォーム\frmPop_Search2.resx">
+      <DependentUpon>frmPop_Search2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tClassForm\tClassForm2010.vbproj">
+      <Project>{2A0234A6-C555-47A3-AEC2-5E7828EC0BA1}</Project>
+      <Name>tClassForm2008</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tClassLibrary\tClassLibrary2010.vbproj">
+      <Project>{F8144424-2197-479C-9BB0-89D2DA9C5847}</Project>
+      <Name>tClassLibrary2008</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

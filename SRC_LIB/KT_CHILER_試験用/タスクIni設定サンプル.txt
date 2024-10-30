@@ -1,0 +1,62 @@
+
+#=========================================================
+# 対チラー装置
+# ### 共通仕様
+#  TEMP_THR	：温度閾値 (これ以上はエラーとなる) [度]
+#  TIMER_CYCLE	：温度取り込み周期 [秒]
+#  NAME_*	：セッションの末の部分となる (インスタンスの名前にもなる) MAX8コ
+#
+# ### 個別仕様
+#  CHILER_TYPE          : チラー装置の型式（0:RKE1500B-VW, 1:RKE3750B-V）※未設定時0
+#  CHILER_CONNECT_ID	: チラー装置との通信状態を格納するID
+#  CHILER_STATE_ID	: チラー運転状態を格納するID (0:クーラー運転中 1:停止,ポンプ単独運転中 )
+#  CHILER_ERR_ID	: チラーからの異常を格納するID 
+#  CHILER_TEMP_ST_ID	: 温度異常を格納するID (ID=0は未実行)
+#  CHILER_TEMP_ID	: 温度を格納するID (ID=0は未実行)
+#   以降は、232C設定
+#=========================================================
+[KT_CHILER]
+TEMP_THR           = 35 
+TIMER_CYCLE        = 180
+NAME_1             = TOP
+NAME_2      	   = BOT
+
+[KT_CHILER_TOP]
+# 一般設定
+CHILER_TYPE        = 0
+CHILER_CONNECT_ID  = 1
+CHILER_STATE_ID    = 2
+CHILER_ERR_ID      = 3
+CHILER_TEMP_ST_ID  = 4
+CHILER_TEMP_ID     = 5
+# 232C設定
+com    = COM4
+baud   = 96
+parity = n
+data   = 8
+stop   = 1
+to     = off
+dtr    = on
+rts    = on
+idsr   = off
+octs   = off
+
+[KT_CHILER_BOT]
+# 一般設定
+CHILER_TYPE        = 0
+CHILER_CONNECT_ID  = 10
+CHILER_STATE_ID    = 20
+CHILER_ERR_ID      = 30
+CHILER_TEMP_ST_ID  = 40
+CHILER_TEMP_ID     = 50
+# 232C設定
+com    = COM5
+baud   = 96
+parity = n
+data   = 8
+stop   = 1
+to     = off
+dtr    = on
+rts    = on
+idsr   = off
+octs   = off

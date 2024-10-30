@@ -1,0 +1,13 @@
+C++
+
+VS2010→VS2015
+KizuLib2010.vcxproj
+KizuLib2010.vcxproj.filters
+をコピーして、
+
+KizuLib2015.vcxproj
+KizuLib2015.vcxproj.filters
+
+にリネーム
+
+VS2015でプロジェクトを開く

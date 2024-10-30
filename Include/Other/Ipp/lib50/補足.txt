@@ -1,0 +1,15 @@
+ここにあるのは、 5.0
+ijl20l.lib は、スタティックリンク
+
+なので、
+追加の依存ファイルで以下を追加すると、ijl20.dllは必要無しとなる。
+ijl20l.lib
+ippimerged.lib
+ippsmerged.lib
+ippjmerged.lib
+ippcvmerged.lib
+ippsemerged.lib
+ippiemerged.lib
+ippjemerged.lib
+ippcvemerged.lib
+ippcorel.lib

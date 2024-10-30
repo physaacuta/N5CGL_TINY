@@ -1,0 +1,77 @@
+#=========================================================
+# 対温度パネルメーター装置 (オムロン製 RS-232C)
+# ### 共通仕様
+#  NAME_*		：セッションの末の部分となる (インスタンスの名前にもなる) MAX8コ
+#
+# ### 個別仕様
+# -１ループ単位-----------------
+# [タスク名_セッション名]
+#  UNIT_NUM		：管理対象装置数 (最大16機器)
+#  TIMER_CYCLE		：温度取り込み周期 [秒]
+#  CONNECT_ID		：232C 通信状態 機器ID 	(0：機器状態に登録しない)
+#  TEMP_KETA	: 取得温度の桁合わせ (1で1/10。2で1/100。0はそのまま。マイナスは未対応)
+#  232C定義
+#
+# -装置単位-----------------
+# [タスク名_セッション名_UNIT(UnitNo)] UnitNo=1～の連番
+#  NAME			：装置名称
+#  TEMP_LIMIT		：温度上限 [度] (0のときは、未チェック)
+#  TEMP_ID		：温度 ID 	(0：機器状態に登録しない)
+#  TEMP_ST_ID		：温度状態 ID	(0：機器状態に登録しない)
+#  UNTEN_ID		：運転状態 ID	(0：機器状態に登録しない)
+#  STATE_ID		：ステータスID 	(0：機器状態に登録しない)
+#			     ステータス状態
+#				1bit目：未計測状態
+#				2bit目：表示範囲オーバー
+#				3bit目：入力異常A
+#				4bit目：入力異常B
+#=========================================================
+[KT_TEMPMT]
+NAME_1		= MAIN
+#NAME_2		= WK
+
+[KT_TEMPMT_MAIN]
+UNIT_NUM	= 4
+TIMER_CYCLE	= 180
+CONNECT_ID	= 308
+TEMP_KETA	= 1
+
+com = COM6
+baud=9600
+parity=e
+data=7
+stop=2
+to = ON
+dtr = ON
+rts = ON
+idsr = ON
+octs = ON
+
+[KT_TEMPMT_MAIN_UNIT1]
+NAME		= 制御盤
+TEMP_LIMIT	= 50
+TEMP_ID		= 309
+TEMP_ST_ID	= 310
+UNTEN_ID	= 311
+STATE_ID	= 312
+[KT_TEMPMT_MAIN_UNIT2]
+NAME		= 表面機側盤
+TEMP_LIMIT	= 50
+TEMP_ID		= 313
+TEMP_ST_ID	= 314
+UNTEN_ID	= 315
+STATE_ID	= 316
+[KT_TEMPMT_MAIN_UNIT3]
+NAME		= 裏面機側盤
+TEMP_LIMIT	= 50
+TEMP_ID		= 317
+TEMP_ST_ID	= 318
+UNTEN_ID	= 319
+STATE_ID	= 320
+[KT_TEMPMT_MAIN_UNIT4]
+NAME		= 照明電源盤
+TEMP_LIMIT	= 50
+TEMP_ID		= 321
+TEMP_ST_ID	= 322
+UNTEN_ID	= 323
+STATE_ID	= 324

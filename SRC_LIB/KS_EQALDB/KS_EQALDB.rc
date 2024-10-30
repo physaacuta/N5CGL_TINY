@@ -1,0 +1,191 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\KS_EQALDB.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\KS_EQALDB.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_KS_EQALDB_DIALOG DIALOGEX 0, 0, 366, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DB同期管理 [KS_EQALDB]"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "強制終了",IDOK,312,0,50,16
+    LISTBOX         IDC_LIST1,0,72,364,84,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "A系→B系",IDC_NOWEXEC_AB,252,52,48,12
+    PUSHBUTTON      "B系→A系",IDC_NOWEXEC_BA,312,52,48,12
+    CONTROL         "デバック",IDC_DEBUG_MANUAL,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,252,28,36,20
+    EDITTEXT        IDC_MAILKEY,324,36,36,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "MAIL_Key",IDC_STATIC,292,36,32,12,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "設定情報",IDC_STATIC,0,0,244,68
+    COMBOBOX        IDC_CMB_DISP,44,12,72,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "設定Session",IDC_STATIC,4,12,40,12,0,WS_EX_CLIENTEDGE
+    LTEXT           "動作タイプ",IDC_STATIC,128,12,40,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_DSP_TYPE,168,12,72,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "MailKey",IDC_STATIC,4,28,40,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_DSP_MAILKEY,44,28,28,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "初期起動",IDC_STATIC,4,40,40,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_DSP_TIMEFAST,44,40,28,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "実行周期",IDC_STATIC,4,52,40,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_DSP_TIMEINTERVAL,44,52,28,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "A系",IDC_STATIC,88,40,16,12,0,WS_EX_CLIENTEDGE
+    LTEXT           "B系",IDC_STATIC,88,52,16,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "読込セッション",IDC_STATIC,104,28,40,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "リンクサーバーパス",IDC_STATIC,144,28,96,12,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_DSP_ODBC_A,104,40,40,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DSP_ODBC_B,104,52,40,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DSP_LINK_A,144,40,96,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_DSP_LINK_B,144,52,96,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "デバック",IDC_STATIC,248,16,116,52
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,2,1,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "KS_EQALDB.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "KS_EQALDB.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_KS_EQALDB_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\KS_EQALDB.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

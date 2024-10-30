@@ -1,0 +1,9 @@
+
+#=========================================================
+# 機器状態履歴管理 (KS_HISTRY)
+#  MAX_DB_COLUMN_KIKI		：DBのST_HISTORY関係の機器状態の列数 (最大64コ)
+#  MAX_DB_COLUMN_TEMP		: DBのST_HISTORY関係の付加情報の列数 (最大64コ)
+#=========================================================
+[KS_HISTRY]
+MAX_DB_COLUMN_KIKI 		= 8
+MAX_DB_COLUMN_TEMP 		= 1

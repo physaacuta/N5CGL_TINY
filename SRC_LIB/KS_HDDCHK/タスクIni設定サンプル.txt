@@ -1,0 +1,17 @@
+
+#=========================================================
+# HDDチェック
+#  MODE		: 動作モード(0:Universal Raid Utility、1:Smart Storage Administrator)
+#	※ MODE=0の場合、Universal RAID Utility ソフトがインストールされていることが前提
+#		[CHK_TXT  : OK_TXT] の形式。OK_TXT以外の場合に、HDD異常と判断する。
+#	※ MODE=1の場合、Smart Storage Administrator ソフトがインストールされていることが前提
+#		[...CHK_TXT...OK_TXT...] の形式。OK_TXTが存在しない場合に、HDD異常と判断する。
+#  STATEID	: 機器ID
+#  CHK_TXT1	: チェックするテキスト文字列 (1～10までの連番)
+#  OK_TXT1	: 正常と判断する文字列 (1～10までの連番)
+#=========================================================
+[KS_HDDCHK]
+MODE = 1
+STATEID = 2
+CHK_TXT1 = Status
+OK_TXT1  = Online

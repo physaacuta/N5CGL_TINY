@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="MainInstance.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeProManager.cpp">
+      <Filter>ソースファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeFFManager.cpp">
+      <Filter>ソースファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="TO_PUTDAT.cpp">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="TO_PUTDATDlg.cpp">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="MainConst.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInstance.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuCommon.h">
+      <Filter>ヘッダーファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuCommonSelect.h">
+      <Filter>ヘッダーファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuListID.h">
+      <Filter>ヘッダーファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\LineCommon.h">
+      <Filter>ヘッダーファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\OutInterface.h">
+      <Filter>ヘッダーファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeFFManager.h">
+      <Filter>ヘッダーファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeProManager.h">
+      <Filter>ヘッダーファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TO_PUTDAT.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TO_PUTDATDlg.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="リソースファイル">
+      <UniqueIdentifier>{049bda3d-5ef1-4e2b-87ff-4a4c2aff2138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル">
+      <UniqueIdentifier>{a767eeb3-5478-4c17-9687-192e03104bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル">
+      <UniqueIdentifier>{0529d31c-8d04-4105-b9dd-330ea6a9a6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\共通ヘッダ">
+      <UniqueIdentifier>{0dbd2de3-0c00-4776-acd7-27ea2e6585ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\WorkThread">
+      <UniqueIdentifier>{83563fbb-f0ca-4a6c-9cd8-5fde59cf5139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\Auto">
+      <UniqueIdentifier>{7477fa9b-2a85-4eaf-9013-356ac286de15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\WorkThread">
+      <UniqueIdentifier>{7b146005-03fc-4934-b02f-4e9d511d0e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Auto">
+      <UniqueIdentifier>{6b9007bd-912f-415f-84e6-e72b55bda59b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TO_PUTDAT.ico">
+      <Filter>リソースファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TO_PUTDAT.rc">
+      <Filter>リソースファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TO_PUTDAT.rc2">
+      <Filter>リソースファイル</Filter>
+    </None>
+  </ItemGroup>
+</Project>

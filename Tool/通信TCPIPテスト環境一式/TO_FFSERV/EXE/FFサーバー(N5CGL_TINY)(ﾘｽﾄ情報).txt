@@ -1,0 +1,9 @@
+C:\N5CGL_TINY\Tool\通信TCPIPテスト環境一式\TO_FFSERV\EXE\(M7)実績応答伝文表.bin
+C:\N5CGL_TINY\Tool\通信TCPIPテスト環境一式\TO_FFSERV\EXE\(M7)実績応答伝文表_DB登録異常.bin
+C:\N5CGL_TINY\Tool\通信TCPIPテスト環境一式\TO_FFSERV\EXE\(M7)実績応答伝文表_インプット異常.bin
+C:\N5CGL_TINY\Tool\通信TCPIPテスト環境一式\TO_FFSERV\EXE\(M8)実績応答伝文裏.bin
+C:\N5CGL_TINY\Tool\通信TCPIPテスト環境一式\TO_FFSERV\EXE\(M8)実績応答伝文裏_DB登録異常.bin
+C:\N5CGL_TINY\Tool\通信TCPIPテスト環境一式\TO_FFSERV\EXE\(M8)実績応答伝文裏_インプット異常.bin
+C:\N5CGL_TINY\Tool\通信TCPIPテスト環境一式\TO_FFSERV\EXE\(R4)前工程疵実績伝文表.bin
+C:\N5CGL_TINY\Tool\通信TCPIPテスト環境一式\TO_FFSERV\EXE\(S4)前工程疵実績伝文裏.bin
+C:\N5CGL_TINY\Tool\通信TCPIPテスト環境一式\TO_FFSERV\EXE\(ZZ)FFヘルシー応答伝文.bin

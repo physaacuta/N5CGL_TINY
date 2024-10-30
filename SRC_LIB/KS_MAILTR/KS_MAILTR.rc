@@ -1,0 +1,195 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\KS_MAILTR.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\KS_MAILTR.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_KS_MAILTR_DIALOG DIALOGEX 0, 0, 319, 231
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "メールスロット転送管理 [KS_MAILTR]"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "強制終了",IDOK,262,7,50,16
+    LISTBOX         IDC_LIST1,7,133,305,91,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DEBUG",IDC_DEBUG_MANUAL,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,7,49,13
+    CONTROL         "",IDC_IPADDR_UDP,"SysIPAddress32",WS_TABSTOP,10,44,78,14
+    EDITTEXT        IDC_TASK,146,44,53,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_PC,90,44,55,14,ES_CENTER | ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "送信先PC名",IDC_STATIC,90,34,45,10
+    LTEXT           "送信先タスク名",IDC_STATIC,146,33,45,10
+    LTEXT           "送信先IPアドレス",IDC_STATIC,10,34,55,10
+    EDITTEXT        IDC_EVENT,10,71,35,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ｲﾍﾞﾝﾄNo",IDC_STATIC,10,60,34,10
+    EDITTEXT        IDC_LINE,46,71,21,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ﾗｲﾝNo",IDC_STATIC,45,60,23,10
+    GROUPBOX        "メール転送送信",IDC_STATIC,7,21,305,69
+    EDITTEXT        IDC_FL_1,89,69,30,15,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_FC_1,129,69,94,16,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "数値ﾃﾞｰﾀ",IDC_STATIC,90,59,31,10
+    LTEXT           "文字ﾃﾞｰﾀ",IDC_STATIC,130,59,31,10
+    PUSHBUTTON      "数値転送",IDC_BTN_TRANS_FL,262,37,47,16,WS_DISABLED
+    PUSHBUTTON      "文字転送",IDC_BTN_TRANS_FC,262,53,47,16,WS_DISABLED
+    PUSHBUTTON      "混合転送",IDC_BTN_TRANS_MIX,262,69,47,16,WS_DISABLED
+    EDITTEXT        IDC_EVENT_R,125,113,35,13,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "メール転送受信",IDC_STATIC,7,91,305,39
+    LTEXT           "ｲﾍﾞﾝﾄNo",IDC_STATIC,126,103,34,10
+    LTEXT           "ﾗｲﾝNo",IDC_STATIC,161,103,23,10
+    EDITTEXT        IDC_LINE_R,161,113,21,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "送信先PC名",IDC_STATIC,12,104,45,10
+    LTEXT           "送信先タスク名",IDC_STATIC,68,103,45,10
+    EDITTEXT        IDC_PC_R,11,113,55,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TASK_R,68,113,51,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "表示クリア",IDC_BTN_CLEAR_R,262,111,48,14,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "KS_MAILTR.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "KS_MAILTR.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_KS_MAILTR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\KS_MAILTR.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

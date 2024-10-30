@@ -1,0 +1,225 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; rgbplanar_colortwist_asm_sse_2tap(BYTE** pdst, size_t width, size_t dst_pitch,
+;;									  const BYTE*const* psrc,  size_t src_pitch, size_t height,
+;;									  const short* c_r, const short* c_g, const short* c_b)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; xmm6-xmm15 is non-volatile
+global rgbplanar_colortwist_asm_sse_2tap
+rgbplanar_colortwist_asm_sse_2tap:
+		mov			[rsp+8],			rcx			;; pdst
+		mov			[rsp+16],			rdx			;; width
+		mov			[rsp+24],			r8			;; dst_pitch
+		mov			[rsp+32],			r9			;; psrc
+		;			[rsp+40]						;; src_pitch
+		;			[rsp+48]						;; height
+		;			[rsp+56]						;; c_r
+		;			[rsp+64]						;; c_g
+		;			[rsp+72]						;; c_b
+
+		mov			r8, rbx
+		mov			r9, rsi
+		mov			r10, rdi
+		enter		80, 0
+		;; enter32,0は次の３命令と等価
+        ;; push   rbp
+        ;; mov    rbp, rsp
+        ;; sub    rsp, 96
+		movdqu		[rbp - 16], xmm6
+		movdqu		[rbp - 32], xmm7
+		movdqu		[rbp - 48], xmm8
+		movdqu		[rbp - 64], xmm9
+		movdqu		[rbp - 80], xmm10
+		movdqu		[rbp - 96], xmm11
+
+		;; ここから
+		mov			eax, 800B0A09h
+		movd		xmm7, eax
+		pslldq		xmm7, 4
+		mov			eax, 80080706h
+		movd		xmm6, eax
+		por			xmm7, xmm6
+		pslldq		xmm7, 4
+		mov			eax, 80050403h
+		movd		xmm6, eax
+		por			xmm7, xmm6
+		pslldq		xmm7, 4
+		mov			eax, 80020100h
+		movd		xmm6, eax
+		por			xmm7, xmm6
+
+		mov			rax, [rbp+8+56]				;; c_r
+		movq		xmm4,  [rax]
+		punpcklqdq	xmm4, xmm4
+
+		mov			rax, [rbp+8+64]				;; c_g
+		movq		xmm5,  [rax]
+		punpcklqdq	xmm5, xmm5
+
+		mov			rax, [rbp+8+72]				;; c_b
+		movq		xmm6,  [rax]
+		punpcklqdq	xmm6, xmm6
+
+		xor			rsi, rsi				;; src offset
+		mov			rcx, [rbp+8+48]			;; height
+		xor			rdi, rdi				;; dst offset
+L0:
+		xor			rbx, rbx				;; x/2 counter
+L1:
+		;;
+		;; psrc[0]
+		;;
+		mov			rax, [rbp+8+32]			;; psrc
+		mov			rax, [rax]				;; psrc[0]
+		add			rax, rbx
+		add			rax, rbx
+		add			rax, rbx				;; + (x/2)*3
+
+		pxor		xmm2, xmm2
+		movq		xmm0,  [rsi+rax]		;; G2 R2 B1 G1 R1 B0 G0 R0
+		movd		xmm1,  [rsi+rax+8]		;;             B3 G3 R3 B2
+		pslldq		xmm1, 8
+		por			xmm0, xmm1
+		pshufb		xmm0, xmm7						;; 0BGR 0BGR 0BGR 0BGR
+		movdqa		xmm1, xmm0
+		punpcklbw	xmm0, xmm2						;; 0BGR:1 0BGR:0
+		punpckhbw	xmm1, xmm2						;; 0BGR:3 0BGR:2
+
+		;; R
+		movdqa		xmm2, xmm0
+		pmaddwd		xmm2, xmm4
+		movdqa		xmm3, xmm1
+		pmaddwd		xmm3, xmm4
+		phaddd		xmm2, xmm3
+		psrad		xmm2, 12
+		packssdw	xmm2, xmm2
+		packuswb	xmm2, xmm2
+
+;;		mov			rax, [rbp+8+8]					;; pdst
+;;		mov			rax, [rax]
+;;		add			rax, rdi
+;;		movd		 [rax+rbx], xmm2
+		movdqa		xmm9, xmm2
+		
+		;; G
+		movdqa		xmm2, xmm0
+		pmaddwd		xmm2, xmm5
+		movdqa		xmm3, xmm1
+		pmaddwd		xmm3, xmm5
+		phaddd		xmm2, xmm3
+		psrad		xmm2, 12
+		packssdw	xmm2, xmm2
+		packuswb	xmm2, xmm2
+
+;;		mov			rax, [rbp+8+8]					;; pdst
+;;		mov			rax, [rax+8]
+;;		add			rax, rdi
+;;		movd		 [rax+rbx], xmm2
+		movdqa		xmm10, xmm2
+
+		;; B
+		movdqa		xmm2, xmm0
+		pmaddwd		xmm2, xmm6
+		movdqa		xmm3, xmm1
+		pmaddwd		xmm3, xmm6
+		phaddd		xmm2, xmm3
+		psrad		xmm2, 12
+		packssdw	xmm2, xmm2
+		packuswb	xmm2, xmm2
+
+;;		mov			rax, [rbp+8+8]					;; pdst
+;;		mov			rax, [rax+16]
+;;		add			rax, rdi
+;;		movd		 [rax+rbx], xmm2
+		movdqa		xmm11, xmm2
+
+		;;
+		;; psrc[1]
+		;;
+		mov			rax, [rbp+8+32]			;; psrc
+		mov			rax, [rax+8]			;; psrc[0]
+		add			rax, rbx;
+		add			rax, rbx;
+		add			rax, rbx;				;; + (x/2)*3
+
+		pxor		xmm2, xmm2
+		movq		xmm0,  [rsi+rax]		;; G2 R2 B1 G1 R1 B0 G0 R0
+		movd		xmm1,  [rsi+rax+8]		;;             B3 G3 R3 B2
+		pslldq		xmm1, 8
+		por			xmm0, xmm1
+		pshufb		xmm0, xmm7						;; 0BGR 0BGR 0BGR 0BGR
+		movdqa		xmm1, xmm0
+		punpcklbw	xmm0, xmm2						;; 0BGR:1 0BGR:0
+		punpckhbw	xmm1, xmm2						;; 0BGR:3 0BGR:2
+
+		;; R
+		movdqa		xmm2, xmm0
+		pmaddwd		xmm2, xmm4
+		movdqa		xmm3, xmm1
+		pmaddwd		xmm3, xmm4
+		phaddd		xmm2, xmm3
+		psrad		xmm2, 12
+		packssdw	xmm2, xmm2
+		packuswb	xmm2, xmm2
+
+		punpcklbw	xmm9, xmm2
+		mov			rax, [rbp+8+8]					;; pdst
+		mov			rax, [rax]						;; pdst[0]
+		add			rax, rdi
+		movq		 [rax+2*rbx], xmm9
+		
+		;; G
+		movdqa		xmm2, xmm0
+		pmaddwd		xmm2, xmm5
+		movdqa		xmm3, xmm1
+		pmaddwd		xmm3, xmm5
+		phaddd		xmm2, xmm3
+		psrad		xmm2, 12
+		packssdw	xmm2, xmm2
+		packuswb	xmm2, xmm2
+
+		punpcklbw	xmm10, xmm2
+		mov			rax, [rbp+8+8]					;; pdst
+		mov			rax, [rax+8]					;; pdst[1]
+		add			rax, rdi
+		movq		 [rax+2*rbx], xmm10
+
+		;; B
+		movdqa		xmm2, xmm0
+		pmaddwd		xmm2, xmm6
+		movdqa		xmm3, xmm1
+		pmaddwd		xmm3, xmm6
+		phaddd		xmm2, xmm3
+		psrad		xmm2, 12
+		packssdw	xmm2, xmm2
+		packuswb	xmm2, xmm2
+
+		punpcklbw	xmm11, xmm2
+		mov			rax, [rbp+8+8]					;; pdst
+		mov			rax, [rax+16]					;; pdst[2]
+		add			rax, rdi
+		movq		 [rax+2*rbx], xmm11
+
+		add			rbx, 4
+		cmp			rbx, [rbp+8+16]					;; width
+		jnz			L1
+
+		add			rsi, [rbp+8+40]					;; src_pitch;
+		add			rdi, [rbp+8+24]					;; dst_pitch;
+		dec			rcx
+		jnz			L0
+
+		;; レジスタ復帰
+		movdqu		xmm6, [rbp-16]
+		movdqu		xmm7, [rbp-32]
+		movdqu		xmm8, [rbp-48]
+		movdqu		xmm9, [rbp-64]
+		movdqu		xmm10, [rbp-80]
+		movdqu		xmm11, [rbp-96]
+		leave
+		mov			rbx, r8
+		mov			rsi, r9
+		mov			rdi, r10
+
+		ret
+

@@ -1,0 +1,1 @@
+start .\EXE\Tcp_spVer4.24ƒÀ.exe .\EXE\ƒvƒƒRƒ“.dat

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC46CFDD-2FAC-4593-8BF3-EA562129F331}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HY_TANSHO.modMain</StartupObject>
+    <RootNamespace>HY_TANSHO</RootNamespace>
+    <AssemblyName>HY_TANSHO</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HY_TANSHO.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HY_TANSHO.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HY_TANSHO.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HY_TANSHO.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>探傷.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KizuLibCLIx32">
+      <HintPath>..\..\EXE\KizuLibCLIx32.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Include\DspCommon.vb">
+      <Link>共通ヘッダ\DspCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\HyTbl.vb">
+      <Link>共通ヘッダ\HyTbl.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommon.vb">
+      <Link>共通ヘッダ\KizuCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommonSelect.vb">
+      <Link>共通ヘッダ\KizuCommonSelect.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuListID.vb">
+      <Link>共通ヘッダ\KizuListID.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\LineCommon.vb">
+      <Link>共通ヘッダ\LineCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\OutInterface.vb">
+      <Link>共通ヘッダ\OutInterface.vb</Link>
+    </Compile>
+    <Compile Include="clsDispMap.vb" />
+    <Compile Include="frmDefectImage2.designer.vb">
+      <DependentUpon>frmDefectImage2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefectImage2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLongPdList.Designer.vb">
+      <DependentUpon>frmLongPdList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLongPdList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMixedRate.designer.vb">
+      <DependentUpon>frmMixedRate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMixedRate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTansho.designer.vb">
+      <DependentUpon>frmTansho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTansho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hy_So_Common.vb" />
+    <Compile Include="modCommon.vb" />
+    <Compile Include="modMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ユーザーコントロール\ucDefect.designer.vb">
+      <DependentUpon>ucDefect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ユーザーコントロール\ucDefect.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="共通クラス\clsDispAlarm.vb" />
+    <Compile Include="共通クラス\clsDispCoil.vb" />
+    <Compile Include="共通クラス\clsDispDefect.vb" />
+    <Compile Include="共通クラス\clsDispStatus.vb" />
+    <Compile Include="共通クラス\clsParamManager.vb" />
+    <Compile Include="共通クラス\clsPointInf.vb" />
+    <Compile Include="ユーザーコントロール\ucCoil.designer.vb">
+      <DependentUpon>ucCoil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ユーザーコントロール\ucCoil.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\ucStatus.designer.vb">
+      <DependentUpon>ucStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ユーザーコントロール\ucStatus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmDefectImage.designer.vb">
+      <DependentUpon>frmDefectImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefectImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ユーザーコントロール\ucDefectImage.Designer.vb">
+      <DependentUpon>ucDefectImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ユーザーコントロール\ucDefectImage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="共通クラス\clsPreParamManager.vb" />
+    <Compile Include="継承したクラス\tClass_ImageDsp2.vb" />
+    <Compile Include="継承したクラス\tCnt_DataGridView_turn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmDefectImage2.resx">
+      <DependentUpon>frmDefectImage2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLongPdList.resx">
+      <DependentUpon>frmLongPdList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMixedRate.resx">
+      <DependentUpon>frmMixedRate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTansho.resx">
+      <DependentUpon>frmTansho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\ucDefect.resx">
+      <DependentUpon>ucDefect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\ucCoil.resx">
+      <DependentUpon>ucCoil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ユーザーコントロール\ucStatus.resx">
+      <DependentUpon>ucStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefectImage.resx">
+      <DependentUpon>frmDefectImage.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\KizuForm\KizuForm2015.vbproj">
+      <Project>{7804679d-f0d1-4c19-bdd3-11e6bdce4030}</Project>
+      <Name>KizuForm2015</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\tClassForm\tClassForm2015.vbproj">
+      <Project>{2a0234a6-c555-47a3-aec2-5e7828ec0ba1}</Project>
+      <Name>tClassForm2015</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\tClassLibrary\tClassLibrary2015.vbproj">
+      <Project>{f8144424-2197-479c-9bb0-89d2da9c5847}</Project>
+      <Name>tClassLibrary2015</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ユーザーコントロール\ucDefectImage.resx">
+      <DependentUpon>ucDefectImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵無し.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\EXE\KizuLibCLIx32.dll">
+      <Link>KizuLibCLIx32.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\EXE\KizuLibCLIx64.dll">
+      <Link>KizuLibCLIx64.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="探傷.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

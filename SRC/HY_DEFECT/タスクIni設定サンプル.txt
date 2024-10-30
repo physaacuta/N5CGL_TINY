@@ -1,0 +1,28 @@
+#=========================================================
+# 表示管理
+# IMAGE_PATH        : 探傷画面表示用の画像格納パス
+# MAEIMG_PATH       : 前工程疵画像格納パス
+# LSTIMG_PATH       : 重欠陥一覧画像格納パス
+# IMG_SAVE_OFF      : 探傷画面表示用の画像保存有無(1：保存しない、以外：保存する)
+# MAEIMG_SAVE_OFF   : 前工程疵画像保存有無        (1：保存しない、以外：保存する)
+# LSTIMG_SAVE_OFF   : 重欠陥一覧画像保存有無      (1：保存しない、以外：保存する)
+# SAVE_IP           : 疵実績情報送信PCのIPアドレス
+# SAVE_PORT         : 受信ポート
+# STATUS_MERGE_OUT  : 出側 通板位置ステータスマージ処理実施有無(1:マージする、以外：未実施)
+# STATUS_MERGE_ANA  : 穴検 通板位置ステータスマージ処理実施有無(1:マージする、以外：未実施)
+#=========================================================
+[HY_DEFECT]
+IMAGE_PATH	= D:\IMG
+MAEIMG_PATH	= D:\MAE
+LSTIMG_PATH	= D:\LSTIMG
+IMG_SAVE_OFF    = 1
+MAEIMG_SAVE_OFF = 1
+LSTIMG_SAVE_OFF = 1
+SAVE_IP		= 192.9.201.31
+#IMAGE_PATH	= C:\IMG
+#MAEIMG_PATH	= C:\MAE
+#LSTIMG_PATH	= C:\LSTIMG
+#SAVE_IP	= 127.0.0.1
+SAVE_PORT	= 10002
+STATUS_MERGE_OUT = 1
+STATUS_MERGE_ANA = 1

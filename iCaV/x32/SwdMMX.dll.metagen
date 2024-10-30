@@ -1,0 +1,71 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly SwdMMX, Version=1.0.*, Culture=ロケールに依存しない言語 (ロケールに依存しない国): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class SwdMMX.MColorSplit: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    PackedToPlainer(IntPtr, Int32, IntPtr[], Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    SwapRB24bpp(IntPtr, Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class SwdMMX.MAccHorz: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Methods:
+    horz_proj_asm(IntPtr, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class SwdMMX.MAccVert: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Methods:
+    acc_vert_proj_asm(IntPtr, Int32, Int32, Int32, IntPtr): PrivateScope, Public, Static, HideBySig
+Class SwdMMX.MColorTwist: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ColorTwist(IntPtr[], Int32, Int32, IntPtr, Int32, Int32, Single[]): PrivateScope, Public, Static, HideBySig
+    ColorTwist(IntPtr[], Int32, Int32, IntPtr, Int32, Int32, Single[,]): PrivateScope, Public, Static, HideBySig
+Class SwdMMX.MDeShade: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Init(Int32, Int32, Params): PrivateScope, Public, HideBySig
+    Exec(IntPtr, IntPtr, IntPtr): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class SwdMMX.MDeShade+Params: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 lpf_width : Public
+    Int32 lpf_height : Public
+    Int32 mag : Public
+    Int32 offset : Public
+Class SwdMMX.MHistogram: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Methods:
+    histogram_asm(IntPtr, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class SwdMMX.Memcopy: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    MemCopy8(IntPtr, Int32, IntPtr, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    MemCopy32(IntPtr, Int32, IntPtr, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    MemCopy64(IntPtr, Int32, IntPtr, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    MemCopy64xmm(IntPtr, IntPtr, Int32): PrivateScope, Public, Static, HideBySig
+    MemCopy64xmm(IntPtr, Int32, IntPtr, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    MemCopy16xmm(IntPtr, Int32, IntPtr, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    MemClear64xmm(IntPtr, Int32): PrivateScope, Public, Static, HideBySig
+    MemSet64xmmShort(IntPtr, UInt16, Int32): PrivateScope, Public, Static, HideBySig
+    MemCopy64xmmSu(IntPtr, IntPtr, Int32): PrivateScope, Public, Static, HideBySig
+    MemCopyNt(IntPtr, IntPtr, Int32): PrivateScope, Public, Static, HideBySig
+Class SwdMMX.MShiftCopy: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ShiftCopy(IntPtr, IntPtr, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    InsertShiftCopyCalc(Int32&(Out), Int32&(Out), Int32&(Out), Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    InsertShiftCopy(IntPtr, Int32, IntPtr, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    InsertShiftCopyShear(IntPtr, Int32, IntPtr, IntPtr, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class SwdMMX.MTapReconst: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    HflipRighthalf(IntPtr, IntPtr, Int32 IsLong, IntPtr, Int32 IsLong, Int32 IsLong, Int32 IsLong): PrivateScope, Public, Static, HideBySig
+    HflipRighthalf(IntPtr, IntPtr, IntPtr, Int32 IsLong, Int32 IsLong, Int32 IsLong): PrivateScope, Public, Static, HideBySig
+    SplitInterleaved(IntPtr, IntPtr, Int32 IsLong, Int32 IsLong): PrivateScope, Public, Static, HideBySig

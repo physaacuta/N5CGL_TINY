@@ -1,0 +1,30 @@
+ここにあるのは、 6.1
+ijl20l.lib は、スタティックリンク
+
+なので、
+追加の依存ファイルで以下を追加すると、ijl20.dllは必要無しとなる。
+
+【32bit】
+ijl20l.lib
+ippimerged.lib
+ippsmerged.lib
+ippjmerged.lib
+ippcvmerged.lib
+ippsemerged.lib
+ippiemerged.lib
+ippjemerged.lib
+ippcvemerged.lib
+ippcorel.lib
+
+
+【64bit】
+ijl20l.lib
+ippimergedem64t.lib
+ippsmergedem64t.lib
+ippjmergedem64t.lib
+ippcvmergedem64t.lib
+ippsemergedem64t.lib
+ippiemergedem64t.lib
+ippjemergedem64t.lib
+ippcvemergedem64t.lib
+ippcoreem64tl.lib

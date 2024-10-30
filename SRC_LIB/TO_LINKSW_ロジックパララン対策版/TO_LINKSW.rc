@@ -1,0 +1,215 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 (日本) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\TO_LINKSW.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""     // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TO_LINKSW.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TO_LINKSW_DIALOG DIALOGEX 0, 0, 541, 469
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "対カメラリンクスイッチ通信 [TO_LINKSW]"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "強制終了",IDOK,477,274,56,16
+    LISTBOX         IDC_LIST1,1,203,408,259,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "デバッグコマンド",IDC_STATIC,413,259,126,203
+    CONTROL         "デバッグ実行",IDC_DEBUG_MANUAL,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,417,276,56,16
+    PUSHBUTTON      "パラメータ変更",IDC_DEBUG_PARAM,417,312,56,16
+    PUSHBUTTON      "検査開始設定",IDC_DEBUG_START_SET,477,312,56,16
+    GROUPBOX        "固定パラメータ",IDC_STATIC,413,224,126,33
+    LTEXT           "Tap",IDC_STATIC,417,240,12,8
+    LTEXT           "Ysize",IDC_STATIC,476,240,16,8
+    EDITTEXT        IDC_PARAM_CAMTAPNUM,432,238,39,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PARAM_YSIZE,494,238,39,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "カメラ選択設定",IDC_DEBUG_CAMERA_SET,417,334,56,16
+    EDITTEXT        IDC_DEBUG_ID,511,334,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,478,336,8,8
+    LTEXT           "ボード",IDC_STATIC,478,348,18,8
+    LTEXT           "カメラ選択",IDC_STATIC,478,360,29,8
+    EDITTEXT        IDC_DEBUG_BOARD,511,346,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEBUG_CAMERA,511,358,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "フレームグラバからCC送信",IDC_DEBUG_CCMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,418,298,86,10
+    PUSHBUTTON      "途中参加設定",IDC_DEBUG_SLAVE_SET,417,376,56,16
+    LTEXT           "表裏区分",IDC_STATIC,478,396,28,8
+    LTEXT           "フレームNo",IDC_STATIC,478,408,30,8
+    EDITTEXT        IDC_DEBUG_TORB,511,394,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEBUG_FNO,511,406,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "高速リセット通知",IDC_DEBUG_COUNTER_RESET,417,392,56,16
+    PUSHBUTTON      "カウンタチェック",IDC_DEBUG_COUNTER_CHECK,417,414,56,16
+    LTEXT           "ﾎﾞｰﾄﾞNo(1~",IDC_STATIC_CAMNO,474,438,34,8
+    LTEXT           "シリアル速度",IDC_STATIC_SERIAL_SPEED,474,448,35,8
+    EDITTEXT        IDC_DEBUG_CAMNO,511,434,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "AOC速度変更",IDC_DEBUG_SET_SERIAL_SPEED,417,440,56,16
+    COMBOBOX        IDC_DEBUG_SERIAL_SPEED_VALUE,511,446,26,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "M/S区分",IDC_STATIC,478,372,27,8
+    EDITTEXT        IDC_DEBUG_DIV_MS,511,370,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    GROUPBOX        "回線状態",IDC_STATIC,413,202,125,21
+    EDITTEXT        IDC_EDIT_RS232C,447,208,15,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "RS232C",IDC_STATIC,418,210,24,8
+    LTEXT           "表示対象ユニット",IDC_STATIC,375,7,48,8
+    COMBOBOX        IDC_UNIT_DSP,426,7,106,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_BOARD,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,23,541,153
+    LTEXT           "送信対象ユニット",IDC_STATIC,374,184,48,8
+    COMBOBOX        IDC_UNIT_EXEC,426,182,106,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,2,2,0
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <会社名>"
+            VALUE "FileDescription", "TODO: <ファイルの説明>"
+            VALUE "FileVersion", "2.2.2.0"
+            VALUE "InternalName", "TO_LINKSW.exe"
+            VALUE "LegalCopyright", "TODO: (C) <会社名>.  All rights reserved."
+            VALUE "OriginalFilename", "TO_LINKSW.exe"
+            VALUE "ProductName", "TODO: <製品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_TO_LINKSW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 534
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 462
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_TO_LINKSW_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 日本語 (日本) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\TO_LINKSW.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"     // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

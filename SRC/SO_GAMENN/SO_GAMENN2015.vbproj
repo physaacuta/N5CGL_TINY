@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83DC9328-9759-426D-91F6-23C4C23E79B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SO_GAMENN.modMain</StartupObject>
+    <RootNamespace>SO_GAMENN</RootNamespace>
+    <AssemblyName>SO_GAMENN</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SO_GAMENN.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SO_GAMENN.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SO_GAMENN.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SO_GAMENN.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>
+    </NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KizuForm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EXE\KizuForm.dll</HintPath>
+    </Reference>
+    <Reference Include="KizuLibCLIx32, Version=1.0.6913.28652, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EXE\KizuLibCLIx32.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="tClassForm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EXE\tClassForm.dll</HintPath>
+    </Reference>
+    <Reference Include="tClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EXE\tClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Include\DspCommon.vb">
+      <Link>共通Include\DspCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\HyTbl.vb">
+      <Link>共通Include\HyTbl.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommon.vb">
+      <Link>共通Include\KizuCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuCommonSelect.vb">
+      <Link>共通Include\KizuCommonSelect.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\KizuListID.vb">
+      <Link>共通Include\KizuListID.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\LineCommon.vb">
+      <Link>共通Include\LineCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\Include\OutInterface.vb">
+      <Link>共通Include\OutInterface.vb</Link>
+    </Compile>
+    <Compile Include="..\..\LibPG\認証\UserCheck.vb">
+      <Link>UserCheck.vb</Link>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\frmLongPdList.designer.vb">
+      <Link>実績Sub画面\frmLongPdList.designer.vb</Link>
+      <DependentUpon>frmLongPdList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\frmLongPdList.vb">
+      <Link>実績Sub画面\frmLongPdList.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\frmMixedRate.designer.vb">
+      <Link>実績Sub画面\frmMixedRate.designer.vb</Link>
+      <DependentUpon>frmMixedRate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\frmMixedRate.vb">
+      <Link>実績Sub画面\frmMixedRate.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\Hy_So_Common.vb">
+      <Link>Hy_So_Common.vb</Link>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\modCommon.vb">
+      <Link>疵拡大画面\modCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\ユーザーコントロール\ucDefectImage.designer.vb">
+      <Link>疵拡大画面\ucDefectImage.designer.vb</Link>
+      <DependentUpon>ucDefectImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\ユーザーコントロール\ucDefectImage.vb">
+      <Link>疵拡大画面\ucDefectImage.vb</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\共通クラス\clsParamManager.vb">
+      <Link>実績画面用クラス\clsParamManager.vb</Link>
+    </Compile>
+    <Compile Include="..\HY_TANSHO\共通クラス\clsPreParamManager.vb">
+      <Link>実績画面用クラス\clsPreParamManager.vb</Link>
+    </Compile>
+    <Compile Include="DataGridCheckButton.vb" />
+    <Compile Include="frmDebugLog.designer.vb">
+      <DependentUpon>frmDebugLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDebugLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDummy.designer.vb">
+      <DependentUpon>frmDummy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDummy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJisseki.designer.vb">
+      <DependentUpon>frmJisseki.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJisseki.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLog.designer.vb">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFFSearch.Designer.vb">
+      <DependentUpon>frmFFSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFFSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain_Log2.designer.vb">
+      <DependentUpon>frmMain_Log2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain_Log2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain_StatusLog.designer.vb">
+      <DependentUpon>frmMain_StatusLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain_StatusLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPop_Dekon.Designer.vb">
+      <DependentUpon>frmPop_Dekon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPop_Dekon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRas.designer.vb">
+      <DependentUpon>frmRas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatusLog.designer.vb">
+      <DependentUpon>frmStatusLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatusLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKikiTrand.designer.vb">
+      <DependentUpon>frmKikiTrand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKikiTrand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemStatus.designer.vb">
+      <DependentUpon>frmSystemStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RASsub画面\frmBaseList.designer.vb">
+      <DependentUpon>frmBaseList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RASsub画面\frmBaseList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RASsub画面\frmDefIncidenceGraph.designer.vb">
+      <DependentUpon>frmDefIncidenceGraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RASsub画面\frmDefIncidenceGraph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RASsub画面\frmDefTrand.designer.vb">
+      <DependentUpon>frmDefTrand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RASsub画面\frmDefTrand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RASsub画面\frmEdgeList.designer.vb">
+      <DependentUpon>frmEdgeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RASsub画面\frmEdgeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RASsub画面\frmRas_Detail.designer.vb">
+      <DependentUpon>frmRas_Detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RASsub画面\frmRas_Detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RASsub画面\立入制限\frmSecurityDisp.designer.vb">
+      <DependentUpon>frmSecurityDisp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RASsub画面\立入制限\frmSecurityDisp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="コイル情報部デザイン\ucCoil.designer.vb">
+      <DependentUpon>ucCoil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="コイル情報部デザイン\ucCoil.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\実績画面用クラス\clsMixedRateInCoil.vb" />
+    <Compile Include="実績Sub画面\検索サブ画面\frmCoilInfo.designer.vb">
+      <DependentUpon>frmCoilInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmCoilInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\frmCoilTrand.designer.vb">
+      <DependentUpon>frmCoilTrand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\frmCoilTrand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\frmDefMapJisseki.Designer.vb">
+      <DependentUpon>frmDefMapJisseki.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\frmDefMapJisseki.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\frmDspCoil.designer.vb">
+      <DependentUpon>frmDspCoil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\frmDspCoil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\frmEdgeDetect.designer.vb">
+      <DependentUpon>frmEdgeDetect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\frmEdgeDetect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\frmSearch.designer.vb">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\frmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\実績画面用クラス\clsDataDefect.vb" />
+    <Compile Include="実績Sub画面\実績画面用クラス\clsDataMap.vb" />
+    <Compile Include="実績Sub画面\実績画面用クラス\clsDispCoil.vb" />
+    <Compile Include="実績Sub画面\実績画面用クラス\clsDispDefect.vb" />
+    <Compile Include="実績Sub画面\実績画面用クラス\clsDispMap.vb" />
+    <Compile Include="実績Sub画面\実績画面用クラス\clsDspDefCoil.vb" />
+    <Compile Include="実績Sub画面\実績画面用クラス\clsDspDefMap.vb" />
+    <Compile Include="実績Sub画面\実績画面用クラス\clsMixedRate.vb" />
+    <Compile Include="実績Sub画面\検索サブ画面\frmCut.designer.vb">
+      <DependentUpon>frmCut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmCut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmFF.designer.vb">
+      <DependentUpon>frmFF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmFF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmFFRecv.designer.vb">
+      <DependentUpon>frmFFRecv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmFFRecv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmKensaStatus.designer.vb">
+      <DependentUpon>frmKensaStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmKensaStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmMixedRateTool.designer.vb">
+      <DependentUpon>frmMixedRateTool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmMixedRateTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmSaisun.designer.vb">
+      <DependentUpon>frmSaisun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="実績Sub画面\検索サブ画面\frmSaisun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵情報部デザイン\ucDefect.designer.vb">
+      <DependentUpon>ucDefect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵情報部デザイン\ucDefect.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="疵拡大画面\frmDefectImage.designer.vb">
+      <DependentUpon>frmDefectImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵拡大画面\frmDefectImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="疵拡大画面\frmDefectImage2.designer.vb">
+      <DependentUpon>frmDefectImage2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="疵拡大画面\frmDefectImage2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="継承したクラス\frmMain_Menu2.designer.vb">
+      <DependentUpon>frmMain_Menu2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="継承したクラス\frmMain_Menu2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="継承したクラス\tClass_ImageDsp2.vb" />
+    <Compile Include="継承したクラス\tCnt_DataGridView_turn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\HY_TANSHO\frmLongPdList.resx">
+      <Link>実績Sub画面\frmLongPdList.resx</Link>
+      <DependentUpon>frmLongPdList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\HY_TANSHO\frmMixedRate.resx">
+      <Link>実績Sub画面\frmMixedRate.resx</Link>
+      <DependentUpon>frmMixedRate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\HY_TANSHO\ユーザーコントロール\ucDefectImage.resx">
+      <Link>疵拡大画面\ucDefectImage.resx</Link>
+      <DependentUpon>ucDefectImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDebugLog.resx">
+      <DependentUpon>frmDebugLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDummy.resx">
+      <DependentUpon>frmDummy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJisseki.resx">
+      <DependentUpon>frmJisseki.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLog.resx">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFFSearch.resx">
+      <DependentUpon>frmFFSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain_Log2.resx">
+      <DependentUpon>frmMain_Log2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain_StatusLog.resx">
+      <DependentUpon>frmMain_StatusLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPop_Dekon.resx">
+      <DependentUpon>frmPop_Dekon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRas.resx">
+      <DependentUpon>frmRas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatusLog.resx">
+      <DependentUpon>frmStatusLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKikiTrand.resx">
+      <DependentUpon>frmKikiTrand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystemStatus.resx">
+      <DependentUpon>frmSystemStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RASsub画面\frmDefIncidenceGraph.resx">
+      <DependentUpon>frmDefIncidenceGraph.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RASsub画面\frmBaseList.resx">
+      <DependentUpon>frmBaseList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RASsub画面\frmDefTrand.resx">
+      <DependentUpon>frmDefTrand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RASsub画面\frmEdgeList.resx">
+      <DependentUpon>frmEdgeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RASsub画面\frmRas_Detail.resx">
+      <DependentUpon>frmRas_Detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RASsub画面\立入制限\frmSecurityDisp.resx">
+      <DependentUpon>frmSecurityDisp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="コイル情報部デザイン\ucCoil.resx">
+      <DependentUpon>ucCoil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\検索サブ画面\frmCoilInfo.resx">
+      <DependentUpon>frmCoilInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\frmCoilTrand.resx">
+      <DependentUpon>frmCoilTrand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\frmDefMapJisseki.resx">
+      <DependentUpon>frmDefMapJisseki.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\frmDspCoil.resx">
+      <DependentUpon>frmDspCoil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\frmEdgeDetect.resx">
+      <DependentUpon>frmEdgeDetect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\frmSearch.resx">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\検索サブ画面\frmCut.resx">
+      <DependentUpon>frmCut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\検索サブ画面\frmFF.resx">
+      <DependentUpon>frmFF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\検索サブ画面\frmFFRecv.resx">
+      <DependentUpon>frmFFRecv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\検索サブ画面\frmKensaStatus.resx">
+      <DependentUpon>frmKensaStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\検索サブ画面\frmMixedRateTool.resx">
+      <DependentUpon>frmMixedRateTool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="実績Sub画面\検索サブ画面\frmSaisun.resx">
+      <DependentUpon>frmSaisun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵情報部デザイン\ucDefect.resx">
+      <DependentUpon>ucDefect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵拡大画面\frmDefectImage.resx">
+      <DependentUpon>frmDefectImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵拡大画面\frmDefectImage2.resx">
+      <DependentUpon>frmDefectImage2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="継承したクラス\frmMain_Menu2.resx">
+      <DependentUpon>frmMain_Menu2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="疵無し.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\EXE\KizuLibCLIx32.dll">
+      <Link>KizuLibCLIx32.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\EXE\KizuLibCLIx64.dll">
+      <Link>KizuLibCLIx64.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\LibPG\認証\UserCheck32.dll">
+      <Link>UserCheck32.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\LibPG\認証\UserCheck64.dll">
+      <Link>UserCheck64.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

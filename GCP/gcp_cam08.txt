@@ -1,0 +1,44 @@
+20240820 114754	cam08
+
+Model          P4_CC_04K07T_00_R
+Microcode      03-081-20282-21
+CCI            03-110-20277-05
+FPGA           03-056-20444-05
+Serial #       12147439
+User ID        
+BiST:          Good
+
+DefaultSet     1
+Ext Trig       On
+Meas L.R.      44150 [Hz]
+Max  L.R.      68500 [Hz]
+Exp. Mode      Timed 
+Exp. Red Time  7350 [ns]
+Exp. Gr. Time  7000 [ns]
+Exp. Bl. Time  10000 [ns]
+Meas E.T.      7350 [ns]
+Max  E.T.      3000000 [ns]
+
+Test Pat.      0:Off
+Direction      Internal, Forward
+Line Delay     3.00
+Hor Alig Mode  Off
+Hor. Bin       1
+Flat Field     Off
+Color Plane Selector:    All
+Offset         0
+Gain           1.00
+Red Gain       1.60
+Green Gain     4.88
+Blue Gain      1.92
+Color Matrix Selector:   User 1
+Color Correction Matrix: 1.009995, -0.019989, -0.019989, 0
+                         -0.229996, 1.069992, -0.409988, 0
+                         0.000000, -0.169998, 1.059998, 0
+Mirror         On
+AOI Mode:      Off
+CL Speed       85MHz
+CL Config      Deca
+Pixel Fmt      RGB8
+CPA ROI        1-4096
+USER>

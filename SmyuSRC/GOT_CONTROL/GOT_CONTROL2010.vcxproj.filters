@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Auto">
+      <UniqueIdentifier>{4c83fda3-e33e-4e36-9967-38d9220f2dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GOT共有メモリ操作用">
+      <UniqueIdentifier>{d35cb43f-a211-430f-ad99-f92e20167540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\シナリオ操作">
+      <UniqueIdentifier>{34b2ad20-9940-445c-b58d-eeac3a4827c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Auto">
+      <UniqueIdentifier>{40d447fc-7984-4dd1-8b20-195febeb3d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\共通ヘッダ">
+      <UniqueIdentifier>{50f1b3a5-dd7b-4c5a-ad16-f530680c7712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\GOT共有メモリ操作用">
+      <UniqueIdentifier>{7aae71d8-39dc-439e-8395-0bff0afbdab0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\シナリオ操作">
+      <UniqueIdentifier>{35195406-4f90-49a0-a223-8048efe2034a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainInctance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="GOT_CONTROL.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="GOT_CONTROLDlg.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="PioControlManager.cpp">
+      <Filter>ソース ファイル\GOT共有メモリ操作用</Filter>
+    </ClCompile>
+    <ClCompile Include="PlgControlManager.cpp">
+      <Filter>ソース ファイル\GOT共有メモリ操作用</Filter>
+    </ClCompile>
+    <ClCompile Include="SmyuBaseManager.cpp">
+      <Filter>ソース ファイル\シナリオ操作</Filter>
+    </ClCompile>
+    <ClCompile Include="SmyuEvtManager.cpp">
+      <Filter>ソース ファイル\シナリオ操作</Filter>
+    </ClCompile>
+    <ClCompile Include="SmyuPlgManager.cpp">
+      <Filter>ソース ファイル\シナリオ操作</Filter>
+    </ClCompile>
+    <ClCompile Include="SmyuTimManager.cpp">
+      <Filter>ソース ファイル\シナリオ操作</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainConst.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInctance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="GOT_CONTROL.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="GOT_CONTROLDlg.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuCommon.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuSmyu.h">
+      <Filter>ヘッダー ファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="PioControlManager.h">
+      <Filter>ヘッダー ファイル\GOT共有メモリ操作用</Filter>
+    </ClInclude>
+    <ClInclude Include="PlgControlManager.h">
+      <Filter>ヘッダー ファイル\GOT共有メモリ操作用</Filter>
+    </ClInclude>
+    <ClInclude Include="SmyuBaseManager.h">
+      <Filter>ヘッダー ファイル\シナリオ操作</Filter>
+    </ClInclude>
+    <ClInclude Include="SmyuEvtManager.h">
+      <Filter>ヘッダー ファイル\シナリオ操作</Filter>
+    </ClInclude>
+    <ClInclude Include="SmyuPlgManager.h">
+      <Filter>ヘッダー ファイル\シナリオ操作</Filter>
+    </ClInclude>
+    <ClInclude Include="SmyuTimManager.h">
+      <Filter>ヘッダー ファイル\シナリオ操作</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\GOT_CONTROL.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="res\GOT_CONTROL.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GOT_CONTROL.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

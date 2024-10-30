@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\パフォーマンス対策">
+      <UniqueIdentifier>{5e5c45ff-4fec-4604-88a4-b6d37927b929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\パフォーマンス対策">
+      <UniqueIdentifier>{5f531d61-0e9e-4b28-93a8-59305691c286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\統合サーバー用">
+      <UniqueIdentifier>{959b6bd7-f948-4aeb-9c23-d013b2747fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\統合サーバー用">
+      <UniqueIdentifier>{10e50129-a5ee-4a71-8620-0b8af5042c82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ControlManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleTable.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="KizuDeleteManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MainInctance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TI_DELETE.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TI_DELETEDlg.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlDefragManager.cpp">
+      <Filter>ソース ファイル\パフォーマンス対策</Filter>
+    </ClCompile>
+    <ClCompile Include="DefragManager.cpp">
+      <Filter>ソース ファイル\パフォーマンス対策</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlLowGr.cpp">
+      <Filter>ソース ファイル\統合サーバー用</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleLowGr.cpp">
+      <Filter>ソース ファイル\統合サーバー用</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControlManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleTable.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="KizuDeleteManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInctance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TI_DELETE.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TI_DELETEDlg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DefragManager.h">
+      <Filter>ヘッダー ファイル\パフォーマンス対策</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlDefragManager.h">
+      <Filter>ヘッダー ファイル\パフォーマンス対策</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlLowGr.h">
+      <Filter>ヘッダー ファイル\統合サーバー用</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleLowGr.h">
+      <Filter>ヘッダー ファイル\統合サーバー用</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TI_DELETE.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="res\TI_DELETE.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="タスクIni設定サンプル.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TI_DELETE.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

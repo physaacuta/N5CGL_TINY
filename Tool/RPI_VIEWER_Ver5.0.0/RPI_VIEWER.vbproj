@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9E2105E-B178-4F03-AC02-C2BFE89E2BB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>RPI_VIEWER</RootNamespace>
+    <AssemblyName>RPI_VIEWER</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <OptionStrict>On</OptionStrict>
+    <ApplicationIcon>メインアイコン.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RPI_VIEWER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RPI_VIEWER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RPI_VIEWER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RPI_VIEWER.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ImgLibCLI, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EXE\ImgLibCLI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCheckKizuWT.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsExecPosWT.vb" />
+    <Compile Include="clsParamManager.vb" />
+    <Compile Include="Doc\GlobalProperties.vb" />
+    <Compile Include="frmMain_Key.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plugin\DrawMemori.vb" />
+    <Compile Include="Plugin\frmPlDspLen.Designer.vb">
+      <DependentUpon>frmPlDspLen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Plugin\frmPlDspLen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plugin\frmPopImgControl.Designer.vb">
+      <DependentUpon>frmPopImgControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Plugin\frmPopImgControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopBaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\DataGridViewButtonColumnColored.vb" />
+    <Compile Include="サブ画面\frmPopBookmark.Designer.vb">
+      <DependentUpon>frmPopBookmark.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopBookmark.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopCoilItem.Designer.vb">
+      <DependentUpon>frmPopCoilItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopCoilItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopCoilSearch.Designer.vb">
+      <DependentUpon>frmPopCoilSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopCoilSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopDspSet.Designer.vb">
+      <DependentUpon>frmPopDspSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopDspSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopGridLine.Designer.vb">
+      <DependentUpon>frmPopGridLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopGridLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopDefMap.Designer.vb">
+      <DependentUpon>frmPopDefMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopDefMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopControl.Designer.vb">
+      <DependentUpon>frmPopControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopInputList.Designer.vb">
+      <DependentUpon>frmPopInputList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopInputList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKaihatu.Designer.vb">
+      <DependentUpon>frmPopKaihatu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKaihatu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKiriImg.Designer.vb">
+      <DependentUpon>frmPopKiriImg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKiriImg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKiriInput.Designer.vb">
+      <DependentUpon>frmPopKiriInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKiriInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKizuList.Designer.vb">
+      <DependentUpon>frmPopKizuList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKizuList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKizuMap.Designer.vb">
+      <DependentUpon>frmPopKizuMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopKizuMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopPrint.Designer.vb">
+      <DependentUpon>frmPopPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopResetOvl.Designer.vb">
+      <DependentUpon>frmPopResetOvl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopResetOvl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="サブ画面\frmPopRpiPath.Designer.vb">
+      <DependentUpon>frmPopRpiPath.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopRpiPath.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modCommon.vb" />
+    <Compile Include="modOutIF.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="clsRecvMail.vb" />
+    <Compile Include="Startup.vb" />
+    <Compile Include="サブ画面\frmPopSetting.Designer.vb">
+      <DependentUpon>frmPopSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="サブ画面\frmPopSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="認証\UserCheck_RPIViewer.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\tClassLibrary\tClassLibrary.vbproj">
+      <Project>{F8144424-2197-479C-9BB0-89D2DA9C5847}</Project>
+      <Name>tClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="サブ画面\frmPopCoilSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopCoilSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopDefMap.resx">
+      <DependentUpon>frmPopDefMap.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopKaihatu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopKaihatu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopKiriImg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopKiriImg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopRpiPath.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopRpiPath.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RPI_VIEWER_Ini設定サンプル.txt" />
+    <Content Include="メインアイコン.ico" />
+    <EmbeddedResource Include="Plugin\frmPlDspLen.resx">
+      <DependentUpon>frmPlDspLen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugin\frmPopImgControl.resx">
+      <DependentUpon>frmPopImgControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopBookmark.resx">
+      <DependentUpon>frmPopBookmark.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopCoilItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopCoilItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopDspSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopDspSet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopGridLine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopGridLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopInputList.resx">
+      <DependentUpon>frmPopInputList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopKiriInput.resx">
+      <DependentUpon>frmPopKiriInput.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopKizuList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopKizuList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopKizuMap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopKizuMap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopPrint.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopResetOvl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPopResetOvl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="サブ画面\frmPopSetting.resx">
+      <DependentUpon>frmPopSetting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="疵無し.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

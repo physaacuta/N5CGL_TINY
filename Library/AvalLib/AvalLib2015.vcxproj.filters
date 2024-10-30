@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="iport">
+      <UniqueIdentifier>{ba234c47-2452-4a3b-ac25-a8f84ff21adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="混色分離">
+      <UniqueIdentifier>{0f817993-78e0-4e3b-9c4b-1d18fc3e7958}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AvalACL2Base.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AvalACL2Manager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AvalACL2ManagerColor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AvalACL2ManagerColorCorr.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IportLib\GrabberManager.cpp">
+      <Filter>iport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IportLib\ColorTwist.cpp">
+      <Filter>混色分離</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IportLib\make_planar_color_corr.cpp">
+      <Filter>混色分離</Filter>
+    </ClCompile>
+    <ClCompile Include="AvalACL2Manager12.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AvalACL2Base.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AvalACL2Manager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AvalACL2ManagerColor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AvalACL2ManagerColorCorr.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AvalManagerIF.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CGrabberCorrMatImpl.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IportLib\ColorTwist.h">
+      <Filter>混色分離</Filter>
+    </ClInclude>
+    <ClInclude Include="AvalACL2Manager12.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Gamma12_8.h">
+      <Filter>混色分離</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AvalLib.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\IportLib\asm64\ColorTwist_x64_1.yasm">
+      <Filter>混色分離</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\IportLib\asm64\ColorTwist_x64_2.yasm">
+      <Filter>混色分離</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\IportLib\asm64\ColorTwist_x64_3.yasm">
+      <Filter>混色分離</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\IportLib\asm64\ColorTwist_x64_4.yasm">
+      <Filter>混色分離</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

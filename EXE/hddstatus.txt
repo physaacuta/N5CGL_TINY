@@ -1,0 +1,62 @@
+
+HPE Smart Array P816i-a SR Gen10 in Slot 0 (Embedded)  (sn: PEYHD0DRHB3077)
+
+
+
+   Internal Drive Cage at Port 1I, Box 3, OK
+
+
+
+   Internal Drive Cage at Port 2I, Box 3, OK
+
+
+
+   Internal Drive Cage at Port 3I, Box 2, OK
+
+
+
+   Internal Drive Cage at Port 4I, Box 2, OK
+
+
+   Port Name: 1I (Mixed)
+
+   Port Name: 2I (Mixed)
+
+   Port Name: 3I (Mixed)
+
+   Port Name: 4I (Mixed)
+
+   Array A (SAS, Unused Space: 0  MB)
+
+      logicaldrive 1 (279.37 GB, RAID 1, OK)
+
+      physicaldrive 1I:3:1 (port 1I:box 3:bay 1, SAS HDD, 300 GB, OK)
+      physicaldrive 1I:3:2 (port 1I:box 3:bay 2, SAS HDD, 300 GB, OK)
+
+
+   Array B (SAS, Unused Space: 6  MB)
+
+      logicaldrive 2 (12.01 TB, RAID 5, OK)
+
+      physicaldrive 1I:3:3 (port 1I:box 3:bay 3, SAS HDD, 1.2 TB, OK)
+      physicaldrive 1I:3:4 (port 1I:box 3:bay 4, SAS HDD, 1.2 TB, OK)
+      physicaldrive 2I:3:5 (port 2I:box 3:bay 5, SAS HDD, 1.2 TB, OK)
+      physicaldrive 2I:3:6 (port 2I:box 3:bay 6, SAS HDD, 1.2 TB, OK)
+      physicaldrive 2I:3:7 (port 2I:box 3:bay 7, SAS HDD, 1.2 TB, OK)
+      physicaldrive 2I:3:8 (port 2I:box 3:bay 8, SAS HDD, 1.2 TB, OK)
+      physicaldrive 3I:2:1 (port 3I:box 2:bay 1, SAS HDD, 1.2 TB, OK)
+      physicaldrive 3I:2:2 (port 3I:box 2:bay 2, SAS HDD, 1.2 TB, OK)
+      physicaldrive 3I:2:3 (port 3I:box 2:bay 3, SAS HDD, 1.2 TB, OK)
+      physicaldrive 3I:2:4 (port 3I:box 2:bay 4, SAS HDD, 1.2 TB, OK)
+      physicaldrive 4I:2:5 (port 4I:box 2:bay 5, SAS HDD, 1.2 TB, OK)
+      physicaldrive 4I:2:6 (port 4I:box 2:bay 6, SAS HDD, 1.2 TB, OK)
+
+
+   Array C (Solid State SATA, Unused Space: 0  MB)
+
+      logicaldrive 3 (447.10 GB, RAID 0, OK)
+
+      physicaldrive 4I:2:8 (port 4I:box 2:bay 8, SATA SSD, 480 GB, OK)
+
+   SEP (Vendor ID HPE, Model Smart Adapter) 379  (WWID: 51402EC01122DDA0, Port: Unknown)
+

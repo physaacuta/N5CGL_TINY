@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="TO_FFSERV.cpp">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="TO_FFSERVDlg.cpp">
+      <Filter>ソースファイル\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="MainInctance.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SockManager.cpp">
+      <Filter>ソースファイル\WorkThread</Filter>
+    </ClCompile>
+    <ClCompile Include="SockDataExec.cpp">
+      <Filter>ソースファイル\WorkThread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\LineCommon.h">
+      <Filter>ヘッダーファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="MainConst.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MainInctance.h">
+      <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\OutInterface.h">
+      <Filter>ヘッダーファイル\共通ヘッダ</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TO_FFSERV.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="TO_FFSERVDlg.h">
+      <Filter>ヘッダーファイル\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="SockDataExec.h">
+      <Filter>ヘッダーファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="SockManager.h">
+      <Filter>ヘッダーファイル\WorkThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\KizuListID.h">
+      <Filter>ヘッダーファイル\共通ヘッダ</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ヘッダーファイル">
+      <UniqueIdentifier>{209479a3-539f-40e0-bd7f-feaa13e49a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\Auto">
+      <UniqueIdentifier>{bc202835-ca5c-4ed6-bd6e-87fdfa01290b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\WorkThread">
+      <UniqueIdentifier>{7c5de91c-e2fc-4415-a7b0-a4c7dfc7764f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\共通ヘッダ">
+      <UniqueIdentifier>{d7e2c29e-a484-47cb-8730-6863bd047fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル">
+      <UniqueIdentifier>{58ffc2c3-2398-4d70-9363-0df540b2ff30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Auto">
+      <UniqueIdentifier>{c1fff769-5b2d-4628-8861-dedf31634bdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\WorkThread">
+      <UniqueIdentifier>{133717dd-f6da-4544-8d59-e7657407f57b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソースファイル">
+      <UniqueIdentifier>{ce2f44d7-041d-4416-a5e8-249cbbcbf74d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TO_FFSERV.ico">
+      <Filter>リソースファイル</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TO_FFSERV.rc">
+      <Filter>リソースファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TO_FFSERV.rc2">
+      <Filter>リソースファイル</Filter>
+    </None>
+  </ItemGroup>
+</Project>

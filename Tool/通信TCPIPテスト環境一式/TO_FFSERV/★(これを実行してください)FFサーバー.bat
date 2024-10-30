@@ -1,0 +1,1 @@
+start .\EXE\Tcp_spVer4.24β.exe .\EXE\FFサーバー(N5CGL_TINY).dat

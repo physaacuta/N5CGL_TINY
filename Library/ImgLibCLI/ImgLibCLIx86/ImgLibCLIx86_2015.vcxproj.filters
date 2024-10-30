@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\01 シェーリング補正関係">
+      <UniqueIdentifier>{160cbee7-e9e5-466e-bff0-636cc46eb280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\02高速画像縮小">
+      <UniqueIdentifier>{8b6cf0cb-b4ab-4320-b2a9-03756cae9068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\03新シェーディング">
+      <UniqueIdentifier>{c7dd8dd4-1af5-4e11-86fb-5579929dddca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\01 シェーリング補正関係">
+      <UniqueIdentifier>{c69b3f43-c4f7-437e-993e-8d33d982f7fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\03新シェーディング">
+      <UniqueIdentifier>{05efce8c-c151-48aa-a203-b9be1be05c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\ShdCmp_DeShade.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShdCmp_Devide.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShdCmp_LowPassFilter.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係</Filter>
+    </ClCompile>
+    <ClCompile Include="ShdCmp_LPF.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係</Filter>
+    </ClCompile>
+    <ClCompile Include="ShdCmp_lut2byte.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShdCmp_Main.cpp">
+      <Filter>ソース ファイル\01 シェーリング補正関係</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\IppResize.cpp">
+      <Filter>ソース ファイル\02高速画像縮小</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\resize.c">
+      <Filter>ソース ファイル\02高速画像縮小</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LPFSAT.cpp">
+      <Filter>ソース ファイル\03新シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MakeSATasm.cpp">
+      <Filter>ソース ファイル\03新シェーディング</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\ShdCmp2_Main.cpp">
+      <Filter>ソース ファイル\03新シェーディング</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\IppResize.h">
+      <Filter>ソース ファイル\02高速画像縮小</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp_DeShade.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp_Devide.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp_LowPassFilter.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp_Main.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="ShdCmp_NSimg.h">
+      <Filter>ヘッダー ファイル\01 シェーリング補正関係</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LPFSAT.h">
+      <Filter>ヘッダー ファイル\03新シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MakeSATasm.h">
+      <Filter>ヘッダー ファイル\03新シェーディング</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ShdCmp2_Main.h">
+      <Filter>ヘッダー ファイル\03新シェーディング</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImgLibCLIx86.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

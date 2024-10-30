@@ -1,0 +1,11 @@
+カメラ切り替え時に、カメラリンクの切り替え対象の
+ボードNo、CHNoを識別するために、要求元のPCIDを設定する必要あり。
+今回の校正ツールは、「window.json」にて設定
+
+window.json　の下記項目（MyOutport）を対象PCIDに変更
+ただし、項目行がなければ、自動判別でPCIDを取得する。
+
+  "CamlinkSwUI#0": {
+    "CustomProps": {
+      "MyOutport": "1"
+    },

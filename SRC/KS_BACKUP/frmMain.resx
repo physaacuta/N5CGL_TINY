@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>○統括兼蓄積機能切替を実行します。
+   ・本操作は、必ず統括兼蓄積バックアップPC上で実行してください。
+     １．検査停止状態にしてください。
+     ２．本ツールで、切替操作を実行してください。
+     ３．切替完了後は、全PCが自動的にシャットダウンします。
+     ４．外部Ⅰ／Ｆ用ケーブル・マウス・キーボード・モニターケーブルを付け替えてください。
+     ５．本PCの電源を投入し、OS起動後に再起動してください。
+     ６．再起動完了後、オペレータ画面から検査を開始してください。
+     ７．統括兼蓄積機能が復旧した場合は、以下の操作を行ってください。
+           ・ 統括兼蓄積予備機で動作中に、マスター（パラメータ設定）を変更した場合は、
+              「B系→A系マスター同期」ボタンを押す事で、統括兼蓄積PCに最新のマスターをコピーします。
+     ８．「B系→A系 実績移動」ボタンを押す事で、統括兼蓄積PCに統括兼蓄積予備機の実績を移動します。</value>
+  </data>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>○表示機能切替を実行します。
+   ★本操作は、必ず、表示オフラインPC上で実行してください。
+     １．異常発生PCの、LANケーブルを外してください。
+     ２．検査中に実行しても、問題ありません。
+     ３．本ツールで、切替操作を実行してください。
+     ４．切替完了後は、本PCのみが自動的にシャットダウンします。
+     ５．マウス／キーボード／モニターケーブルを付け替えてください。
+     ６．表示オフラインPCの電源を投入し、PCを起動してください。</value>
+  </data>
+  <data name="Label9.Text" xml:space="preserve">
+    <value>○全長画像機能切替を実行します。
+   ★本操作は、必ず、全長処理BKPC上で実行してください。
+     １．検査停止状態にしてください。
+     ２．異常発生PCの、LANケーブルを外してください。
+     ３．本ツールで、切替操作を実行してください。
+     ４．切替完了後は、本PCのみが自動的にシャットダウンします。
+     ５．外部I/F用ケーブルを付け替えてください。
+     ６．全長処理BKPCの電源を投入し、PCを起動してください。</value>
+  </data>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>○操作機能切替を実行します。
+   ★本操作は、必ず、バックアップ機上で実行してください。
+     １．異常発生パソコンの、LANケーブルを外してください。
+     ２．検査中に実行しても、問題ありません。
+     ３．本ツールで、切替操作を実行してください。
+     ４．切替完了後は、本PCのみシャットダウンします。
+     ５．マウス／キーボード／モニターケーブルを付け替えてください。
+     ６．バックアップ機の電源を投入し、パソコンを起動してください。
+</value>
+  </data>
+</root>
